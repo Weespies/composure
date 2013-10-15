@@ -1,0 +1,57 @@
+<skillProfiles>
+	<profile name="Tank">
+		<skill name="Guns" bias="20"/>
+		<skill name="Melee Weapon Combat" bias="15"/>
+		<skill name="Ranged Weapons" bias="15"/>
+		<skill name="Unarmed Combat" bias="10"/>
+	</profile>
+	<profile name="Assassin">
+		<skill name="Guns" bias="10"/>
+		<skill name="Melee Weapon Combat" bias="10"/>
+		<skill name="Ranged Weapons" bias="10"/>
+		<skill name="Unarmed Combat" bias="5"/>
+		<skill name="Perception" bias="5"/>
+		<skill name="Covert" bias="10"/>
+	</profile>
+	<profile name="Guard">
+		<skill name="Guns" bias="10"/>
+		<skill name="Melee Weapon Combat" bias="10"/>
+		<skill name="Unarmed Combat" bias="15"/>
+		<skill name="Perception" bias="10"/>
+	</profile>
+	<profile name="Generic">
+	</profile>
+	<profile name="Leader">
+		<skill name="Guns" bias="10"/>
+		<skill name="Discipline" bias="15"/>
+		<skill name="Perception" bias="10"/>
+		<skill name="Influence" bias="5"/>
+	</profile>
+	<profile name="Pilot">
+		<skill name="Pilot" bias="25"/>
+		<skill name="Guns" bias="5"/>
+		<skill name="Planetary Vehicle" bias="10"/>
+	</profile>
+	<profile name="Technical">
+		<skill name="Guns" bias="5"/>
+		<skill name="Mechanical Engineering" bias="15"/>
+		<skill name="Technical Engineering" bias="15"/>
+		<skill name="Knowledge" bias="5"/>
+		<skill name="Perception" bias="5"/>
+	</profile>
+	<profile name="Medic">
+		<skill name="Guns" bias="5"/>
+		<skill name="Medical Expertise" bias="20"/>
+		<skill name="Scientific Expertise" bias="5"/>
+		<skill name="Knowledge" bias="5"/>
+		<skill name="Perception" bias="10"/>
+	</profile>
+	<profile name="Diplomat">
+		<skill name="Influence" bias="10"/>
+		<skill name="Knowledge" bias="10"/>
+		<skill name="Performance" bias="5"/>
+		<skill name="Discipline" bias="5"/>
+		<skill name="Perception" bias="5"/>
+		<skill name="Linguist" bias="5"/>
+	</profile>
+</skillProfiles>

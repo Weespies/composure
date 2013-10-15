@@ -1,0 +1,2461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archetypes>
+  <archetype enabled="true" name="Assassin" author="DrStrangeLug">
+    <description />
+    <stats>
+      <stat stat="AGL" weighting="7" />
+      <stat stat="STR" weighting="5" />
+      <stat stat="VIT" weighting="2" />
+      <stat stat="ALT" weighting="2" />
+      <stat stat="INT" weighting="5" />
+      <stat stat="WIL" weighting="3" />
+    </stats>
+    <skill name="ANIMHAND" weighting="1">
+      <specialty name="Animal Training" weighting="1" />
+      <specialty name="Riding" weighting="1" />
+      <specialty name="Vetinary" weighting="1" />
+      <specialty name="Zoology" weighting="1" />
+    </skill>
+    <skill name="ARTIST" weighting="1">
+      <specialty name="Appraisal" weighting="1" />
+      <specialty name="Cooking" weighting="1" />
+      <specialty name="Forgery" weighting="1" />
+      <specialty name="Game Designing" weighting="1" />
+      <specialty name="Painting" weighting="1" />
+      <specialty name="Photography" weighting="1" />
+      <specialty name="Poetry" weighting="1" />
+      <specialty name="Sculpting" weighting="1" />
+      <specialty name="Writing" weighting="1" />
+    </skill>
+    <skill name="ATHLET" weighting="1">
+      <specialty name="Climbing" weighting="1" />
+      <specialty name="Contortion" weighting="1" />
+      <specialty name="Dodge" weighting="1" />
+      <specialty name="Gymnastics" weighting="1" />
+      <specialty name="Juggling" weighting="1" />
+      <specialty name="Jumping" weighting="1" />
+      <specialty name="Parachuting" weighting="1" />
+      <specialty name="Parasailing" weighting="1" />
+      <specialty name="Pole Vaulting" weighting="1" />
+      <specialty name="Riding" weighting="1" />
+      <specialty name="Running" weighting="1" />
+      <specialty name="Swimming" weighting="1" />
+      <specialty name="Weight Lifting" weighting="1" />
+    </skill>
+    <skill name="COVRT" weighting="3">
+      <specialty name="Camoflauge" weighting="1" />
+      <specialty name="Disable Devices" weighting="1" />
+      <specialty name="Forgery" weighting="1" />
+      <specialty name="Infiltration" weighting="1" />
+      <specialty name="Open Locks" weighting="1" />
+      <specialty name="Sabotage" weighting="1" />
+      <specialty name="Sleight of Hand" weighting="1" />
+      <specialty name="Stealth" weighting="1" />
+      <specialty name="Streetwise" weighting="1" />
+      <specialty name="Surveillance" weighting="1" />
+    </skill>
+    <skill name="CRAFT" weighting="1">
+      <specialty name="Architecture" weighting="1" />
+      <specialty name="Blacksmithing" weighting="1" />
+      <specialty name="Carpentry" weighting="1" />
+      <specialty name="Cooking" weighting="1" />
+      <specialty name="Leatherworking" weighting="1" />
+      <specialty name="Metalworking" weighting="1" />
+      <specialty name="Pottery" weighting="1" />
+      <specialty name="Sewing" weighting="1" />
+    </skill>
+    <skill name="DISCIP" weighting="1">
+      <specialty name="Concentration" weighting="1" />
+      <specialty name="Interrogation" weighting="1" />
+      <specialty name="Intimidation" weighting="1" />
+      <specialty name="Leadership" weighting="1" />
+      <specialty name="Mental Resistance" weighting="1" />
+      <specialty name="Morale" weighting="1" />
+    </skill>
+    <skill name="GUNS" weighting="3">
+      <specialty name="Assault Rifles" weighting="1" />
+      <specialty name="Energy Weapons" weighting="1" />
+      <specialty name="Grenade Launchers" weighting="1" />
+      <specialty name="Gunsmithing" weighting="1" />
+      <specialty name="Machine Guns" weighting="1" />
+      <specialty name="Pistols" weighting="1" />
+      <specialty name="Rifles" weighting="1" />
+      <specialty name="Shotguns" weighting="1" />
+    </skill>
+    <skill name="HVYWEAP" weighting="1">
+      <specialty name="Artillery" weighting="1" />
+      <specialty name="Catapults" weighting="1" />
+      <specialty name="Demolitions" weighting="1" />
+      <specialty name="Forward Observer" weighting="1" />
+      <specialty name="Mounted Guns" weighting="1" />
+      <specialty name="Repair Heavy Weapons" weighting="1" />
+      <specialty name="Rocket Launchers" weighting="1" />
+      <specialty name="Ships Cannons" weighting="1" />
+      <specialty name="Siege Weapons" weighting="1" />
+    </skill>
+    <skill name="INFLU" weighting="1">
+      <specialty name="Administration" weighting="1" />
+      <specialty name="Barter" weighting="1" />
+      <specialty name="Bureaucracy" weighting="1" />
+      <specialty name="Conversation" weighting="1" />
+      <specialty name="Counseling" weighting="1" />
+      <specialty name="Interrogation" weighting="1" />
+      <specialty name="Intimidation" weighting="1" />
+      <specialty name="Leadership" weighting="1" />
+      <specialty name="Marketing" weighting="1" />
+      <specialty name="Persuasion" weighting="1" />
+      <specialty name="Politics" weighting="1" />
+      <specialty name="Seduction" weighting="1" />
+      <specialty name="Streetwise" weighting="1" />
+    </skill>
+    <skill name="KNOW" weighting="1">
+      <specialty name="Appraisal" weighting="1" />
+      <specialty name="Cultures" weighting="1" />
+      <specialty name="History" weighting="1" />
+      <specialty name="Law" weighting="1" />
+      <specialty name="Literature" weighting="1" />
+      <specialty name="Philosophy" weighting="1" />
+      <specialty name="Religion" weighting="1" />
+      <specialty name="Sports" weighting="1" />
+    </skill>
+    <skill name="LING" weighting="1">
+      <specialty name="Arabic" weighting="1" />
+      <specialty name="Armenian" weighting="1" />
+      <specialty name="French" weighting="1" />
+      <specialty name="German" weighting="1" />
+      <specialty name="Hindu" weighting="1" />
+      <specialty name="Japanese" weighting="1" />
+      <specialty name="Latin" weighting="1" />
+      <specialty name="Portuguese" weighting="1" />
+      <specialty name="Russian" weighting="1" />
+      <specialty name="Swahili" weighting="1" />
+      <specialty name="Swedish" weighting="1" />
+      <specialty name="Tagalog" weighting="1" />
+    </skill>
+    <skill name="MECHENG" weighting="1">
+      <specialty name="Create Mechanical Devices" weighting="1" />
+      <specialty name="Fix Mechanical Security Systems" weighting="1" />
+      <specialty name="Machinery Maintenance" weighting="1" />
+      <specialty name="Mechanical Repairs" weighting="1" />
+      <specialty name="Plumbing" weighting="1" />
+    </skill>
+    <skill name="MED" weighting="1">
+      <specialty name="Dentistry" weighting="1" />
+      <specialty name="Field Medic" weighting="1" />
+      <specialty name="First Aid" weighting="1" />
+      <specialty name="Forensics" weighting="1" />
+      <specialty name="General Practice" weighting="1" />
+      <specialty name="Genetics" weighting="1" />
+      <specialty name="Internal Medicine" weighting="1" />
+      <specialty name="Neurology" weighting="1" />
+      <specialty name="Pharmaceuticals" weighting="1" />
+      <specialty name="Physiology" weighting="1" />
+      <specialty name="Psychiatry" weighting="1" />
+      <specialty name="Rehabilitation" weighting="1" />
+      <specialty name="Surgery" weighting="1" />
+      <specialty name="Toxicology" weighting="1" />
+      <specialty name="Vetinary Medicine" weighting="1" />
+    </skill>
+    <skill name="MELEE" weighting="3">
+      <specialty name="Clubs" weighting="1" />
+      <specialty name="Knives" weighting="1" />
+      <specialty name="Melee Weaponsmithing" weighting="1" />
+      <specialty name="Nunchaku" weighting="1" />
+      <specialty name="Pole Arms" weighting="1" />
+      <specialty name="Swords" weighting="1" />
+      <specialty name="Whips" weighting="1" />
+    </skill>
+    <skill name="PERC" weighting="2">
+      <specialty name="Deduction" weighting="1" />
+      <specialty name="Empathy" weighting="1" />
+      <specialty name="Gambling" weighting="1" />
+      <specialty name="Hearing" weighting="1" />
+      <specialty name="Intuition" weighting="1" />
+      <specialty name="Investigation" weighting="1" />
+      <specialty name="Read Lips" weighting="1" />
+      <specialty name="Search" weighting="1" />
+      <specialty name="Sight" weighting="1" />
+      <specialty name="Smell" weighting="1" />
+      <specialty name="Tactics" weighting="1" />
+      <specialty name="Taste" weighting="1" />
+      <specialty name="Tracking" weighting="1" />
+    </skill>
+    <skill name="PERF" weighting="1">
+      <specialty name="Acting" weighting="1" />
+      <specialty name="Costuming" weighting="1" />
+      <specialty name="Dancing" weighting="1" />
+      <specialty name="Impersonation" weighting="1" />
+      <specialty name="Keyboard Instruments" weighting="1" />
+      <specialty name="Mimicry" weighting="1" />
+      <specialty name="Oratory" weighting="1" />
+      <specialty name="Percussion Instruments" weighting="1" />
+      <specialty name="Rock and Roll" weighting="1" />
+      <specialty name="Singing" weighting="1" />
+      <specialty name="Stringed Instruments" weighting="1" />
+      <specialty name="Wind Instruments" weighting="1" />
+    </skill>
+    <skill name="PILOT" weighting="1">
+      <specialty name="Aerial Navigation" weighting="1" />
+      <specialty name="Astrogation" weighting="1" />
+      <specialty name="Astronomy" weighting="1" />
+      <specialty name="Astrophysics" weighting="1" />
+      <specialty name="Gunships" weighting="1" />
+      <specialty name="Hang Gliders" weighting="1" />
+      <specialty name="Large Cruisers" weighting="1" />
+      <specialty name="Mid Bulk Transport" weighting="1" />
+      <specialty name="Patrol Vessels" weighting="1" />
+      <specialty name="Rocket Shuttles" weighting="1" />
+      <specialty name="Space Survival" weighting="1" />
+      <specialty name="Tankers" weighting="1" />
+      <specialty name="Ultralight Aircraft" weighting="1" />
+      <specialty name="VTOL Tilt Rotor" weighting="1" />
+    </skill>
+    <skill name="PLANVEH" weighting="1">
+      <specialty name="Aquatic Navigation" weighting="1" />
+      <specialty name="Bikes" weighting="1" />
+      <specialty name="Canoes" weighting="1" />
+      <specialty name="Cars" weighting="1" />
+      <specialty name="Equestrian" weighting="1" />
+      <specialty name="Ground Vehicle Repair" weighting="1" />
+      <specialty name="Horse Drawn Conveyances" weighting="1" />
+      <specialty name="Hovercraft" weighting="1" />
+      <specialty name="Industrial Vehicles" weighting="1" />
+      <specialty name="Land Navigation" weighting="1" />
+      <specialty name="Large Ground Transports" weighting="1" />
+      <specialty name="Military Combat Vehicles" weighting="1" />
+      <specialty name="Powerboats" weighting="1" />
+      <specialty name="Sailing" weighting="1" />
+      <specialty name="Submarines" weighting="1" />
+    </skill>
+    <skill name="RANGWEAP" weighting="1">
+      <specialty name="Blowguns" weighting="1" />
+      <specialty name="Bows" weighting="1" />
+      <specialty name="Crossbows" weighting="1" />
+      <specialty name="Darts" weighting="1" />
+      <specialty name="Grenades" weighting="1" />
+      <specialty name="Javelin" weighting="1" />
+      <specialty name="Ranged Weaponsmithing" weighting="1" />
+      <specialty name="Slings" weighting="1" />
+      <specialty name="Throwing Axes" weighting="1" />
+      <specialty name="Throwing Knives" weighting="1" />
+    </skill>
+    <skill name="SCIEXP" weighting="1">
+      <specialty name="Earth Sciences" weighting="1" />
+      <specialty name="Historical Sciences" weighting="1" />
+      <specialty name="Life Sciences" weighting="1" />
+      <specialty name="Mathematical Sciences" weighting="1" />
+    </skill>
+    <skill name="SURV" weighting="1">
+      <specialty name="Aerial" weighting="1" />
+      <specialty name="Aquatic" weighting="1" />
+      <specialty name="Generical Navigation" weighting="1" />
+      <specialty name="Land Survival" weighting="1" />
+      <specialty name="Nature" weighting="1" />
+      <specialty name="Space" weighting="1" />
+    </skill>
+    <skill name="TECHENG" weighting="1">
+      <specialty name="Communications Systems" weighting="1" />
+      <specialty name="Computer Systems" weighting="1" />
+      <specialty name="Create/Alter Technical Devices" weighting="1" />
+      <specialty name="Demolitions" weighting="1" />
+      <specialty name="Electronics" weighting="1" />
+      <specialty name="Hacking" weighting="1" />
+      <specialty name="Technical Repair" weighting="1" />
+      <specialty name="Technical Security Systems" weighting="1" />
+    </skill>
+    <skill name="UNARMED" weighting="3">
+      <specialty name="Boxing" weighting="1" />
+      <specialty name="Brawling" weighting="1" />
+      <specialty name="Judo" weighting="1" />
+      <specialty name="Karate" weighting="1" />
+      <specialty name="Kung Fu" weighting="1" />
+      <specialty name="Savate" weighting="1" />
+      <specialty name="Wrestling" weighting="1" />
+    </skill>
+  </archetype>
+  <archetype enabled="true" name="Diplomat" author="DrStrangeLug">
+    <description />
+    <stats>
+      <stat stat="AGL" weighting="2" />
+      <stat stat="STR" weighting="1" />
+      <stat stat="VIT" weighting="3" />
+      <stat stat="ALT" weighting="6" />
+      <stat stat="INT" weighting="3" />
+      <stat stat="WIL" weighting="6" />
+    </stats>
+    <skill name="ANIMHAND" weighting="1">
+      <specialty name="Animal Training" weighting="1" />
+      <specialty name="Riding" weighting="1" />
+      <specialty name="Vetinary" weighting="1" />
+      <specialty name="Zoology" weighting="1" />
+    </skill>
+    <skill name="ARTIST" weighting="1">
+      <specialty name="Appraisal" weighting="1" />
+      <specialty name="Cooking" weighting="1" />
+      <specialty name="Forgery" weighting="1" />
+      <specialty name="Game Designing" weighting="1" />
+      <specialty name="Painting" weighting="1" />
+      <specialty name="Photography" weighting="1" />
+      <specialty name="Poetry" weighting="1" />
+      <specialty name="Sculpting" weighting="1" />
+      <specialty name="Writing" weighting="1" />
+    </skill>
+    <skill name="ATHLET" weighting="1">
+      <specialty name="Climbing" weighting="1" />
+      <specialty name="Contortion" weighting="1" />
+      <specialty name="Dodge" weighting="1" />
+      <specialty name="Gymnastics" weighting="1" />
+      <specialty name="Juggling" weighting="1" />
+      <specialty name="Jumping" weighting="1" />
+      <specialty name="Parachuting" weighting="1" />
+      <specialty name="Parasailing" weighting="1" />
+      <specialty name="Pole Vaulting" weighting="1" />
+      <specialty name="Riding" weighting="1" />
+      <specialty name="Running" weighting="1" />
+      <specialty name="Swimming" weighting="1" />
+      <specialty name="Weight Lifting" weighting="1" />
+    </skill>
+    <skill name="COVRT" weighting="1">
+      <specialty name="Camoflauge" weighting="1" />
+      <specialty name="Disable Devices" weighting="1" />
+      <specialty name="Forgery" weighting="1" />
+      <specialty name="Infiltration" weighting="1" />
+      <specialty name="Open Locks" weighting="1" />
+      <specialty name="Sabotage" weighting="1" />
+      <specialty name="Sleight of Hand" weighting="1" />
+      <specialty name="Stealth" weighting="1" />
+      <specialty name="Streetwise" weighting="1" />
+      <specialty name="Surveillance" weighting="1" />
+    </skill>
+    <skill name="CRAFT" weighting="1">
+      <specialty name="Architecture" weighting="1" />
+      <specialty name="Blacksmithing" weighting="1" />
+      <specialty name="Carpentry" weighting="1" />
+      <specialty name="Cooking" weighting="1" />
+      <specialty name="Leatherworking" weighting="1" />
+      <specialty name="Metalworking" weighting="1" />
+      <specialty name="Pottery" weighting="1" />
+      <specialty name="Sewing" weighting="1" />
+    </skill>
+    <skill name="DISCIP" weighting="2">
+      <specialty name="Concentration" weighting="1" />
+      <specialty name="Interrogation" weighting="1" />
+      <specialty name="Intimidation" weighting="1" />
+      <specialty name="Leadership" weighting="1" />
+      <specialty name="Mental Resistance" weighting="1" />
+      <specialty name="Morale" weighting="1" />
+    </skill>
+    <skill name="GUNS" weighting="1">
+      <specialty name="Assault Rifles" weighting="1" />
+      <specialty name="Energy Weapons" weighting="1" />
+      <specialty name="Grenade Launchers" weighting="1" />
+      <specialty name="Gunsmithing" weighting="1" />
+      <specialty name="Machine Guns" weighting="1" />
+      <specialty name="Pistols" weighting="1" />
+      <specialty name="Rifles" weighting="1" />
+      <specialty name="Shotguns" weighting="1" />
+    </skill>
+    <skill name="HVYWEAP" weighting="1">
+      <specialty name="Artillery" weighting="1" />
+      <specialty name="Catapults" weighting="1" />
+      <specialty name="Demolitions" weighting="1" />
+      <specialty name="Forward Observer" weighting="1" />
+      <specialty name="Mounted Guns" weighting="1" />
+      <specialty name="Repair Heavy Weapons" weighting="1" />
+      <specialty name="Rocket Launchers" weighting="1" />
+      <specialty name="Ships Cannons" weighting="1" />
+      <specialty name="Siege Weapons" weighting="1" />
+    </skill>
+    <skill name="INFLU" weighting="4">
+      <specialty name="Administration" weighting="1" />
+      <specialty name="Barter" weighting="1" />
+      <specialty name="Bureaucracy" weighting="1" />
+      <specialty name="Conversation" weighting="1" />
+      <specialty name="Counseling" weighting="1" />
+      <specialty name="Interrogation" weighting="1" />
+      <specialty name="Intimidation" weighting="1" />
+      <specialty name="Leadership" weighting="1" />
+      <specialty name="Marketing" weighting="1" />
+      <specialty name="Persuasion" weighting="1" />
+      <specialty name="Politics" weighting="1" />
+      <specialty name="Seduction" weighting="1" />
+      <specialty name="Streetwise" weighting="1" />
+    </skill>
+    <skill name="KNOW" weighting="4">
+      <specialty name="Appraisal" weighting="1" />
+      <specialty name="Cultures" weighting="1" />
+      <specialty name="History" weighting="1" />
+      <specialty name="Law" weighting="1" />
+      <specialty name="Literature" weighting="1" />
+      <specialty name="Philosophy" weighting="1" />
+      <specialty name="Religion" weighting="1" />
+      <specialty name="Sports" weighting="1" />
+    </skill>
+    <skill name="LING" weighting="3">
+      <specialty name="Arabic" weighting="1" />
+      <specialty name="Armenian" weighting="1" />
+      <specialty name="French" weighting="1" />
+      <specialty name="German" weighting="1" />
+      <specialty name="Hindu" weighting="1" />
+      <specialty name="Japanese" weighting="1" />
+      <specialty name="Latin" weighting="1" />
+      <specialty name="Portuguese" weighting="1" />
+      <specialty name="Russian" weighting="1" />
+      <specialty name="Swahili" weighting="1" />
+      <specialty name="Swedish" weighting="1" />
+      <specialty name="Tagalog" weighting="1" />
+    </skill>
+    <skill name="MECHENG" weighting="1">
+      <specialty name="Create Mechanical Devices" weighting="1" />
+      <specialty name="Fix Mechanical Security Systems" weighting="1" />
+      <specialty name="Machinery Maintenance" weighting="1" />
+      <specialty name="Mechanical Repairs" weighting="1" />
+      <specialty name="Plumbing" weighting="1" />
+    </skill>
+    <skill name="MED" weighting="1">
+      <specialty name="Dentistry" weighting="1" />
+      <specialty name="Field Medic" weighting="1" />
+      <specialty name="First Aid" weighting="1" />
+      <specialty name="Forensics" weighting="1" />
+      <specialty name="General Practice" weighting="1" />
+      <specialty name="Genetics" weighting="1" />
+      <specialty name="Internal Medicine" weighting="1" />
+      <specialty name="Neurology" weighting="1" />
+      <specialty name="Pharmaceuticals" weighting="1" />
+      <specialty name="Physiology" weighting="1" />
+      <specialty name="Psychiatry" weighting="1" />
+      <specialty name="Rehabilitation" weighting="1" />
+      <specialty name="Surgery" weighting="1" />
+      <specialty name="Toxicology" weighting="1" />
+      <specialty name="Vetinary Medicine" weighting="1" />
+    </skill>
+    <skill name="MELEE" weighting="1">
+      <specialty name="Clubs" weighting="1" />
+      <specialty name="Knives" weighting="1" />
+      <specialty name="Melee Weaponsmithing" weighting="1" />
+      <specialty name="Nunchaku" weighting="1" />
+      <specialty name="Pole Arms" weighting="1" />
+      <specialty name="Swords" weighting="1" />
+      <specialty name="Whips" weighting="1" />
+    </skill>
+    <skill name="PERC" weighting="3">
+      <specialty name="Deduction" weighting="1" />
+      <specialty name="Empathy" weighting="1" />
+      <specialty name="Gambling" weighting="1" />
+      <specialty name="Hearing" weighting="1" />
+      <specialty name="Intuition" weighting="1" />
+      <specialty name="Investigation" weighting="1" />
+      <specialty name="Read Lips" weighting="1" />
+      <specialty name="Search" weighting="1" />
+      <specialty name="Sight" weighting="1" />
+      <specialty name="Smell" weighting="1" />
+      <specialty name="Tactics" weighting="1" />
+      <specialty name="Taste" weighting="1" />
+      <specialty name="Tracking" weighting="1" />
+    </skill>
+    <skill name="PERF" weighting="2">
+      <specialty name="Acting" weighting="1" />
+      <specialty name="Costuming" weighting="1" />
+      <specialty name="Dancing" weighting="1" />
+      <specialty name="Impersonation" weighting="1" />
+      <specialty name="Keyboard Instruments" weighting="1" />
+      <specialty name="Mimicry" weighting="1" />
+      <specialty name="Oratory" weighting="1" />
+      <specialty name="Percussion Instruments" weighting="1" />
+      <specialty name="Rock and Roll" weighting="1" />
+      <specialty name="Singing" weighting="1" />
+      <specialty name="Stringed Instruments" weighting="1" />
+      <specialty name="Wind Instruments" weighting="1" />
+    </skill>
+    <skill name="PILOT" weighting="1">
+      <specialty name="Aerial Navigation" weighting="1" />
+      <specialty name="Astrogation" weighting="1" />
+      <specialty name="Astronomy" weighting="1" />
+      <specialty name="Astrophysics" weighting="1" />
+      <specialty name="Gunships" weighting="1" />
+      <specialty name="Hang Gliders" weighting="1" />
+      <specialty name="Large Cruisers" weighting="1" />
+      <specialty name="Mid Bulk Transport" weighting="1" />
+      <specialty name="Patrol Vessels" weighting="1" />
+      <specialty name="Rocket Shuttles" weighting="1" />
+      <specialty name="Space Survival" weighting="1" />
+      <specialty name="Tankers" weighting="1" />
+      <specialty name="Ultralight Aircraft" weighting="1" />
+      <specialty name="VTOL Tilt Rotor" weighting="1" />
+    </skill>
+    <skill name="PLANVEH" weighting="1">
+      <specialty name="Aquatic Navigation" weighting="1" />
+      <specialty name="Bikes" weighting="1" />
+      <specialty name="Canoes" weighting="1" />
+      <specialty name="Cars" weighting="1" />
+      <specialty name="Equestrian" weighting="1" />
+      <specialty name="Ground Vehicle Repair" weighting="1" />
+      <specialty name="Horse Drawn Conveyances" weighting="1" />
+      <specialty name="Hovercraft" weighting="1" />
+      <specialty name="Industrial Vehicles" weighting="1" />
+      <specialty name="Land Navigation" weighting="1" />
+      <specialty name="Large Ground Transports" weighting="1" />
+      <specialty name="Military Combat Vehicles" weighting="1" />
+      <specialty name="Powerboats" weighting="1" />
+      <specialty name="Sailing" weighting="1" />
+      <specialty name="Submarines" weighting="1" />
+    </skill>
+    <skill name="RANGWEAP" weighting="1">
+      <specialty name="Blowguns" weighting="1" />
+      <specialty name="Bows" weighting="1" />
+      <specialty name="Crossbows" weighting="1" />
+      <specialty name="Darts" weighting="1" />
+      <specialty name="Grenades" weighting="1" />
+      <specialty name="Javelin" weighting="1" />
+      <specialty name="Ranged Weaponsmithing" weighting="1" />
+      <specialty name="Slings" weighting="1" />
+      <specialty name="Throwing Axes" weighting="1" />
+      <specialty name="Throwing Knives" weighting="1" />
+    </skill>
+    <skill name="SCIEXP" weighting="1">
+      <specialty name="Earth Sciences" weighting="1" />
+      <specialty name="Historical Sciences" weighting="1" />
+      <specialty name="Life Sciences" weighting="1" />
+      <specialty name="Mathematical Sciences" weighting="1" />
+    </skill>
+    <skill name="SURV" weighting="1">
+      <specialty name="Aerial" weighting="1" />
+      <specialty name="Aquatic" weighting="1" />
+      <specialty name="Generical Navigation" weighting="1" />
+      <specialty name="Land Survival" weighting="1" />
+      <specialty name="Nature" weighting="1" />
+      <specialty name="Space" weighting="1" />
+    </skill>
+    <skill name="TECHENG" weighting="1">
+      <specialty name="Communications Systems" weighting="1" />
+      <specialty name="Computer Systems" weighting="1" />
+      <specialty name="Create/Alter Technical Devices" weighting="1" />
+      <specialty name="Demolitions" weighting="1" />
+      <specialty name="Electronics" weighting="1" />
+      <specialty name="Hacking" weighting="1" />
+      <specialty name="Technical Repair" weighting="1" />
+      <specialty name="Technical Security Systems" weighting="1" />
+    </skill>
+    <skill name="UNARMED" weighting="1">
+      <specialty name="Boxing" weighting="1" />
+      <specialty name="Brawling" weighting="1" />
+      <specialty name="Judo" weighting="1" />
+      <specialty name="Karate" weighting="1" />
+      <specialty name="Kung Fu" weighting="1" />
+      <specialty name="Savate" weighting="1" />
+      <specialty name="Wrestling" weighting="1" />
+    </skill>
+  </archetype>
+  <archetype enabled="true" name="Generic" author="DrStrangeLug">
+    <description />
+    <stats>
+      <stat stat="AGL" weighting="1" />
+      <stat stat="STR" weighting="1" />
+      <stat stat="VIT" weighting="1" />
+      <stat stat="ALT" weighting="1" />
+      <stat stat="INT" weighting="1" />
+      <stat stat="WIL" weighting="1" />
+    </stats>
+    <skill name="ANIMHAND" weighting="1">
+      <specialty name="Animal Training" weighting="1" />
+      <specialty name="Riding" weighting="1" />
+      <specialty name="Vetinary" weighting="1" />
+      <specialty name="Zoology" weighting="1" />
+    </skill>
+    <skill name="ARTIST" weighting="1">
+      <specialty name="Appraisal" weighting="1" />
+      <specialty name="Cooking" weighting="1" />
+      <specialty name="Forgery" weighting="1" />
+      <specialty name="Game Designing" weighting="1" />
+      <specialty name="Painting" weighting="1" />
+      <specialty name="Photography" weighting="1" />
+      <specialty name="Poetry" weighting="1" />
+      <specialty name="Sculpting" weighting="1" />
+      <specialty name="Writing" weighting="1" />
+    </skill>
+    <skill name="ATHLET" weighting="1">
+      <specialty name="Climbing" weighting="1" />
+      <specialty name="Contortion" weighting="1" />
+      <specialty name="Dodge" weighting="1" />
+      <specialty name="Gymnastics" weighting="1" />
+      <specialty name="Juggling" weighting="1" />
+      <specialty name="Jumping" weighting="1" />
+      <specialty name="Parachuting" weighting="1" />
+      <specialty name="Parasailing" weighting="1" />
+      <specialty name="Pole Vaulting" weighting="1" />
+      <specialty name="Riding" weighting="1" />
+      <specialty name="Running" weighting="1" />
+      <specialty name="Swimming" weighting="1" />
+      <specialty name="Weight Lifting" weighting="1" />
+    </skill>
+    <skill name="COVRT" weighting="1">
+      <specialty name="Camoflauge" weighting="1" />
+      <specialty name="Disable Devices" weighting="1" />
+      <specialty name="Forgery" weighting="1" />
+      <specialty name="Infiltration" weighting="1" />
+      <specialty name="Open Locks" weighting="1" />
+      <specialty name="Sabotage" weighting="1" />
+      <specialty name="Sleight of Hand" weighting="1" />
+      <specialty name="Stealth" weighting="1" />
+      <specialty name="Streetwise" weighting="1" />
+      <specialty name="Surveillance" weighting="1" />
+    </skill>
+    <skill name="CRAFT" weighting="1">
+      <specialty name="Architecture" weighting="1" />
+      <specialty name="Blacksmithing" weighting="1" />
+      <specialty name="Carpentry" weighting="1" />
+      <specialty name="Cooking" weighting="1" />
+      <specialty name="Leatherworking" weighting="1" />
+      <specialty name="Metalworking" weighting="1" />
+      <specialty name="Pottery" weighting="1" />
+      <specialty name="Sewing" weighting="1" />
+    </skill>
+    <skill name="DISCIP" weighting="1">
+      <specialty name="Concentration" weighting="1" />
+      <specialty name="Interrogation" weighting="1" />
+      <specialty name="Intimidation" weighting="1" />
+      <specialty name="Leadership" weighting="1" />
+      <specialty name="Mental Resistance" weighting="1" />
+      <specialty name="Morale" weighting="1" />
+    </skill>
+    <skill name="GUNS" weighting="1">
+      <specialty name="Assault Rifles" weighting="1" />
+      <specialty name="Energy Weapons" weighting="1" />
+      <specialty name="Grenade Launchers" weighting="1" />
+      <specialty name="Gunsmithing" weighting="1" />
+      <specialty name="Machine Guns" weighting="1" />
+      <specialty name="Pistols" weighting="1" />
+      <specialty name="Rifles" weighting="1" />
+      <specialty name="Shotguns" weighting="1" />
+    </skill>
+    <skill name="HVYWEAP" weighting="1">
+      <specialty name="Artillery" weighting="1" />
+      <specialty name="Catapults" weighting="1" />
+      <specialty name="Demolitions" weighting="1" />
+      <specialty name="Forward Observer" weighting="1" />
+      <specialty name="Mounted Guns" weighting="1" />
+      <specialty name="Repair Heavy Weapons" weighting="1" />
+      <specialty name="Rocket Launchers" weighting="1" />
+      <specialty name="Ships Cannons" weighting="1" />
+      <specialty name="Siege Weapons" weighting="1" />
+    </skill>
+    <skill name="INFLU" weighting="1">
+      <specialty name="Administration" weighting="1" />
+      <specialty name="Barter" weighting="1" />
+      <specialty name="Bureaucracy" weighting="1" />
+      <specialty name="Conversation" weighting="1" />
+      <specialty name="Counseling" weighting="1" />
+      <specialty name="Interrogation" weighting="1" />
+      <specialty name="Intimidation" weighting="1" />
+      <specialty name="Leadership" weighting="1" />
+      <specialty name="Marketing" weighting="1" />
+      <specialty name="Persuasion" weighting="1" />
+      <specialty name="Politics" weighting="1" />
+      <specialty name="Seduction" weighting="1" />
+      <specialty name="Streetwise" weighting="1" />
+    </skill>
+    <skill name="KNOW" weighting="1">
+      <specialty name="Appraisal" weighting="1" />
+      <specialty name="Cultures" weighting="1" />
+      <specialty name="History" weighting="1" />
+      <specialty name="Law" weighting="1" />
+      <specialty name="Literature" weighting="1" />
+      <specialty name="Philosophy" weighting="1" />
+      <specialty name="Religion" weighting="1" />
+      <specialty name="Sports" weighting="1" />
+    </skill>
+    <skill name="LING" weighting="1">
+      <specialty name="Arabic" weighting="1" />
+      <specialty name="Armenian" weighting="1" />
+      <specialty name="French" weighting="1" />
+      <specialty name="German" weighting="1" />
+      <specialty name="Hindu" weighting="1" />
+      <specialty name="Japanese" weighting="1" />
+      <specialty name="Latin" weighting="1" />
+      <specialty name="Portuguese" weighting="1" />
+      <specialty name="Russian" weighting="1" />
+      <specialty name="Swahili" weighting="1" />
+      <specialty name="Swedish" weighting="1" />
+      <specialty name="Tagalog" weighting="1" />
+    </skill>
+    <skill name="MECHENG" weighting="1">
+      <specialty name="Create Mechanical Devices" weighting="1" />
+      <specialty name="Fix Mechanical Security Systems" weighting="1" />
+      <specialty name="Machinery Maintenance" weighting="1" />
+      <specialty name="Mechanical Repairs" weighting="1" />
+      <specialty name="Plumbing" weighting="1" />
+    </skill>
+    <skill name="MED" weighting="1">
+      <specialty name="Dentistry" weighting="1" />
+      <specialty name="Field Medic" weighting="1" />
+      <specialty name="First Aid" weighting="1" />
+      <specialty name="Forensics" weighting="1" />
+      <specialty name="General Practice" weighting="1" />
+      <specialty name="Genetics" weighting="1" />
+      <specialty name="Internal Medicine" weighting="1" />
+      <specialty name="Neurology" weighting="1" />
+      <specialty name="Pharmaceuticals" weighting="1" />
+      <specialty name="Physiology" weighting="1" />
+      <specialty name="Psychiatry" weighting="1" />
+      <specialty name="Rehabilitation" weighting="1" />
+      <specialty name="Surgery" weighting="1" />
+      <specialty name="Toxicology" weighting="1" />
+      <specialty name="Vetinary Medicine" weighting="1" />
+    </skill>
+    <skill name="MELEE" weighting="1">
+      <specialty name="Clubs" weighting="1" />
+      <specialty name="Knives" weighting="1" />
+      <specialty name="Melee Weaponsmithing" weighting="1" />
+      <specialty name="Nunchaku" weighting="1" />
+      <specialty name="Pole Arms" weighting="1" />
+      <specialty name="Swords" weighting="1" />
+      <specialty name="Whips" weighting="1" />
+    </skill>
+    <skill name="PERC" weighting="1">
+      <specialty name="Deduction" weighting="1" />
+      <specialty name="Empathy" weighting="1" />
+      <specialty name="Gambling" weighting="1" />
+      <specialty name="Hearing" weighting="1" />
+      <specialty name="Intuition" weighting="1" />
+      <specialty name="Investigation" weighting="1" />
+      <specialty name="Read Lips" weighting="1" />
+      <specialty name="Search" weighting="1" />
+      <specialty name="Sight" weighting="1" />
+      <specialty name="Smell" weighting="1" />
+      <specialty name="Tactics" weighting="1" />
+      <specialty name="Taste" weighting="1" />
+      <specialty name="Tracking" weighting="1" />
+    </skill>
+    <skill name="PERF" weighting="1">
+      <specialty name="Acting" weighting="1" />
+      <specialty name="Costuming" weighting="1" />
+      <specialty name="Dancing" weighting="1" />
+      <specialty name="Impersonation" weighting="1" />
+      <specialty name="Keyboard Instruments" weighting="1" />
+      <specialty name="Mimicry" weighting="1" />
+      <specialty name="Oratory" weighting="1" />
+      <specialty name="Percussion Instruments" weighting="1" />
+      <specialty name="Rock and Roll" weighting="1" />
+      <specialty name="Singing" weighting="1" />
+      <specialty name="Stringed Instruments" weighting="1" />
+      <specialty name="Wind Instruments" weighting="1" />
+    </skill>
+    <skill name="PILOT" weighting="1">
+      <specialty name="Aerial Navigation" weighting="1" />
+      <specialty name="Astrogation" weighting="1" />
+      <specialty name="Astronomy" weighting="1" />
+      <specialty name="Astrophysics" weighting="1" />
+      <specialty name="Gunships" weighting="1" />
+      <specialty name="Hang Gliders" weighting="1" />
+      <specialty name="Large Cruisers" weighting="1" />
+      <specialty name="Mid Bulk Transport" weighting="1" />
+      <specialty name="Patrol Vessels" weighting="1" />
+      <specialty name="Rocket Shuttles" weighting="1" />
+      <specialty name="Space Survival" weighting="1" />
+      <specialty name="Tankers" weighting="1" />
+      <specialty name="Ultralight Aircraft" weighting="1" />
+      <specialty name="VTOL Tilt Rotor" weighting="1" />
+    </skill>
+    <skill name="PLANVEH" weighting="1">
+      <specialty name="Aquatic Navigation" weighting="1" />
+      <specialty name="Bikes" weighting="1" />
+      <specialty name="Canoes" weighting="1" />
+      <specialty name="Cars" weighting="1" />
+      <specialty name="Equestrian" weighting="1" />
+      <specialty name="Ground Vehicle Repair" weighting="1" />
+      <specialty name="Horse Drawn Conveyances" weighting="1" />
+      <specialty name="Hovercraft" weighting="1" />
+      <specialty name="Industrial Vehicles" weighting="1" />
+      <specialty name="Land Navigation" weighting="1" />
+      <specialty name="Large Ground Transports" weighting="1" />
+      <specialty name="Military Combat Vehicles" weighting="1" />
+      <specialty name="Powerboats" weighting="1" />
+      <specialty name="Sailing" weighting="1" />
+      <specialty name="Submarines" weighting="1" />
+    </skill>
+    <skill name="RANGWEAP" weighting="1">
+      <specialty name="Blowguns" weighting="1" />
+      <specialty name="Bows" weighting="1" />
+      <specialty name="Crossbows" weighting="1" />
+      <specialty name="Darts" weighting="1" />
+      <specialty name="Grenades" weighting="1" />
+      <specialty name="Javelin" weighting="1" />
+      <specialty name="Ranged Weaponsmithing" weighting="1" />
+      <specialty name="Slings" weighting="1" />
+      <specialty name="Throwing Axes" weighting="1" />
+      <specialty name="Throwing Knives" weighting="1" />
+    </skill>
+    <skill name="SCIEXP" weighting="1">
+      <specialty name="Earth Sciences" weighting="1" />
+      <specialty name="Historical Sciences" weighting="1" />
+      <specialty name="Life Sciences" weighting="1" />
+      <specialty name="Mathematical Sciences" weighting="1" />
+    </skill>
+    <skill name="SURV" weighting="1">
+      <specialty name="Aerial" weighting="1" />
+      <specialty name="Aquatic" weighting="1" />
+      <specialty name="Generical Navigation" weighting="1" />
+      <specialty name="Land Survival" weighting="1" />
+      <specialty name="Nature" weighting="1" />
+      <specialty name="Space" weighting="1" />
+    </skill>
+    <skill name="TECHENG" weighting="1">
+      <specialty name="Communications Systems" weighting="1" />
+      <specialty name="Computer Systems" weighting="1" />
+      <specialty name="Create/Alter Technical Devices" weighting="1" />
+      <specialty name="Demolitions" weighting="1" />
+      <specialty name="Electronics" weighting="1" />
+      <specialty name="Hacking" weighting="1" />
+      <specialty name="Technical Repair" weighting="1" />
+      <specialty name="Technical Security Systems" weighting="1" />
+    </skill>
+    <skill name="UNARMED" weighting="1">
+      <specialty name="Boxing" weighting="1" />
+      <specialty name="Brawling" weighting="1" />
+      <specialty name="Judo" weighting="1" />
+      <specialty name="Karate" weighting="1" />
+      <specialty name="Kung Fu" weighting="1" />
+      <specialty name="Savate" weighting="1" />
+      <specialty name="Wrestling" weighting="1" />
+    </skill>
+  </archetype>
+  <archetype enabled="true" name="Guard" author="DrStrangeLug">
+    <description />
+    <stats>
+      <stat stat="AGL" weighting="4" />
+      <stat stat="STR" weighting="4" />
+      <stat stat="VIT" weighting="7" />
+      <stat stat="ALT" weighting="3" />
+      <stat stat="INT" weighting="1" />
+      <stat stat="WIL" weighting="2" />
+    </stats>
+    <skill name="ANIMHAND" weighting="1">
+      <specialty name="Animal Training" weighting="1" />
+      <specialty name="Riding" weighting="1" />
+      <specialty name="Vetinary" weighting="1" />
+      <specialty name="Zoology" weighting="1" />
+    </skill>
+    <skill name="ARTIST" weighting="1">
+      <specialty name="Appraisal" weighting="1" />
+      <specialty name="Cooking" weighting="1" />
+      <specialty name="Forgery" weighting="1" />
+      <specialty name="Game Designing" weighting="1" />
+      <specialty name="Painting" weighting="1" />
+      <specialty name="Photography" weighting="1" />
+      <specialty name="Poetry" weighting="1" />
+      <specialty name="Sculpting" weighting="1" />
+      <specialty name="Writing" weighting="1" />
+    </skill>
+    <skill name="ATHLET" weighting="1">
+      <specialty name="Climbing" weighting="1" />
+      <specialty name="Contortion" weighting="1" />
+      <specialty name="Dodge" weighting="1" />
+      <specialty name="Gymnastics" weighting="1" />
+      <specialty name="Juggling" weighting="1" />
+      <specialty name="Jumping" weighting="1" />
+      <specialty name="Parachuting" weighting="1" />
+      <specialty name="Parasailing" weighting="1" />
+      <specialty name="Pole Vaulting" weighting="1" />
+      <specialty name="Riding" weighting="1" />
+      <specialty name="Running" weighting="1" />
+      <specialty name="Swimming" weighting="1" />
+      <specialty name="Weight Lifting" weighting="1" />
+    </skill>
+    <skill name="COVRT" weighting="1">
+      <specialty name="Camoflauge" weighting="1" />
+      <specialty name="Disable Devices" weighting="1" />
+      <specialty name="Forgery" weighting="1" />
+      <specialty name="Infiltration" weighting="1" />
+      <specialty name="Open Locks" weighting="1" />
+      <specialty name="Sabotage" weighting="1" />
+      <specialty name="Sleight of Hand" weighting="1" />
+      <specialty name="Stealth" weighting="1" />
+      <specialty name="Streetwise" weighting="1" />
+      <specialty name="Surveillance" weighting="1" />
+    </skill>
+    <skill name="CRAFT" weighting="1">
+      <specialty name="Architecture" weighting="1" />
+      <specialty name="Blacksmithing" weighting="1" />
+      <specialty name="Carpentry" weighting="1" />
+      <specialty name="Cooking" weighting="1" />
+      <specialty name="Leatherworking" weighting="1" />
+      <specialty name="Metalworking" weighting="1" />
+      <specialty name="Pottery" weighting="1" />
+      <specialty name="Sewing" weighting="1" />
+    </skill>
+    <skill name="DISCIP" weighting="1">
+      <specialty name="Concentration" weighting="1" />
+      <specialty name="Interrogation" weighting="1" />
+      <specialty name="Intimidation" weighting="1" />
+      <specialty name="Leadership" weighting="1" />
+      <specialty name="Mental Resistance" weighting="1" />
+      <specialty name="Morale" weighting="1" />
+    </skill>
+    <skill name="GUNS" weighting="4">
+      <specialty name="Assault Rifles" weighting="1" />
+      <specialty name="Energy Weapons" weighting="1" />
+      <specialty name="Grenade Launchers" weighting="1" />
+      <specialty name="Gunsmithing" weighting="1" />
+      <specialty name="Machine Guns" weighting="1" />
+      <specialty name="Pistols" weighting="1" />
+      <specialty name="Rifles" weighting="1" />
+      <specialty name="Shotguns" weighting="1" />
+    </skill>
+    <skill name="HVYWEAP" weighting="1">
+      <specialty name="Artillery" weighting="1" />
+      <specialty name="Catapults" weighting="1" />
+      <specialty name="Demolitions" weighting="1" />
+      <specialty name="Forward Observer" weighting="1" />
+      <specialty name="Mounted Guns" weighting="1" />
+      <specialty name="Repair Heavy Weapons" weighting="1" />
+      <specialty name="Rocket Launchers" weighting="1" />
+      <specialty name="Ships Cannons" weighting="1" />
+      <specialty name="Siege Weapons" weighting="1" />
+    </skill>
+    <skill name="INFLU" weighting="1">
+      <specialty name="Administration" weighting="1" />
+      <specialty name="Barter" weighting="1" />
+      <specialty name="Bureaucracy" weighting="1" />
+      <specialty name="Conversation" weighting="1" />
+      <specialty name="Counseling" weighting="1" />
+      <specialty name="Interrogation" weighting="1" />
+      <specialty name="Intimidation" weighting="1" />
+      <specialty name="Leadership" weighting="1" />
+      <specialty name="Marketing" weighting="1" />
+      <specialty name="Persuasion" weighting="1" />
+      <specialty name="Politics" weighting="1" />
+      <specialty name="Seduction" weighting="1" />
+      <specialty name="Streetwise" weighting="1" />
+    </skill>
+    <skill name="KNOW" weighting="1">
+      <specialty name="Appraisal" weighting="1" />
+      <specialty name="Cultures" weighting="1" />
+      <specialty name="History" weighting="1" />
+      <specialty name="Law" weighting="1" />
+      <specialty name="Literature" weighting="1" />
+      <specialty name="Philosophy" weighting="1" />
+      <specialty name="Religion" weighting="1" />
+      <specialty name="Sports" weighting="1" />
+    </skill>
+    <skill name="LING" weighting="1">
+      <specialty name="Arabic" weighting="1" />
+      <specialty name="Armenian" weighting="1" />
+      <specialty name="French" weighting="1" />
+      <specialty name="German" weighting="1" />
+      <specialty name="Hindu" weighting="1" />
+      <specialty name="Japanese" weighting="1" />
+      <specialty name="Latin" weighting="1" />
+      <specialty name="Portuguese" weighting="1" />
+      <specialty name="Russian" weighting="1" />
+      <specialty name="Swahili" weighting="1" />
+      <specialty name="Swedish" weighting="1" />
+      <specialty name="Tagalog" weighting="1" />
+    </skill>
+    <skill name="MECHENG" weighting="1">
+      <specialty name="Create Mechanical Devices" weighting="1" />
+      <specialty name="Fix Mechanical Security Systems" weighting="1" />
+      <specialty name="Machinery Maintenance" weighting="1" />
+      <specialty name="Mechanical Repairs" weighting="1" />
+      <specialty name="Plumbing" weighting="1" />
+    </skill>
+    <skill name="MED" weighting="1">
+      <specialty name="Dentistry" weighting="1" />
+      <specialty name="Field Medic" weighting="1" />
+      <specialty name="First Aid" weighting="1" />
+      <specialty name="Forensics" weighting="1" />
+      <specialty name="General Practice" weighting="1" />
+      <specialty name="Genetics" weighting="1" />
+      <specialty name="Internal Medicine" weighting="1" />
+      <specialty name="Neurology" weighting="1" />
+      <specialty name="Pharmaceuticals" weighting="1" />
+      <specialty name="Physiology" weighting="1" />
+      <specialty name="Psychiatry" weighting="1" />
+      <specialty name="Rehabilitation" weighting="1" />
+      <specialty name="Surgery" weighting="1" />
+      <specialty name="Toxicology" weighting="1" />
+      <specialty name="Vetinary Medicine" weighting="1" />
+    </skill>
+    <skill name="MELEE" weighting="3">
+      <specialty name="Clubs" weighting="1" />
+      <specialty name="Knives" weighting="1" />
+      <specialty name="Melee Weaponsmithing" weighting="1" />
+      <specialty name="Nunchaku" weighting="1" />
+      <specialty name="Pole Arms" weighting="1" />
+      <specialty name="Swords" weighting="1" />
+      <specialty name="Whips" weighting="1" />
+    </skill>
+    <skill name="PERC" weighting="3">
+      <specialty name="Deduction" weighting="1" />
+      <specialty name="Empathy" weighting="1" />
+      <specialty name="Gambling" weighting="1" />
+      <specialty name="Hearing" weighting="1" />
+      <specialty name="Intuition" weighting="1" />
+      <specialty name="Investigation" weighting="1" />
+      <specialty name="Read Lips" weighting="1" />
+      <specialty name="Search" weighting="1" />
+      <specialty name="Sight" weighting="1" />
+      <specialty name="Smell" weighting="1" />
+      <specialty name="Tactics" weighting="1" />
+      <specialty name="Taste" weighting="1" />
+      <specialty name="Tracking" weighting="1" />
+    </skill>
+    <skill name="PERF" weighting="1">
+      <specialty name="Acting" weighting="1" />
+      <specialty name="Costuming" weighting="1" />
+      <specialty name="Dancing" weighting="1" />
+      <specialty name="Impersonation" weighting="1" />
+      <specialty name="Keyboard Instruments" weighting="1" />
+      <specialty name="Mimicry" weighting="1" />
+      <specialty name="Oratory" weighting="1" />
+      <specialty name="Percussion Instruments" weighting="1" />
+      <specialty name="Rock and Roll" weighting="1" />
+      <specialty name="Singing" weighting="1" />
+      <specialty name="Stringed Instruments" weighting="1" />
+      <specialty name="Wind Instruments" weighting="1" />
+    </skill>
+    <skill name="PILOT" weighting="1">
+      <specialty name="Aerial Navigation" weighting="1" />
+      <specialty name="Astrogation" weighting="1" />
+      <specialty name="Astronomy" weighting="1" />
+      <specialty name="Astrophysics" weighting="1" />
+      <specialty name="Gunships" weighting="1" />
+      <specialty name="Hang Gliders" weighting="1" />
+      <specialty name="Large Cruisers" weighting="1" />
+      <specialty name="Mid Bulk Transport" weighting="1" />
+      <specialty name="Patrol Vessels" weighting="1" />
+      <specialty name="Rocket Shuttles" weighting="1" />
+      <specialty name="Space Survival" weighting="1" />
+      <specialty name="Tankers" weighting="1" />
+      <specialty name="Ultralight Aircraft" weighting="1" />
+      <specialty name="VTOL Tilt Rotor" weighting="1" />
+    </skill>
+    <skill name="PLANVEH" weighting="1">
+      <specialty name="Aquatic Navigation" weighting="1" />
+      <specialty name="Bikes" weighting="1" />
+      <specialty name="Canoes" weighting="1" />
+      <specialty name="Cars" weighting="1" />
+      <specialty name="Equestrian" weighting="1" />
+      <specialty name="Ground Vehicle Repair" weighting="1" />
+      <specialty name="Horse Drawn Conveyances" weighting="1" />
+      <specialty name="Hovercraft" weighting="1" />
+      <specialty name="Industrial Vehicles" weighting="1" />
+      <specialty name="Land Navigation" weighting="1" />
+      <specialty name="Large Ground Transports" weighting="1" />
+      <specialty name="Military Combat Vehicles" weighting="1" />
+      <specialty name="Powerboats" weighting="1" />
+      <specialty name="Sailing" weighting="1" />
+      <specialty name="Submarines" weighting="1" />
+    </skill>
+    <skill name="RANGWEAP" weighting="1">
+      <specialty name="Blowguns" weighting="1" />
+      <specialty name="Bows" weighting="1" />
+      <specialty name="Crossbows" weighting="1" />
+      <specialty name="Darts" weighting="1" />
+      <specialty name="Grenades" weighting="1" />
+      <specialty name="Javelin" weighting="1" />
+      <specialty name="Ranged Weaponsmithing" weighting="1" />
+      <specialty name="Slings" weighting="1" />
+      <specialty name="Throwing Axes" weighting="1" />
+      <specialty name="Throwing Knives" weighting="1" />
+    </skill>
+    <skill name="SCIEXP" weighting="1">
+      <specialty name="Earth Sciences" weighting="1" />
+      <specialty name="Historical Sciences" weighting="1" />
+      <specialty name="Life Sciences" weighting="1" />
+      <specialty name="Mathematical Sciences" weighting="1" />
+    </skill>
+    <skill name="SURV" weighting="1">
+      <specialty name="Aerial" weighting="1" />
+      <specialty name="Aquatic" weighting="1" />
+      <specialty name="Generical Navigation" weighting="1" />
+      <specialty name="Land Survival" weighting="1" />
+      <specialty name="Nature" weighting="1" />
+      <specialty name="Space" weighting="1" />
+    </skill>
+    <skill name="TECHENG" weighting="1">
+      <specialty name="Communications Systems" weighting="1" />
+      <specialty name="Computer Systems" weighting="1" />
+      <specialty name="Create/Alter Technical Devices" weighting="1" />
+      <specialty name="Demolitions" weighting="1" />
+      <specialty name="Electronics" weighting="1" />
+      <specialty name="Hacking" weighting="1" />
+      <specialty name="Technical Repair" weighting="1" />
+      <specialty name="Technical Security Systems" weighting="1" />
+    </skill>
+    <skill name="UNARMED" weighting="1">
+      <specialty name="Boxing" weighting="1" />
+      <specialty name="Brawling" weighting="1" />
+      <specialty name="Judo" weighting="1" />
+      <specialty name="Karate" weighting="1" />
+      <specialty name="Kung Fu" weighting="1" />
+      <specialty name="Savate" weighting="1" />
+      <specialty name="Wrestling" weighting="1" />
+    </skill>
+  </archetype>
+  <archetype enabled="true" name="Leader" author="Paul Loveridge">
+    <description />
+    <stats>
+      <stat stat="AGL" weighting="3" />
+      <stat stat="STR" weighting="4" />
+      <stat stat="VIT" weighting="2" />
+      <stat stat="ALT" weighting="6" />
+      <stat stat="INT" weighting="4" />
+      <stat stat="WIL" weighting="6" />
+    </stats>
+    <skill name="ANIMHAND" weighting="1">
+      <specialty name="Animal Training" weighting="1" />
+      <specialty name="Riding" weighting="1" />
+      <specialty name="Vetinary" weighting="1" />
+      <specialty name="Zoology" weighting="1" />
+    </skill>
+    <skill name="ARTIST" weighting="1">
+      <specialty name="Appraisal" weighting="1" />
+      <specialty name="Cooking" weighting="1" />
+      <specialty name="Forgery" weighting="1" />
+      <specialty name="Game Designing" weighting="1" />
+      <specialty name="Painting" weighting="1" />
+      <specialty name="Photography" weighting="1" />
+      <specialty name="Poetry" weighting="1" />
+      <specialty name="Sculpting" weighting="1" />
+      <specialty name="Writing" weighting="1" />
+    </skill>
+    <skill name="ATHLET" weighting="1">
+      <specialty name="Climbing" weighting="1" />
+      <specialty name="Contortion" weighting="1" />
+      <specialty name="Dodge" weighting="1" />
+      <specialty name="Gymnastics" weighting="1" />
+      <specialty name="Juggling" weighting="1" />
+      <specialty name="Jumping" weighting="1" />
+      <specialty name="Parachuting" weighting="1" />
+      <specialty name="Parasailing" weighting="1" />
+      <specialty name="Pole Vaulting" weighting="1" />
+      <specialty name="Riding" weighting="1" />
+      <specialty name="Running" weighting="1" />
+      <specialty name="Swimming" weighting="1" />
+      <specialty name="Weight Lifting" weighting="1" />
+    </skill>
+    <skill name="COVRT" weighting="1">
+      <specialty name="Camoflauge" weighting="1" />
+      <specialty name="Disable Devices" weighting="1" />
+      <specialty name="Forgery" weighting="1" />
+      <specialty name="Infiltration" weighting="1" />
+      <specialty name="Open Locks" weighting="1" />
+      <specialty name="Sabotage" weighting="1" />
+      <specialty name="Sleight of Hand" weighting="1" />
+      <specialty name="Stealth" weighting="1" />
+      <specialty name="Streetwise" weighting="1" />
+      <specialty name="Surveillance" weighting="1" />
+    </skill>
+    <skill name="CRAFT" weighting="1">
+      <specialty name="Architecture" weighting="1" />
+      <specialty name="Blacksmithing" weighting="1" />
+      <specialty name="Carpentry" weighting="1" />
+      <specialty name="Cooking" weighting="1" />
+      <specialty name="Leatherworking" weighting="1" />
+      <specialty name="Metalworking" weighting="1" />
+      <specialty name="Pottery" weighting="1" />
+      <specialty name="Sewing" weighting="1" />
+    </skill>
+    <skill name="DISCIP" weighting="4">
+      <specialty name="Concentration" weighting="1" />
+      <specialty name="Interrogation" weighting="1" />
+      <specialty name="Intimidation" weighting="1" />
+      <specialty name="Leadership" weighting="1" />
+      <specialty name="Mental Resistance" weighting="1" />
+      <specialty name="Morale" weighting="1" />
+    </skill>
+    <skill name="GUNS" weighting="3">
+      <specialty name="Assault Rifles" weighting="1" />
+      <specialty name="Energy Weapons" weighting="1" />
+      <specialty name="Grenade Launchers" weighting="1" />
+      <specialty name="Gunsmithing" weighting="1" />
+      <specialty name="Machine Guns" weighting="1" />
+      <specialty name="Pistols" weighting="1" />
+      <specialty name="Rifles" weighting="1" />
+      <specialty name="Shotguns" weighting="1" />
+    </skill>
+    <skill name="HVYWEAP" weighting="1">
+      <specialty name="Artillery" weighting="1" />
+      <specialty name="Catapults" weighting="1" />
+      <specialty name="Demolitions" weighting="1" />
+      <specialty name="Forward Observer" weighting="1" />
+      <specialty name="Mounted Guns" weighting="1" />
+      <specialty name="Repair Heavy Weapons" weighting="1" />
+      <specialty name="Rocket Launchers" weighting="1" />
+      <specialty name="Ships Cannons" weighting="1" />
+      <specialty name="Siege Weapons" weighting="1" />
+    </skill>
+    <skill name="INFLU" weighting="3">
+      <specialty name="Administration" weighting="1" />
+      <specialty name="Barter" weighting="1" />
+      <specialty name="Bureaucracy" weighting="1" />
+      <specialty name="Conversation" weighting="1" />
+      <specialty name="Counseling" weighting="1" />
+      <specialty name="Interrogation" weighting="1" />
+      <specialty name="Intimidation" weighting="1" />
+      <specialty name="Leadership" weighting="1" />
+      <specialty name="Marketing" weighting="1" />
+      <specialty name="Persuasion" weighting="1" />
+      <specialty name="Politics" weighting="1" />
+      <specialty name="Seduction" weighting="1" />
+      <specialty name="Streetwise" weighting="1" />
+    </skill>
+    <skill name="KNOW" weighting="1">
+      <specialty name="Appraisal" weighting="1" />
+      <specialty name="Cultures" weighting="1" />
+      <specialty name="History" weighting="1" />
+      <specialty name="Law" weighting="1" />
+      <specialty name="Literature" weighting="1" />
+      <specialty name="Philosophy" weighting="1" />
+      <specialty name="Religion" weighting="1" />
+      <specialty name="Sports" weighting="1" />
+    </skill>
+    <skill name="LING" weighting="1">
+      <specialty name="Arabic" weighting="1" />
+      <specialty name="Armenian" weighting="1" />
+      <specialty name="French" weighting="1" />
+      <specialty name="German" weighting="1" />
+      <specialty name="Hindu" weighting="1" />
+      <specialty name="Japanese" weighting="1" />
+      <specialty name="Latin" weighting="1" />
+      <specialty name="Portuguese" weighting="1" />
+      <specialty name="Russian" weighting="1" />
+      <specialty name="Swahili" weighting="1" />
+      <specialty name="Swedish" weighting="1" />
+      <specialty name="Tagalog" weighting="1" />
+    </skill>
+    <skill name="MECHENG" weighting="1">
+      <specialty name="Create Mechanical Devices" weighting="1" />
+      <specialty name="Fix Mechanical Security Systems" weighting="1" />
+      <specialty name="Machinery Maintenance" weighting="1" />
+      <specialty name="Mechanical Repairs" weighting="1" />
+      <specialty name="Plumbing" weighting="1" />
+    </skill>
+    <skill name="MED" weighting="1">
+      <specialty name="Dentistry" weighting="1" />
+      <specialty name="Field Medic" weighting="1" />
+      <specialty name="First Aid" weighting="1" />
+      <specialty name="Forensics" weighting="1" />
+      <specialty name="General Practice" weighting="1" />
+      <specialty name="Genetics" weighting="1" />
+      <specialty name="Internal Medicine" weighting="1" />
+      <specialty name="Neurology" weighting="1" />
+      <specialty name="Pharmaceuticals" weighting="1" />
+      <specialty name="Physiology" weighting="1" />
+      <specialty name="Psychiatry" weighting="1" />
+      <specialty name="Rehabilitation" weighting="1" />
+      <specialty name="Surgery" weighting="1" />
+      <specialty name="Toxicology" weighting="1" />
+      <specialty name="Vetinary Medicine" weighting="1" />
+    </skill>
+    <skill name="MELEE" weighting="1">
+      <specialty name="Clubs" weighting="1" />
+      <specialty name="Knives" weighting="1" />
+      <specialty name="Melee Weaponsmithing" weighting="1" />
+      <specialty name="Nunchaku" weighting="1" />
+      <specialty name="Pole Arms" weighting="1" />
+      <specialty name="Swords" weighting="1" />
+      <specialty name="Whips" weighting="1" />
+    </skill>
+    <skill name="PERC" weighting="3">
+      <specialty name="Deduction" weighting="1" />
+      <specialty name="Empathy" weighting="1" />
+      <specialty name="Gambling" weighting="1" />
+      <specialty name="Hearing" weighting="1" />
+      <specialty name="Intuition" weighting="1" />
+      <specialty name="Investigation" weighting="1" />
+      <specialty name="Read Lips" weighting="1" />
+      <specialty name="Search" weighting="1" />
+      <specialty name="Sight" weighting="1" />
+      <specialty name="Smell" weighting="1" />
+      <specialty name="Tactics" weighting="1" />
+      <specialty name="Taste" weighting="1" />
+      <specialty name="Tracking" weighting="1" />
+    </skill>
+    <skill name="PERF" weighting="1">
+      <specialty name="Acting" weighting="1" />
+      <specialty name="Costuming" weighting="1" />
+      <specialty name="Dancing" weighting="1" />
+      <specialty name="Impersonation" weighting="1" />
+      <specialty name="Keyboard Instruments" weighting="1" />
+      <specialty name="Mimicry" weighting="1" />
+      <specialty name="Oratory" weighting="1" />
+      <specialty name="Percussion Instruments" weighting="1" />
+      <specialty name="Rock and Roll" weighting="1" />
+      <specialty name="Singing" weighting="1" />
+      <specialty name="Stringed Instruments" weighting="1" />
+      <specialty name="Wind Instruments" weighting="1" />
+    </skill>
+    <skill name="PILOT" weighting="1">
+      <specialty name="Aerial Navigation" weighting="1" />
+      <specialty name="Astrogation" weighting="1" />
+      <specialty name="Astronomy" weighting="1" />
+      <specialty name="Astrophysics" weighting="1" />
+      <specialty name="Gunships" weighting="1" />
+      <specialty name="Hang Gliders" weighting="1" />
+      <specialty name="Large Cruisers" weighting="1" />
+      <specialty name="Mid Bulk Transport" weighting="1" />
+      <specialty name="Patrol Vessels" weighting="1" />
+      <specialty name="Rocket Shuttles" weighting="1" />
+      <specialty name="Space Survival" weighting="1" />
+      <specialty name="Tankers" weighting="1" />
+      <specialty name="Ultralight Aircraft" weighting="1" />
+      <specialty name="VTOL Tilt Rotor" weighting="1" />
+    </skill>
+    <skill name="PLANVEH" weighting="1">
+      <specialty name="Aquatic Navigation" weighting="1" />
+      <specialty name="Bikes" weighting="1" />
+      <specialty name="Canoes" weighting="1" />
+      <specialty name="Cars" weighting="1" />
+      <specialty name="Equestrian" weighting="1" />
+      <specialty name="Ground Vehicle Repair" weighting="1" />
+      <specialty name="Horse Drawn Conveyances" weighting="1" />
+      <specialty name="Hovercraft" weighting="1" />
+      <specialty name="Industrial Vehicles" weighting="1" />
+      <specialty name="Land Navigation" weighting="1" />
+      <specialty name="Large Ground Transports" weighting="1" />
+      <specialty name="Military Combat Vehicles" weighting="1" />
+      <specialty name="Powerboats" weighting="1" />
+      <specialty name="Sailing" weighting="1" />
+      <specialty name="Submarines" weighting="1" />
+    </skill>
+    <skill name="RANGWEAP" weighting="1">
+      <specialty name="Blowguns" weighting="1" />
+      <specialty name="Bows" weighting="1" />
+      <specialty name="Crossbows" weighting="1" />
+      <specialty name="Darts" weighting="1" />
+      <specialty name="Grenades" weighting="1" />
+      <specialty name="Javelin" weighting="1" />
+      <specialty name="Ranged Weaponsmithing" weighting="1" />
+      <specialty name="Slings" weighting="1" />
+      <specialty name="Throwing Axes" weighting="1" />
+      <specialty name="Throwing Knives" weighting="1" />
+    </skill>
+    <skill name="SCIEXP" weighting="1">
+      <specialty name="Earth Sciences" weighting="1" />
+      <specialty name="Historical Sciences" weighting="1" />
+      <specialty name="Life Sciences" weighting="1" />
+      <specialty name="Mathematical Sciences" weighting="1" />
+    </skill>
+    <skill name="SURV" weighting="1">
+      <specialty name="Aerial" weighting="1" />
+      <specialty name="Aquatic" weighting="1" />
+      <specialty name="Generical Navigation" weighting="1" />
+      <specialty name="Land Survival" weighting="1" />
+      <specialty name="Nature" weighting="1" />
+      <specialty name="Space" weighting="1" />
+    </skill>
+    <skill name="TECHENG" weighting="1">
+      <specialty name="Communications Systems" weighting="1" />
+      <specialty name="Computer Systems" weighting="1" />
+      <specialty name="Create/Alter Technical Devices" weighting="1" />
+      <specialty name="Demolitions" weighting="1" />
+      <specialty name="Electronics" weighting="1" />
+      <specialty name="Hacking" weighting="1" />
+      <specialty name="Technical Repair" weighting="1" />
+      <specialty name="Technical Security Systems" weighting="1" />
+    </skill>
+    <skill name="UNARMED" weighting="1">
+      <specialty name="Boxing" weighting="1" />
+      <specialty name="Brawling" weighting="1" />
+      <specialty name="Judo" weighting="1" />
+      <specialty name="Karate" weighting="1" />
+      <specialty name="Kung Fu" weighting="1" />
+      <specialty name="Savate" weighting="1" />
+      <specialty name="Wrestling" weighting="1" />
+    </skill>
+  </archetype>
+  <archetype enabled="true" name="Medic" author="DrStrangeLug">
+    <description />
+    <stats>
+      <stat stat="AGL" weighting="3" />
+      <stat stat="STR" weighting="1" />
+      <stat stat="VIT" weighting="2" />
+      <stat stat="ALT" weighting="4" />
+      <stat stat="INT" weighting="7" />
+      <stat stat="WIL" weighting="4" />
+    </stats>
+    <skill name="ANIMHAND" weighting="1">
+      <specialty name="Animal Training" weighting="1" />
+      <specialty name="Riding" weighting="1" />
+      <specialty name="Vetinary" weighting="1" />
+      <specialty name="Zoology" weighting="1" />
+    </skill>
+    <skill name="ARTIST" weighting="1">
+      <specialty name="Appraisal" weighting="1" />
+      <specialty name="Cooking" weighting="1" />
+      <specialty name="Forgery" weighting="1" />
+      <specialty name="Game Designing" weighting="1" />
+      <specialty name="Painting" weighting="1" />
+      <specialty name="Photography" weighting="1" />
+      <specialty name="Poetry" weighting="1" />
+      <specialty name="Sculpting" weighting="1" />
+      <specialty name="Writing" weighting="1" />
+    </skill>
+    <skill name="ATHLET" weighting="1">
+      <specialty name="Climbing" weighting="1" />
+      <specialty name="Contortion" weighting="1" />
+      <specialty name="Dodge" weighting="1" />
+      <specialty name="Gymnastics" weighting="1" />
+      <specialty name="Juggling" weighting="1" />
+      <specialty name="Jumping" weighting="1" />
+      <specialty name="Parachuting" weighting="1" />
+      <specialty name="Parasailing" weighting="1" />
+      <specialty name="Pole Vaulting" weighting="1" />
+      <specialty name="Riding" weighting="1" />
+      <specialty name="Running" weighting="1" />
+      <specialty name="Swimming" weighting="1" />
+      <specialty name="Weight Lifting" weighting="1" />
+    </skill>
+    <skill name="COVRT" weighting="1">
+      <specialty name="Camoflauge" weighting="1" />
+      <specialty name="Disable Devices" weighting="1" />
+      <specialty name="Forgery" weighting="1" />
+      <specialty name="Infiltration" weighting="1" />
+      <specialty name="Open Locks" weighting="1" />
+      <specialty name="Sabotage" weighting="1" />
+      <specialty name="Sleight of Hand" weighting="1" />
+      <specialty name="Stealth" weighting="1" />
+      <specialty name="Streetwise" weighting="1" />
+      <specialty name="Surveillance" weighting="1" />
+    </skill>
+    <skill name="CRAFT" weighting="1">
+      <specialty name="Architecture" weighting="1" />
+      <specialty name="Blacksmithing" weighting="1" />
+      <specialty name="Carpentry" weighting="1" />
+      <specialty name="Cooking" weighting="1" />
+      <specialty name="Leatherworking" weighting="1" />
+      <specialty name="Metalworking" weighting="1" />
+      <specialty name="Pottery" weighting="1" />
+      <specialty name="Sewing" weighting="1" />
+    </skill>
+    <skill name="DISCIP" weighting="1">
+      <specialty name="Concentration" weighting="1" />
+      <specialty name="Interrogation" weighting="1" />
+      <specialty name="Intimidation" weighting="1" />
+      <specialty name="Leadership" weighting="1" />
+      <specialty name="Mental Resistance" weighting="1" />
+      <specialty name="Morale" weighting="1" />
+    </skill>
+    <skill name="GUNS" weighting="2">
+      <specialty name="Assault Rifles" weighting="1" />
+      <specialty name="Energy Weapons" weighting="1" />
+      <specialty name="Grenade Launchers" weighting="1" />
+      <specialty name="Gunsmithing" weighting="1" />
+      <specialty name="Machine Guns" weighting="1" />
+      <specialty name="Pistols" weighting="1" />
+      <specialty name="Rifles" weighting="1" />
+      <specialty name="Shotguns" weighting="1" />
+    </skill>
+    <skill name="HVYWEAP" weighting="1">
+      <specialty name="Artillery" weighting="1" />
+      <specialty name="Catapults" weighting="1" />
+      <specialty name="Demolitions" weighting="1" />
+      <specialty name="Forward Observer" weighting="1" />
+      <specialty name="Mounted Guns" weighting="1" />
+      <specialty name="Repair Heavy Weapons" weighting="1" />
+      <specialty name="Rocket Launchers" weighting="1" />
+      <specialty name="Ships Cannons" weighting="1" />
+      <specialty name="Siege Weapons" weighting="1" />
+    </skill>
+    <skill name="INFLU" weighting="1">
+      <specialty name="Administration" weighting="1" />
+      <specialty name="Barter" weighting="1" />
+      <specialty name="Bureaucracy" weighting="1" />
+      <specialty name="Conversation" weighting="1" />
+      <specialty name="Counseling" weighting="1" />
+      <specialty name="Interrogation" weighting="1" />
+      <specialty name="Intimidation" weighting="1" />
+      <specialty name="Leadership" weighting="1" />
+      <specialty name="Marketing" weighting="1" />
+      <specialty name="Persuasion" weighting="1" />
+      <specialty name="Politics" weighting="1" />
+      <specialty name="Seduction" weighting="1" />
+      <specialty name="Streetwise" weighting="1" />
+    </skill>
+    <skill name="KNOW" weighting="2">
+      <specialty name="Appraisal" weighting="1" />
+      <specialty name="Cultures" weighting="1" />
+      <specialty name="History" weighting="1" />
+      <specialty name="Law" weighting="1" />
+      <specialty name="Literature" weighting="1" />
+      <specialty name="Philosophy" weighting="1" />
+      <specialty name="Religion" weighting="1" />
+      <specialty name="Sports" weighting="1" />
+    </skill>
+    <skill name="LING" weighting="1">
+      <specialty name="Arabic" weighting="1" />
+      <specialty name="Armenian" weighting="1" />
+      <specialty name="French" weighting="1" />
+      <specialty name="German" weighting="1" />
+      <specialty name="Hindu" weighting="1" />
+      <specialty name="Japanese" weighting="1" />
+      <specialty name="Latin" weighting="1" />
+      <specialty name="Portuguese" weighting="1" />
+      <specialty name="Russian" weighting="1" />
+      <specialty name="Swahili" weighting="1" />
+      <specialty name="Swedish" weighting="1" />
+      <specialty name="Tagalog" weighting="1" />
+    </skill>
+    <skill name="MECHENG" weighting="1">
+      <specialty name="Create Mechanical Devices" weighting="1" />
+      <specialty name="Fix Mechanical Security Systems" weighting="1" />
+      <specialty name="Machinery Maintenance" weighting="1" />
+      <specialty name="Mechanical Repairs" weighting="1" />
+      <specialty name="Plumbing" weighting="1" />
+    </skill>
+    <skill name="MED" weighting="7">
+      <specialty name="Dentistry" weighting="1" />
+      <specialty name="Field Medic" weighting="1" />
+      <specialty name="First Aid" weighting="1" />
+      <specialty name="Forensics" weighting="1" />
+      <specialty name="General Practice" weighting="1" />
+      <specialty name="Genetics" weighting="1" />
+      <specialty name="Internal Medicine" weighting="1" />
+      <specialty name="Neurology" weighting="1" />
+      <specialty name="Pharmaceuticals" weighting="1" />
+      <specialty name="Physiology" weighting="1" />
+      <specialty name="Psychiatry" weighting="1" />
+      <specialty name="Rehabilitation" weighting="1" />
+      <specialty name="Surgery" weighting="1" />
+      <specialty name="Toxicology" weighting="1" />
+      <specialty name="Vetinary Medicine" weighting="1" />
+    </skill>
+    <skill name="MELEE" weighting="1">
+      <specialty name="Clubs" weighting="1" />
+      <specialty name="Knives" weighting="1" />
+      <specialty name="Melee Weaponsmithing" weighting="1" />
+      <specialty name="Nunchaku" weighting="1" />
+      <specialty name="Pole Arms" weighting="1" />
+      <specialty name="Swords" weighting="1" />
+      <specialty name="Whips" weighting="1" />
+    </skill>
+    <skill name="PERC" weighting="3">
+      <specialty name="Deduction" weighting="1" />
+      <specialty name="Empathy" weighting="1" />
+      <specialty name="Gambling" weighting="1" />
+      <specialty name="Hearing" weighting="1" />
+      <specialty name="Intuition" weighting="1" />
+      <specialty name="Investigation" weighting="1" />
+      <specialty name="Read Lips" weighting="1" />
+      <specialty name="Search" weighting="1" />
+      <specialty name="Sight" weighting="1" />
+      <specialty name="Smell" weighting="1" />
+      <specialty name="Tactics" weighting="1" />
+      <specialty name="Taste" weighting="1" />
+      <specialty name="Tracking" weighting="1" />
+    </skill>
+    <skill name="PERF" weighting="1">
+      <specialty name="Acting" weighting="1" />
+      <specialty name="Costuming" weighting="1" />
+      <specialty name="Dancing" weighting="1" />
+      <specialty name="Impersonation" weighting="1" />
+      <specialty name="Keyboard Instruments" weighting="1" />
+      <specialty name="Mimicry" weighting="1" />
+      <specialty name="Oratory" weighting="1" />
+      <specialty name="Percussion Instruments" weighting="1" />
+      <specialty name="Rock and Roll" weighting="1" />
+      <specialty name="Singing" weighting="1" />
+      <specialty name="Stringed Instruments" weighting="1" />
+      <specialty name="Wind Instruments" weighting="1" />
+    </skill>
+    <skill name="PILOT" weighting="1">
+      <specialty name="Aerial Navigation" weighting="1" />
+      <specialty name="Astrogation" weighting="1" />
+      <specialty name="Astronomy" weighting="1" />
+      <specialty name="Astrophysics" weighting="1" />
+      <specialty name="Gunships" weighting="1" />
+      <specialty name="Hang Gliders" weighting="1" />
+      <specialty name="Large Cruisers" weighting="1" />
+      <specialty name="Mid Bulk Transport" weighting="1" />
+      <specialty name="Patrol Vessels" weighting="1" />
+      <specialty name="Rocket Shuttles" weighting="1" />
+      <specialty name="Space Survival" weighting="1" />
+      <specialty name="Tankers" weighting="1" />
+      <specialty name="Ultralight Aircraft" weighting="1" />
+      <specialty name="VTOL Tilt Rotor" weighting="1" />
+    </skill>
+    <skill name="PLANVEH" weighting="1">
+      <specialty name="Aquatic Navigation" weighting="1" />
+      <specialty name="Bikes" weighting="1" />
+      <specialty name="Canoes" weighting="1" />
+      <specialty name="Cars" weighting="1" />
+      <specialty name="Equestrian" weighting="1" />
+      <specialty name="Ground Vehicle Repair" weighting="1" />
+      <specialty name="Horse Drawn Conveyances" weighting="1" />
+      <specialty name="Hovercraft" weighting="1" />
+      <specialty name="Industrial Vehicles" weighting="1" />
+      <specialty name="Land Navigation" weighting="1" />
+      <specialty name="Large Ground Transports" weighting="1" />
+      <specialty name="Military Combat Vehicles" weighting="1" />
+      <specialty name="Powerboats" weighting="1" />
+      <specialty name="Sailing" weighting="1" />
+      <specialty name="Submarines" weighting="1" />
+    </skill>
+    <skill name="RANGWEAP" weighting="1">
+      <specialty name="Blowguns" weighting="1" />
+      <specialty name="Bows" weighting="1" />
+      <specialty name="Crossbows" weighting="1" />
+      <specialty name="Darts" weighting="1" />
+      <specialty name="Grenades" weighting="1" />
+      <specialty name="Javelin" weighting="1" />
+      <specialty name="Ranged Weaponsmithing" weighting="1" />
+      <specialty name="Slings" weighting="1" />
+      <specialty name="Throwing Axes" weighting="1" />
+      <specialty name="Throwing Knives" weighting="1" />
+    </skill>
+    <skill name="SCIEXP" weighting="3">
+      <specialty name="Earth Sciences" weighting="1" />
+      <specialty name="Historical Sciences" weighting="1" />
+      <specialty name="Life Sciences" weighting="1" />
+      <specialty name="Mathematical Sciences" weighting="1" />
+    </skill>
+    <skill name="SURV" weighting="1">
+      <specialty name="Aerial" weighting="1" />
+      <specialty name="Aquatic" weighting="1" />
+      <specialty name="Generical Navigation" weighting="1" />
+      <specialty name="Land Survival" weighting="1" />
+      <specialty name="Nature" weighting="1" />
+      <specialty name="Space" weighting="1" />
+    </skill>
+    <skill name="TECHENG" weighting="1">
+      <specialty name="Communications Systems" weighting="1" />
+      <specialty name="Computer Systems" weighting="1" />
+      <specialty name="Create/Alter Technical Devices" weighting="1" />
+      <specialty name="Demolitions" weighting="1" />
+      <specialty name="Electronics" weighting="1" />
+      <specialty name="Hacking" weighting="1" />
+      <specialty name="Technical Repair" weighting="1" />
+      <specialty name="Technical Security Systems" weighting="1" />
+    </skill>
+    <skill name="UNARMED" weighting="1">
+      <specialty name="Boxing" weighting="1" />
+      <specialty name="Brawling" weighting="1" />
+      <specialty name="Judo" weighting="1" />
+      <specialty name="Karate" weighting="1" />
+      <specialty name="Kung Fu" weighting="1" />
+      <specialty name="Savate" weighting="1" />
+      <specialty name="Wrestling" weighting="1" />
+    </skill>
+  </archetype>
+  <archetype enabled="true" name="Pilot" author="DrStrangeLug">
+    <description />
+    <stats>
+      <stat stat="AGL" weighting="7" />
+      <stat stat="STR" weighting="3" />
+      <stat stat="VIT" weighting="3" />
+      <stat stat="ALT" weighting="3" />
+      <stat stat="INT" weighting="3" />
+      <stat stat="WIL" weighting="3" />
+    </stats>
+    <skill name="ANIMHAND" weighting="1">
+      <specialty name="Animal Training" weighting="1" />
+      <specialty name="Riding" weighting="1" />
+      <specialty name="Vetinary" weighting="1" />
+      <specialty name="Zoology" weighting="1" />
+    </skill>
+    <skill name="ARTIST" weighting="1">
+      <specialty name="Appraisal" weighting="1" />
+      <specialty name="Cooking" weighting="1" />
+      <specialty name="Forgery" weighting="1" />
+      <specialty name="Game Designing" weighting="1" />
+      <specialty name="Painting" weighting="1" />
+      <specialty name="Photography" weighting="1" />
+      <specialty name="Poetry" weighting="1" />
+      <specialty name="Sculpting" weighting="1" />
+      <specialty name="Writing" weighting="1" />
+    </skill>
+    <skill name="ATHLET" weighting="1">
+      <specialty name="Climbing" weighting="1" />
+      <specialty name="Contortion" weighting="1" />
+      <specialty name="Dodge" weighting="1" />
+      <specialty name="Gymnastics" weighting="1" />
+      <specialty name="Juggling" weighting="1" />
+      <specialty name="Jumping" weighting="1" />
+      <specialty name="Parachuting" weighting="1" />
+      <specialty name="Parasailing" weighting="1" />
+      <specialty name="Pole Vaulting" weighting="1" />
+      <specialty name="Riding" weighting="1" />
+      <specialty name="Running" weighting="1" />
+      <specialty name="Swimming" weighting="1" />
+      <specialty name="Weight Lifting" weighting="1" />
+    </skill>
+    <skill name="COVRT" weighting="1">
+      <specialty name="Camoflauge" weighting="1" />
+      <specialty name="Disable Devices" weighting="1" />
+      <specialty name="Forgery" weighting="1" />
+      <specialty name="Infiltration" weighting="1" />
+      <specialty name="Open Locks" weighting="1" />
+      <specialty name="Sabotage" weighting="1" />
+      <specialty name="Sleight of Hand" weighting="1" />
+      <specialty name="Stealth" weighting="1" />
+      <specialty name="Streetwise" weighting="1" />
+      <specialty name="Surveillance" weighting="1" />
+    </skill>
+    <skill name="CRAFT" weighting="1">
+      <specialty name="Architecture" weighting="1" />
+      <specialty name="Blacksmithing" weighting="1" />
+      <specialty name="Carpentry" weighting="1" />
+      <specialty name="Cooking" weighting="1" />
+      <specialty name="Leatherworking" weighting="1" />
+      <specialty name="Metalworking" weighting="1" />
+      <specialty name="Pottery" weighting="1" />
+      <specialty name="Sewing" weighting="1" />
+    </skill>
+    <skill name="DISCIP" weighting="1">
+      <specialty name="Concentration" weighting="1" />
+      <specialty name="Interrogation" weighting="1" />
+      <specialty name="Intimidation" weighting="1" />
+      <specialty name="Leadership" weighting="1" />
+      <specialty name="Mental Resistance" weighting="1" />
+      <specialty name="Morale" weighting="1" />
+    </skill>
+    <skill name="GUNS" weighting="2">
+      <specialty name="Assault Rifles" weighting="1" />
+      <specialty name="Energy Weapons" weighting="1" />
+      <specialty name="Grenade Launchers" weighting="1" />
+      <specialty name="Gunsmithing" weighting="1" />
+      <specialty name="Machine Guns" weighting="1" />
+      <specialty name="Pistols" weighting="1" />
+      <specialty name="Rifles" weighting="1" />
+      <specialty name="Shotguns" weighting="1" />
+    </skill>
+    <skill name="HVYWEAP" weighting="1">
+      <specialty name="Artillery" weighting="1" />
+      <specialty name="Catapults" weighting="1" />
+      <specialty name="Demolitions" weighting="1" />
+      <specialty name="Forward Observer" weighting="1" />
+      <specialty name="Mounted Guns" weighting="1" />
+      <specialty name="Repair Heavy Weapons" weighting="1" />
+      <specialty name="Rocket Launchers" weighting="1" />
+      <specialty name="Ships Cannons" weighting="1" />
+      <specialty name="Siege Weapons" weighting="1" />
+    </skill>
+    <skill name="INFLU" weighting="1">
+      <specialty name="Administration" weighting="1" />
+      <specialty name="Barter" weighting="1" />
+      <specialty name="Bureaucracy" weighting="1" />
+      <specialty name="Conversation" weighting="1" />
+      <specialty name="Counseling" weighting="1" />
+      <specialty name="Interrogation" weighting="1" />
+      <specialty name="Intimidation" weighting="1" />
+      <specialty name="Leadership" weighting="1" />
+      <specialty name="Marketing" weighting="1" />
+      <specialty name="Persuasion" weighting="1" />
+      <specialty name="Politics" weighting="1" />
+      <specialty name="Seduction" weighting="1" />
+      <specialty name="Streetwise" weighting="1" />
+    </skill>
+    <skill name="KNOW" weighting="1">
+      <specialty name="Appraisal" weighting="1" />
+      <specialty name="Cultures" weighting="1" />
+      <specialty name="History" weighting="1" />
+      <specialty name="Law" weighting="1" />
+      <specialty name="Literature" weighting="1" />
+      <specialty name="Philosophy" weighting="1" />
+      <specialty name="Religion" weighting="1" />
+      <specialty name="Sports" weighting="1" />
+    </skill>
+    <skill name="LING" weighting="1">
+      <specialty name="Arabic" weighting="1" />
+      <specialty name="Armenian" weighting="1" />
+      <specialty name="French" weighting="1" />
+      <specialty name="German" weighting="1" />
+      <specialty name="Hindu" weighting="1" />
+      <specialty name="Japanese" weighting="1" />
+      <specialty name="Latin" weighting="1" />
+      <specialty name="Portuguese" weighting="1" />
+      <specialty name="Russian" weighting="1" />
+      <specialty name="Swahili" weighting="1" />
+      <specialty name="Swedish" weighting="1" />
+      <specialty name="Tagalog" weighting="1" />
+    </skill>
+    <skill name="MECHENG" weighting="1">
+      <specialty name="Create Mechanical Devices" weighting="1" />
+      <specialty name="Fix Mechanical Security Systems" weighting="1" />
+      <specialty name="Machinery Maintenance" weighting="1" />
+      <specialty name="Mechanical Repairs" weighting="1" />
+      <specialty name="Plumbing" weighting="1" />
+    </skill>
+    <skill name="MED" weighting="1">
+      <specialty name="Dentistry" weighting="1" />
+      <specialty name="Field Medic" weighting="1" />
+      <specialty name="First Aid" weighting="1" />
+      <specialty name="Forensics" weighting="1" />
+      <specialty name="General Practice" weighting="1" />
+      <specialty name="Genetics" weighting="1" />
+      <specialty name="Internal Medicine" weighting="1" />
+      <specialty name="Neurology" weighting="1" />
+      <specialty name="Pharmaceuticals" weighting="1" />
+      <specialty name="Physiology" weighting="1" />
+      <specialty name="Psychiatry" weighting="1" />
+      <specialty name="Rehabilitation" weighting="1" />
+      <specialty name="Surgery" weighting="1" />
+      <specialty name="Toxicology" weighting="1" />
+      <specialty name="Vetinary Medicine" weighting="1" />
+    </skill>
+    <skill name="MELEE" weighting="1">
+      <specialty name="Clubs" weighting="1" />
+      <specialty name="Knives" weighting="1" />
+      <specialty name="Melee Weaponsmithing" weighting="1" />
+      <specialty name="Nunchaku" weighting="1" />
+      <specialty name="Pole Arms" weighting="1" />
+      <specialty name="Swords" weighting="1" />
+      <specialty name="Whips" weighting="1" />
+    </skill>
+    <skill name="PERC" weighting="1">
+      <specialty name="Deduction" weighting="1" />
+      <specialty name="Empathy" weighting="1" />
+      <specialty name="Gambling" weighting="1" />
+      <specialty name="Hearing" weighting="1" />
+      <specialty name="Intuition" weighting="1" />
+      <specialty name="Investigation" weighting="1" />
+      <specialty name="Read Lips" weighting="1" />
+      <specialty name="Search" weighting="1" />
+      <specialty name="Sight" weighting="1" />
+      <specialty name="Smell" weighting="1" />
+      <specialty name="Tactics" weighting="1" />
+      <specialty name="Taste" weighting="1" />
+      <specialty name="Tracking" weighting="1" />
+    </skill>
+    <skill name="PERF" weighting="1">
+      <specialty name="Acting" weighting="1" />
+      <specialty name="Costuming" weighting="1" />
+      <specialty name="Dancing" weighting="1" />
+      <specialty name="Impersonation" weighting="1" />
+      <specialty name="Keyboard Instruments" weighting="1" />
+      <specialty name="Mimicry" weighting="1" />
+      <specialty name="Oratory" weighting="1" />
+      <specialty name="Percussion Instruments" weighting="1" />
+      <specialty name="Rock and Roll" weighting="1" />
+      <specialty name="Singing" weighting="1" />
+      <specialty name="Stringed Instruments" weighting="1" />
+      <specialty name="Wind Instruments" weighting="1" />
+    </skill>
+    <skill name="PILOT" weighting="7">
+      <specialty name="Aerial Navigation" weighting="1" />
+      <specialty name="Astrogation" weighting="1" />
+      <specialty name="Astronomy" weighting="1" />
+      <specialty name="Astrophysics" weighting="1" />
+      <specialty name="Gunships" weighting="1" />
+      <specialty name="Hang Gliders" weighting="1" />
+      <specialty name="Large Cruisers" weighting="1" />
+      <specialty name="Mid Bulk Transport" weighting="1" />
+      <specialty name="Patrol Vessels" weighting="1" />
+      <specialty name="Rocket Shuttles" weighting="1" />
+      <specialty name="Space Survival" weighting="1" />
+      <specialty name="Tankers" weighting="1" />
+      <specialty name="Ultralight Aircraft" weighting="1" />
+      <specialty name="VTOL Tilt Rotor" weighting="1" />
+    </skill>
+    <skill name="PLANVEH" weighting="4">
+      <specialty name="Aquatic Navigation" weighting="1" />
+      <specialty name="Bikes" weighting="1" />
+      <specialty name="Canoes" weighting="1" />
+      <specialty name="Cars" weighting="1" />
+      <specialty name="Equestrian" weighting="1" />
+      <specialty name="Ground Vehicle Repair" weighting="1" />
+      <specialty name="Horse Drawn Conveyances" weighting="1" />
+      <specialty name="Hovercraft" weighting="1" />
+      <specialty name="Industrial Vehicles" weighting="1" />
+      <specialty name="Land Navigation" weighting="1" />
+      <specialty name="Large Ground Transports" weighting="1" />
+      <specialty name="Military Combat Vehicles" weighting="1" />
+      <specialty name="Powerboats" weighting="1" />
+      <specialty name="Sailing" weighting="1" />
+      <specialty name="Submarines" weighting="1" />
+    </skill>
+    <skill name="RANGWEAP" weighting="1">
+      <specialty name="Blowguns" weighting="1" />
+      <specialty name="Bows" weighting="1" />
+      <specialty name="Crossbows" weighting="1" />
+      <specialty name="Darts" weighting="1" />
+      <specialty name="Grenades" weighting="1" />
+      <specialty name="Javelin" weighting="1" />
+      <specialty name="Ranged Weaponsmithing" weighting="1" />
+      <specialty name="Slings" weighting="1" />
+      <specialty name="Throwing Axes" weighting="1" />
+      <specialty name="Throwing Knives" weighting="1" />
+    </skill>
+    <skill name="SCIEXP" weighting="1">
+      <specialty name="Earth Sciences" weighting="1" />
+      <specialty name="Historical Sciences" weighting="1" />
+      <specialty name="Life Sciences" weighting="1" />
+      <specialty name="Mathematical Sciences" weighting="1" />
+    </skill>
+    <skill name="SURV" weighting="1">
+      <specialty name="Aerial" weighting="1" />
+      <specialty name="Aquatic" weighting="1" />
+      <specialty name="Generical Navigation" weighting="1" />
+      <specialty name="Land Survival" weighting="1" />
+      <specialty name="Nature" weighting="1" />
+      <specialty name="Space" weighting="1" />
+    </skill>
+    <skill name="TECHENG" weighting="1">
+      <specialty name="Communications Systems" weighting="1" />
+      <specialty name="Computer Systems" weighting="1" />
+      <specialty name="Create/Alter Technical Devices" weighting="1" />
+      <specialty name="Demolitions" weighting="1" />
+      <specialty name="Electronics" weighting="1" />
+      <specialty name="Hacking" weighting="1" />
+      <specialty name="Technical Repair" weighting="1" />
+      <specialty name="Technical Security Systems" weighting="1" />
+    </skill>
+    <skill name="UNARMED" weighting="1">
+      <specialty name="Boxing" weighting="1" />
+      <specialty name="Brawling" weighting="1" />
+      <specialty name="Judo" weighting="1" />
+      <specialty name="Karate" weighting="1" />
+      <specialty name="Kung Fu" weighting="1" />
+      <specialty name="Savate" weighting="1" />
+      <specialty name="Wrestling" weighting="1" />
+    </skill>
+  </archetype>
+  <archetype enabled="false" name="Tank" author="DrStrangeLug">
+    <description />
+    <stats>
+      <stat stat="AGL" weighting="4" />
+      <stat stat="STR" weighting="7" />
+      <stat stat="VIT" weighting="5" />
+      <stat stat="ALT" weighting="1" />
+      <stat stat="INT" weighting="1" />
+      <stat stat="WIL" weighting="1" />
+    </stats>
+    <skill name="ANIMHAND" weighting="1">
+      <specialty name="Animal Training" weighting="1" />
+      <specialty name="Riding" weighting="1" />
+      <specialty name="Vetinary" weighting="1" />
+      <specialty name="Zoology" weighting="1" />
+    </skill>
+    <skill name="ARTIST" weighting="1">
+      <specialty name="Appraisal" weighting="1" />
+      <specialty name="Cooking" weighting="1" />
+      <specialty name="Forgery" weighting="1" />
+      <specialty name="Game Designing" weighting="1" />
+      <specialty name="Painting" weighting="1" />
+      <specialty name="Photography" weighting="1" />
+      <specialty name="Poetry" weighting="1" />
+      <specialty name="Sculpting" weighting="1" />
+      <specialty name="Writing" weighting="1" />
+    </skill>
+    <skill name="ATHLET" weighting="1">
+      <specialty name="Climbing" weighting="1" />
+      <specialty name="Contortion" weighting="1" />
+      <specialty name="Dodge" weighting="1" />
+      <specialty name="Gymnastics" weighting="1" />
+      <specialty name="Juggling" weighting="1" />
+      <specialty name="Jumping" weighting="1" />
+      <specialty name="Parachuting" weighting="1" />
+      <specialty name="Parasailing" weighting="1" />
+      <specialty name="Pole Vaulting" weighting="1" />
+      <specialty name="Riding" weighting="1" />
+      <specialty name="Running" weighting="1" />
+      <specialty name="Swimming" weighting="1" />
+      <specialty name="Weight Lifting" weighting="1" />
+    </skill>
+    <skill name="COVRT" weighting="1">
+      <specialty name="Camoflauge" weighting="1" />
+      <specialty name="Disable Devices" weighting="1" />
+      <specialty name="Forgery" weighting="1" />
+      <specialty name="Infiltration" weighting="1" />
+      <specialty name="Open Locks" weighting="1" />
+      <specialty name="Sabotage" weighting="1" />
+      <specialty name="Sleight of Hand" weighting="1" />
+      <specialty name="Stealth" weighting="1" />
+      <specialty name="Streetwise" weighting="1" />
+      <specialty name="Surveillance" weighting="1" />
+    </skill>
+    <skill name="CRAFT" weighting="1">
+      <specialty name="Architecture" weighting="1" />
+      <specialty name="Blacksmithing" weighting="1" />
+      <specialty name="Carpentry" weighting="1" />
+      <specialty name="Cooking" weighting="1" />
+      <specialty name="Leatherworking" weighting="1" />
+      <specialty name="Metalworking" weighting="1" />
+      <specialty name="Pottery" weighting="1" />
+      <specialty name="Sewing" weighting="1" />
+    </skill>
+    <skill name="DISCIP" weighting="1">
+      <specialty name="Concentration" weighting="1" />
+      <specialty name="Interrogation" weighting="1" />
+      <specialty name="Intimidation" weighting="1" />
+      <specialty name="Leadership" weighting="1" />
+      <specialty name="Mental Resistance" weighting="1" />
+      <specialty name="Morale" weighting="1" />
+    </skill>
+    <skill name="GUNS" weighting="4">
+      <specialty name="Assault Rifles" weighting="1" />
+      <specialty name="Energy Weapons" weighting="1" />
+      <specialty name="Grenade Launchers" weighting="1" />
+      <specialty name="Gunsmithing" weighting="1" />
+      <specialty name="Machine Guns" weighting="1" />
+      <specialty name="Pistols" weighting="1" />
+      <specialty name="Rifles" weighting="1" />
+      <specialty name="Shotguns" weighting="1" />
+    </skill>
+    <skill name="HVYWEAP" weighting="1">
+      <specialty name="Artillery" weighting="1" />
+      <specialty name="Catapults" weighting="1" />
+      <specialty name="Demolitions" weighting="1" />
+      <specialty name="Forward Observer" weighting="1" />
+      <specialty name="Mounted Guns" weighting="1" />
+      <specialty name="Repair Heavy Weapons" weighting="1" />
+      <specialty name="Rocket Launchers" weighting="1" />
+      <specialty name="Ships Cannons" weighting="1" />
+      <specialty name="Siege Weapons" weighting="1" />
+    </skill>
+    <skill name="INFLU" weighting="1">
+      <specialty name="Administration" weighting="1" />
+      <specialty name="Barter" weighting="1" />
+      <specialty name="Bureaucracy" weighting="1" />
+      <specialty name="Conversation" weighting="1" />
+      <specialty name="Counseling" weighting="1" />
+      <specialty name="Interrogation" weighting="1" />
+      <specialty name="Intimidation" weighting="1" />
+      <specialty name="Leadership" weighting="1" />
+      <specialty name="Marketing" weighting="1" />
+      <specialty name="Persuasion" weighting="1" />
+      <specialty name="Politics" weighting="1" />
+      <specialty name="Seduction" weighting="1" />
+      <specialty name="Streetwise" weighting="1" />
+    </skill>
+    <skill name="KNOW" weighting="1">
+      <specialty name="Appraisal" weighting="1" />
+      <specialty name="Cultures" weighting="1" />
+      <specialty name="History" weighting="1" />
+      <specialty name="Law" weighting="1" />
+      <specialty name="Literature" weighting="1" />
+      <specialty name="Philosophy" weighting="1" />
+      <specialty name="Religion" weighting="1" />
+      <specialty name="Sports" weighting="1" />
+    </skill>
+    <skill name="LING" weighting="1">
+      <specialty name="Arabic" weighting="1" />
+      <specialty name="Armenian" weighting="1" />
+      <specialty name="French" weighting="1" />
+      <specialty name="German" weighting="1" />
+      <specialty name="Hindu" weighting="1" />
+      <specialty name="Japanese" weighting="1" />
+      <specialty name="Latin" weighting="1" />
+      <specialty name="Portuguese" weighting="1" />
+      <specialty name="Russian" weighting="1" />
+      <specialty name="Swahili" weighting="1" />
+      <specialty name="Swedish" weighting="1" />
+      <specialty name="Tagalog" weighting="1" />
+    </skill>
+    <skill name="MECHENG" weighting="1">
+      <specialty name="Create Mechanical Devices" weighting="1" />
+      <specialty name="Fix Mechanical Security Systems" weighting="1" />
+      <specialty name="Machinery Maintenance" weighting="1" />
+      <specialty name="Mechanical Repairs" weighting="1" />
+      <specialty name="Plumbing" weighting="1" />
+    </skill>
+    <skill name="MED" weighting="1">
+      <specialty name="Dentistry" weighting="1" />
+      <specialty name="Field Medic" weighting="1" />
+      <specialty name="First Aid" weighting="1" />
+      <specialty name="Forensics" weighting="1" />
+      <specialty name="General Practice" weighting="1" />
+      <specialty name="Genetics" weighting="1" />
+      <specialty name="Internal Medicine" weighting="1" />
+      <specialty name="Neurology" weighting="1" />
+      <specialty name="Pharmaceuticals" weighting="1" />
+      <specialty name="Physiology" weighting="1" />
+      <specialty name="Psychiatry" weighting="1" />
+      <specialty name="Rehabilitation" weighting="1" />
+      <specialty name="Surgery" weighting="1" />
+      <specialty name="Toxicology" weighting="1" />
+      <specialty name="Vetinary Medicine" weighting="1" />
+    </skill>
+    <skill name="MELEE" weighting="3">
+      <specialty name="Clubs" weighting="1" />
+      <specialty name="Knives" weighting="1" />
+      <specialty name="Melee Weaponsmithing" weighting="1" />
+      <specialty name="Nunchaku" weighting="1" />
+      <specialty name="Pole Arms" weighting="1" />
+      <specialty name="Swords" weighting="1" />
+      <specialty name="Whips" weighting="1" />
+    </skill>
+    <skill name="PERC" weighting="1">
+      <specialty name="Deduction" weighting="1" />
+      <specialty name="Empathy" weighting="1" />
+      <specialty name="Gambling" weighting="1" />
+      <specialty name="Hearing" weighting="1" />
+      <specialty name="Intuition" weighting="1" />
+      <specialty name="Investigation" weighting="1" />
+      <specialty name="Read Lips" weighting="1" />
+      <specialty name="Search" weighting="1" />
+      <specialty name="Sight" weighting="1" />
+      <specialty name="Smell" weighting="1" />
+      <specialty name="Tactics" weighting="1" />
+      <specialty name="Taste" weighting="1" />
+      <specialty name="Tracking" weighting="1" />
+    </skill>
+    <skill name="PERF" weighting="1">
+      <specialty name="Acting" weighting="1" />
+      <specialty name="Costuming" weighting="1" />
+      <specialty name="Dancing" weighting="1" />
+      <specialty name="Impersonation" weighting="1" />
+      <specialty name="Keyboard Instruments" weighting="1" />
+      <specialty name="Mimicry" weighting="1" />
+      <specialty name="Oratory" weighting="1" />
+      <specialty name="Percussion Instruments" weighting="1" />
+      <specialty name="Rock and Roll" weighting="1" />
+      <specialty name="Singing" weighting="1" />
+      <specialty name="Stringed Instruments" weighting="1" />
+      <specialty name="Wind Instruments" weighting="1" />
+    </skill>
+    <skill name="PILOT" weighting="1">
+      <specialty name="Aerial Navigation" weighting="1" />
+      <specialty name="Astrogation" weighting="1" />
+      <specialty name="Astronomy" weighting="1" />
+      <specialty name="Astrophysics" weighting="1" />
+      <specialty name="Gunships" weighting="1" />
+      <specialty name="Hang Gliders" weighting="1" />
+      <specialty name="Large Cruisers" weighting="1" />
+      <specialty name="Mid Bulk Transport" weighting="1" />
+      <specialty name="Patrol Vessels" weighting="1" />
+      <specialty name="Rocket Shuttles" weighting="1" />
+      <specialty name="Space Survival" weighting="1" />
+      <specialty name="Tankers" weighting="1" />
+      <specialty name="Ultralight Aircraft" weighting="1" />
+      <specialty name="VTOL Tilt Rotor" weighting="1" />
+    </skill>
+    <skill name="PLANVEH" weighting="1">
+      <specialty name="Aquatic Navigation" weighting="1" />
+      <specialty name="Bikes" weighting="1" />
+      <specialty name="Canoes" weighting="1" />
+      <specialty name="Cars" weighting="1" />
+      <specialty name="Equestrian" weighting="1" />
+      <specialty name="Ground Vehicle Repair" weighting="1" />
+      <specialty name="Horse Drawn Conveyances" weighting="1" />
+      <specialty name="Hovercraft" weighting="1" />
+      <specialty name="Industrial Vehicles" weighting="1" />
+      <specialty name="Land Navigation" weighting="1" />
+      <specialty name="Large Ground Transports" weighting="1" />
+      <specialty name="Military Combat Vehicles" weighting="1" />
+      <specialty name="Powerboats" weighting="1" />
+      <specialty name="Sailing" weighting="1" />
+      <specialty name="Submarines" weighting="1" />
+    </skill>
+    <skill name="RANGWEAP" weighting="1">
+      <specialty name="Blowguns" weighting="1" />
+      <specialty name="Bows" weighting="1" />
+      <specialty name="Crossbows" weighting="1" />
+      <specialty name="Darts" weighting="1" />
+      <specialty name="Grenades" weighting="1" />
+      <specialty name="Javelin" weighting="1" />
+      <specialty name="Ranged Weaponsmithing" weighting="1" />
+      <specialty name="Slings" weighting="1" />
+      <specialty name="Throwing Axes" weighting="1" />
+      <specialty name="Throwing Knives" weighting="1" />
+    </skill>
+    <skill name="SCIEXP" weighting="1">
+      <specialty name="Earth Sciences" weighting="1" />
+      <specialty name="Historical Sciences" weighting="1" />
+      <specialty name="Life Sciences" weighting="1" />
+      <specialty name="Mathematical Sciences" weighting="1" />
+    </skill>
+    <skill name="SURV" weighting="1">
+      <specialty name="Aerial" weighting="1" />
+      <specialty name="Aquatic" weighting="1" />
+      <specialty name="Generical Navigation" weighting="1" />
+      <specialty name="Land Survival" weighting="1" />
+      <specialty name="Nature" weighting="1" />
+      <specialty name="Space" weighting="1" />
+    </skill>
+    <skill name="TECHENG" weighting="1">
+      <specialty name="Communications Systems" weighting="1" />
+      <specialty name="Computer Systems" weighting="1" />
+      <specialty name="Create/Alter Technical Devices" weighting="1" />
+      <specialty name="Demolitions" weighting="1" />
+      <specialty name="Electronics" weighting="1" />
+      <specialty name="Hacking" weighting="1" />
+      <specialty name="Technical Repair" weighting="1" />
+      <specialty name="Technical Security Systems" weighting="1" />
+    </skill>
+    <skill name="UNARMED" weighting="3">
+      <specialty name="Boxing" weighting="1" />
+      <specialty name="Brawling" weighting="1" />
+      <specialty name="Judo" weighting="1" />
+      <specialty name="Karate" weighting="1" />
+      <specialty name="Kung Fu" weighting="1" />
+      <specialty name="Savate" weighting="1" />
+      <specialty name="Wrestling" weighting="1" />
+    </skill>
+  </archetype>
+  <archetype enabled="true" name="Technical" author="DrStrangeLug">
+    <description />
+    <stats>
+      <stat stat="AGL" weighting="2" />
+      <stat stat="STR" weighting="1" />
+      <stat stat="VIT" weighting="2" />
+      <stat stat="ALT" weighting="4" />
+      <stat stat="INT" weighting="7" />
+      <stat stat="WIL" weighting="3" />
+    </stats>
+    <skill name="ANIMHAND" weighting="1">
+      <specialty name="Animal Training" weighting="1" />
+      <specialty name="Riding" weighting="1" />
+      <specialty name="Vetinary" weighting="1" />
+      <specialty name="Zoology" weighting="1" />
+    </skill>
+    <skill name="ARTIST" weighting="1">
+      <specialty name="Appraisal" weighting="1" />
+      <specialty name="Cooking" weighting="1" />
+      <specialty name="Forgery" weighting="1" />
+      <specialty name="Game Designing" weighting="1" />
+      <specialty name="Painting" weighting="1" />
+      <specialty name="Photography" weighting="1" />
+      <specialty name="Poetry" weighting="1" />
+      <specialty name="Sculpting" weighting="1" />
+      <specialty name="Writing" weighting="1" />
+    </skill>
+    <skill name="ATHLET" weighting="1">
+      <specialty name="Climbing" weighting="1" />
+      <specialty name="Contortion" weighting="1" />
+      <specialty name="Dodge" weighting="1" />
+      <specialty name="Gymnastics" weighting="1" />
+      <specialty name="Juggling" weighting="1" />
+      <specialty name="Jumping" weighting="1" />
+      <specialty name="Parachuting" weighting="1" />
+      <specialty name="Parasailing" weighting="1" />
+      <specialty name="Pole Vaulting" weighting="1" />
+      <specialty name="Riding" weighting="1" />
+      <specialty name="Running" weighting="1" />
+      <specialty name="Swimming" weighting="1" />
+      <specialty name="Weight Lifting" weighting="1" />
+    </skill>
+    <skill name="COVRT" weighting="1">
+      <specialty name="Camoflauge" weighting="1" />
+      <specialty name="Disable Devices" weighting="1" />
+      <specialty name="Forgery" weighting="1" />
+      <specialty name="Infiltration" weighting="1" />
+      <specialty name="Open Locks" weighting="1" />
+      <specialty name="Sabotage" weighting="1" />
+      <specialty name="Sleight of Hand" weighting="1" />
+      <specialty name="Stealth" weighting="1" />
+      <specialty name="Streetwise" weighting="1" />
+      <specialty name="Surveillance" weighting="1" />
+    </skill>
+    <skill name="CRAFT" weighting="1">
+      <specialty name="Architecture" weighting="1" />
+      <specialty name="Blacksmithing" weighting="1" />
+      <specialty name="Carpentry" weighting="1" />
+      <specialty name="Cooking" weighting="1" />
+      <specialty name="Leatherworking" weighting="1" />
+      <specialty name="Metalworking" weighting="1" />
+      <specialty name="Pottery" weighting="1" />
+      <specialty name="Sewing" weighting="1" />
+    </skill>
+    <skill name="DISCIP" weighting="1">
+      <specialty name="Concentration" weighting="1" />
+      <specialty name="Interrogation" weighting="1" />
+      <specialty name="Intimidation" weighting="1" />
+      <specialty name="Leadership" weighting="1" />
+      <specialty name="Mental Resistance" weighting="1" />
+      <specialty name="Morale" weighting="1" />
+    </skill>
+    <skill name="GUNS" weighting="2">
+      <specialty name="Assault Rifles" weighting="1" />
+      <specialty name="Energy Weapons" weighting="1" />
+      <specialty name="Grenade Launchers" weighting="1" />
+      <specialty name="Gunsmithing" weighting="1" />
+      <specialty name="Machine Guns" weighting="1" />
+      <specialty name="Pistols" weighting="1" />
+      <specialty name="Rifles" weighting="1" />
+      <specialty name="Shotguns" weighting="1" />
+    </skill>
+    <skill name="HVYWEAP" weighting="1">
+      <specialty name="Artillery" weighting="1" />
+      <specialty name="Catapults" weighting="1" />
+      <specialty name="Demolitions" weighting="1" />
+      <specialty name="Forward Observer" weighting="1" />
+      <specialty name="Mounted Guns" weighting="1" />
+      <specialty name="Repair Heavy Weapons" weighting="1" />
+      <specialty name="Rocket Launchers" weighting="1" />
+      <specialty name="Ships Cannons" weighting="1" />
+      <specialty name="Siege Weapons" weighting="1" />
+    </skill>
+    <skill name="INFLU" weighting="1">
+      <specialty name="Administration" weighting="1" />
+      <specialty name="Barter" weighting="1" />
+      <specialty name="Bureaucracy" weighting="1" />
+      <specialty name="Conversation" weighting="1" />
+      <specialty name="Counseling" weighting="1" />
+      <specialty name="Interrogation" weighting="1" />
+      <specialty name="Intimidation" weighting="1" />
+      <specialty name="Leadership" weighting="1" />
+      <specialty name="Marketing" weighting="1" />
+      <specialty name="Persuasion" weighting="1" />
+      <specialty name="Politics" weighting="1" />
+      <specialty name="Seduction" weighting="1" />
+      <specialty name="Streetwise" weighting="1" />
+    </skill>
+    <skill name="KNOW" weighting="2">
+      <specialty name="Appraisal" weighting="1" />
+      <specialty name="Cultures" weighting="1" />
+      <specialty name="History" weighting="1" />
+      <specialty name="Law" weighting="1" />
+      <specialty name="Literature" weighting="1" />
+      <specialty name="Philosophy" weighting="1" />
+      <specialty name="Religion" weighting="1" />
+      <specialty name="Sports" weighting="1" />
+    </skill>
+    <skill name="LING" weighting="1">
+      <specialty name="Arabic" weighting="1" />
+      <specialty name="Armenian" weighting="1" />
+      <specialty name="French" weighting="1" />
+      <specialty name="German" weighting="1" />
+      <specialty name="Hindu" weighting="1" />
+      <specialty name="Japanese" weighting="1" />
+      <specialty name="Latin" weighting="1" />
+      <specialty name="Portuguese" weighting="1" />
+      <specialty name="Russian" weighting="1" />
+      <specialty name="Swahili" weighting="1" />
+      <specialty name="Swedish" weighting="1" />
+      <specialty name="Tagalog" weighting="1" />
+    </skill>
+    <skill name="MECHENG" weighting="6">
+      <specialty name="Create Mechanical Devices" weighting="1" />
+      <specialty name="Fix Mechanical Security Systems" weighting="1" />
+      <specialty name="Machinery Maintenance" weighting="1" />
+      <specialty name="Mechanical Repairs" weighting="1" />
+      <specialty name="Plumbing" weighting="1" />
+    </skill>
+    <skill name="MED" weighting="1">
+      <specialty name="Dentistry" weighting="1" />
+      <specialty name="Field Medic" weighting="1" />
+      <specialty name="First Aid" weighting="1" />
+      <specialty name="Forensics" weighting="1" />
+      <specialty name="General Practice" weighting="1" />
+      <specialty name="Genetics" weighting="1" />
+      <specialty name="Internal Medicine" weighting="1" />
+      <specialty name="Neurology" weighting="1" />
+      <specialty name="Pharmaceuticals" weighting="1" />
+      <specialty name="Physiology" weighting="1" />
+      <specialty name="Psychiatry" weighting="1" />
+      <specialty name="Rehabilitation" weighting="1" />
+      <specialty name="Surgery" weighting="1" />
+      <specialty name="Toxicology" weighting="1" />
+      <specialty name="Vetinary Medicine" weighting="1" />
+    </skill>
+    <skill name="MELEE" weighting="1">
+      <specialty name="Clubs" weighting="1" />
+      <specialty name="Knives" weighting="1" />
+      <specialty name="Melee Weaponsmithing" weighting="1" />
+      <specialty name="Nunchaku" weighting="1" />
+      <specialty name="Pole Arms" weighting="1" />
+      <specialty name="Swords" weighting="1" />
+      <specialty name="Whips" weighting="1" />
+    </skill>
+    <skill name="PERC" weighting="2">
+      <specialty name="Deduction" weighting="1" />
+      <specialty name="Empathy" weighting="1" />
+      <specialty name="Gambling" weighting="1" />
+      <specialty name="Hearing" weighting="1" />
+      <specialty name="Intuition" weighting="1" />
+      <specialty name="Investigation" weighting="1" />
+      <specialty name="Read Lips" weighting="1" />
+      <specialty name="Search" weighting="1" />
+      <specialty name="Sight" weighting="1" />
+      <specialty name="Smell" weighting="1" />
+      <specialty name="Tactics" weighting="1" />
+      <specialty name="Taste" weighting="1" />
+      <specialty name="Tracking" weighting="1" />
+    </skill>
+    <skill name="PERF" weighting="1">
+      <specialty name="Acting" weighting="1" />
+      <specialty name="Costuming" weighting="1" />
+      <specialty name="Dancing" weighting="1" />
+      <specialty name="Impersonation" weighting="1" />
+      <specialty name="Keyboard Instruments" weighting="1" />
+      <specialty name="Mimicry" weighting="1" />
+      <specialty name="Oratory" weighting="1" />
+      <specialty name="Percussion Instruments" weighting="1" />
+      <specialty name="Rock and Roll" weighting="1" />
+      <specialty name="Singing" weighting="1" />
+      <specialty name="Stringed Instruments" weighting="1" />
+      <specialty name="Wind Instruments" weighting="1" />
+    </skill>
+    <skill name="PILOT" weighting="1">
+      <specialty name="Aerial Navigation" weighting="1" />
+      <specialty name="Astrogation" weighting="1" />
+      <specialty name="Astronomy" weighting="1" />
+      <specialty name="Astrophysics" weighting="1" />
+      <specialty name="Gunships" weighting="1" />
+      <specialty name="Hang Gliders" weighting="1" />
+      <specialty name="Large Cruisers" weighting="1" />
+      <specialty name="Mid Bulk Transport" weighting="1" />
+      <specialty name="Patrol Vessels" weighting="1" />
+      <specialty name="Rocket Shuttles" weighting="1" />
+      <specialty name="Space Survival" weighting="1" />
+      <specialty name="Tankers" weighting="1" />
+      <specialty name="Ultralight Aircraft" weighting="1" />
+      <specialty name="VTOL Tilt Rotor" weighting="1" />
+    </skill>
+    <skill name="PLANVEH" weighting="1">
+      <specialty name="Aquatic Navigation" weighting="1" />
+      <specialty name="Bikes" weighting="1" />
+      <specialty name="Canoes" weighting="1" />
+      <specialty name="Cars" weighting="1" />
+      <specialty name="Equestrian" weighting="1" />
+      <specialty name="Ground Vehicle Repair" weighting="1" />
+      <specialty name="Horse Drawn Conveyances" weighting="1" />
+      <specialty name="Hovercraft" weighting="1" />
+      <specialty name="Industrial Vehicles" weighting="1" />
+      <specialty name="Land Navigation" weighting="1" />
+      <specialty name="Large Ground Transports" weighting="1" />
+      <specialty name="Military Combat Vehicles" weighting="1" />
+      <specialty name="Powerboats" weighting="1" />
+      <specialty name="Sailing" weighting="1" />
+      <specialty name="Submarines" weighting="1" />
+    </skill>
+    <skill name="RANGWEAP" weighting="1">
+      <specialty name="Blowguns" weighting="1" />
+      <specialty name="Bows" weighting="1" />
+      <specialty name="Crossbows" weighting="1" />
+      <specialty name="Darts" weighting="1" />
+      <specialty name="Grenades" weighting="1" />
+      <specialty name="Javelin" weighting="1" />
+      <specialty name="Ranged Weaponsmithing" weighting="1" />
+      <specialty name="Slings" weighting="1" />
+      <specialty name="Throwing Axes" weighting="1" />
+      <specialty name="Throwing Knives" weighting="1" />
+    </skill>
+    <skill name="SCIEXP" weighting="1">
+      <specialty name="Earth Sciences" weighting="1" />
+      <specialty name="Historical Sciences" weighting="1" />
+      <specialty name="Life Sciences" weighting="1" />
+      <specialty name="Mathematical Sciences" weighting="1" />
+    </skill>
+    <skill name="SURV" weighting="1">
+      <specialty name="Aerial" weighting="1" />
+      <specialty name="Aquatic" weighting="1" />
+      <specialty name="Generical Navigation" weighting="1" />
+      <specialty name="Land Survival" weighting="1" />
+      <specialty name="Nature" weighting="1" />
+      <specialty name="Space" weighting="1" />
+    </skill>
+    <skill name="TECHENG" weighting="6">
+      <specialty name="Communications Systems" weighting="1" />
+      <specialty name="Computer Systems" weighting="1" />
+      <specialty name="Create/Alter Technical Devices" weighting="1" />
+      <specialty name="Demolitions" weighting="1" />
+      <specialty name="Electronics" weighting="1" />
+      <specialty name="Hacking" weighting="1" />
+      <specialty name="Technical Repair" weighting="1" />
+      <specialty name="Technical Security Systems" weighting="1" />
+    </skill>
+    <skill name="UNARMED" weighting="1">
+      <specialty name="Boxing" weighting="1" />
+      <specialty name="Brawling" weighting="1" />
+      <specialty name="Judo" weighting="1" />
+      <specialty name="Karate" weighting="1" />
+      <specialty name="Kung Fu" weighting="1" />
+      <specialty name="Savate" weighting="1" />
+      <specialty name="Wrestling" weighting="1" />
+    </skill>
+  </archetype>
+</archetypes>
+

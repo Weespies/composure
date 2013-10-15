@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rangedList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="rangedWeapons.xsd">
+
+	<ranged name="Bow" damage="d4 W" cost="6" weight="8" availability="E"
+		range="70" rate="1" clip="1" type="Ranged" skill="Bows"/>
+	<ranged name="Crossbow" damage="d4 W" cost="8" weight="13" availability="C"
+		range="150" rate="0.5" clip="1" type="Ranged" skill="Crossbows"/>
+	<ranged name="Crossbow, Powered" damage="d4 W" cost="24" weight="15" availability="C"
+		range="175" rate="2" clip="6" type="Ranged" skill="Crossbows"/>
+	<ranged name="Derringer" damage="d4 W" cost="30" weight="1" availability="E" 
+		range="30" rate="1" clip="2" type="Ranged" skill="Pistols"/>
+	<ranged name="Grenade Launcher" damage="*" cost="106" weight="12" availability="I" 
+		range="40" rate="1" clip="8" type="Ranged" skill="Heavy Weapons"/>
+	<ranged name="Pistol" damage="d6 W" cost="18" weight="2" availability="E" 
+		range="100" rate="3" clip="8" type="Ranged" skill="Pistols"/>
+	<ranged name="Pistol, Machine" damage="d4 W" cost="50" weight="5" availability="I" 
+		range="100" rate="6" clip="12" type="Ranged" skill="Pistols"/>
+	<ranged name="Pistol, Laser" damage="d10 W" cost="330" weight="1.5" availability="I"
+		range="100" rate="3" clip="10" type="Ranged" skill="Energy Weapon"/>
+	<ranged name="Rifle" damage="d8 W" cost="30" weight="9" availability="C"
+		range="225" rate="3" clip="30" type="Ranged" skill="Rifles"/>
+	<ranged name="Rifle, Bullpup" damage="d8 W" cost="60" weight="7" availability="I"
+		range="100" rate="3" clip="20" type="Ranged" skill="Assault Rifles"/>
+	<ranged name="Rifle, Assault" damage="d8 W" cost="40" weight="11" availability="I"
+		range="150" rate="3" clip="40" type="Ranged" skill="Assault Rifles"/>
+	<ranged name="Rifle, Sniper" damage="d8 W" cost="180" weight="15" availability="C"
+		range="1000" rate="3" clip="20" type="Ranged" skill="Rifles"/>
+	<ranged name="Rifle, Sonic" damage="d8 S" cost="140" weight="6" availability="I" 
+		range="15" rate="2" clip="50" type="Ranged" skill="Energy Weapons"/>
+	<ranged name="Shotgun" damage="d10 W" cost="50" weight="10" availability="E" 
+		range="10" rate="2" clip="10" type="Ranged" skill="Shotguns"/>
+	<ranged name="Submachine Gun" damage="d6 W" cost="36" weight="4" availability="I" 
+		range="60" rate="3" clip="35" type="Ranged" skill="Guns"/>
+	
+</rangedList>

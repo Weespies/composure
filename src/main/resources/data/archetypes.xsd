@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="archetypes">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="archetype" type="archetype" minOccurs="1" maxOccurs="unbounded"/>
+			</xsd:sequence>
+		</xsd:complexType>
+		
+	</xsd:element>
+	
+	<xsd:complexType name="archetype">	
+		<xsd:sequence>
+			<xsd:element name="stats" type="statList"/>
+			<xsd:element name="skills" type="skillList"/>
+			
+		</xsd:sequence>
+		<xsd:attribute name="name" use="required"/>
+		<xsd:attribute name="author" use="required"/>
+	</xsd:complexType>
+	
+	<xsd:complexType name="statList">
+		<xsd:sequence>
+		<xsd:element name="stat" type="statBias" minOccurs="6" maxOccurs="6"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="statBias">
+		<xsd:attribute name="stat" use="required">
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:string">
+					<xsd:enumeration value="AGL"/>
+					<xsd:enumeration value="STR"/>
+					<xsd:enumeration value="VIT"/>
+					<xsd:enumeration value="ALT"/>
+					<xsd:enumeration value="INT"/>
+					<xsd:enumeration value="WIL"/>
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:attribute>
+		<xsd:attribute name="weighting" use="required" type="weightingValue" />
+	</xsd:complexType>
+	
+	<xsd:simpleType name="weightingValue">
+		<xsd:restriction base="xsd:integer">
+			<xsd:minInclusive value="1"/>
+			<xsd:maxInclusive value="7"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:complexType name="skillList">
+		<xsd:sequence>
+		<xsd:element name="skill" type="skillBias" minOccurs="1" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	
+	<xsd:complexType name="skillBias">
+		<xsd:sequence>
+			<xsd:element name="specialty" type="weightedChildSkill" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="weightingGroup" type="childGroup" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="exclusiveGroup" type="childGroup" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+		<xsd:attribute name="name" use="required"/>
+		<xsd:attribute name="weighting" use="required" type="weightingValue" />
+	</xsd:complexType>
+	
+	<xsd:complexType name="weightedChildSkill">
+		<xsd:attribute name="name" type="xsd:string" use="required"/>
+		<xsd:attribute name="weighting" type="weightingValue" use="required"/>"
+	</xsd:complexType>	
+	
+	<xsd:complexType name="weightingGroup">
+		<xsd:sequence>
+			<xsd:element name="specialty" type="weightedChildSkill" minOccurs="1" maxOccurs="unbounded"/>
+		</xsd:sequence>
+		<xsd:attribute name="name" type="xsd:string" use="required"/>
+		<xsd:attribute name="weighting" type="weightingValue" use="required"/>
+	</xsd:complexType>
+</xsd:schema>

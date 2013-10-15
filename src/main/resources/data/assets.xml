@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="assets.xsd">
+
+	<asset name="Allure" type="BOTH" focus="any">
+		<description>
+		With minor allure you gain a +2 step Skill die bonuson all actions keyed to appearance, such as seduction,
+		negotiation, persuasion or winning beauty pageants.  If you are gorgeous enough to have major Allure, whenever
+		you spent plot points on these actions you spend an additional 2 free plotpoints.
+		</description>
+	</asset>
+	<asset name="Athlete" type="BOTH" skill="Athletics"/>
+	<asset name="Born Behind The Wheel" type="BOTH"/>
+	<asset name="Cortex Spectre" type="BOTH"/>
+	<asset name="Fightin' Type" type="MAJOR"/>
+	<asset name="Friends in Low Places" type="MINOR"/>
+	<asset name="Friends in High Places" type="MINOR"/>
+	<asset name="Good Name" type="BOTH"/>
+	<asset name="Healthy as a Horse" type="MAJOR"/>
+	<asset name="Heavy Tolerance" type="MINOR"/>
+	<asset name="Highly Educated" type="MINOR"/>
+	<asset name="Intimidating Manner" type="MINOR"/>
+	<asset name="Leadership" type="BOTH"/>
+	<asset name="Lightnin' Reflexes" type="MAJOR"/>
+	<asset name="Math Whiz" type="MINOR"/>
+	<asset name="Mean Left Hook" type="MINOR"/>
+	<asset name="Mechanical Empathy" type="MINOR"/>
+	<asset name="Military Rank" type="MINOR"/>
+	<asset name="Moneyed Individual" type="MAJOR"/>
+	<asset name="Natural Linguist" type="MAJOR"/>
+	<asset name="Nature Lover" type="MINOR"/>
+	<asset name="Nose for Trouble" type="BOTH"/>
+	<asset name="Reader" type="BOTH"/>
+	<asset name="Registered Companion" type="MINOR"/>
+	<asset name="Religiosity" type="BOTH"/>
+	<asset name="Sharp Sense" type="MINOR" focus="Smell|Touch|Sight|Taste|Hearing"/>
+	<asset name="Steady Calm" type="BOTH"/>
+	<asset name="Sweet and Cheerful" type="MINOR"/>
+	<asset name="Talented" type="BOTH" skill="any"/>
+	<asset name="Things Go Smooth" type="BOTH"/>
+	<asset name="Total Recall" type="MAJOR"/>
+	<asset name="Tough as Nails" type="BOTH"/>
+	<asset name="Trustworthy Gut" type="BOTH"/>
+	<asset name="Two-Fisted" type="MAJOR"/>
+	<asset name="Walking Timepiece" type="MINOR"/>
+	<asset name="Wears a Badge" type="BOTH"/>
+</assets>

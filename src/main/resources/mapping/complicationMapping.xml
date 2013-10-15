@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapping PUBLIC "-//EXOLAB/Castor Mapping DTD Version 1.0//EN"
+                        "http://castor.org/mapping.dtd">
+<mapping>
+   <class name="uk.lug.serenity.npc.model.traits.Trait">
+      <map-to xml="complication"/>
+      <field name="name" type="java.lang.String">
+         <bind-xml name="name" node="attribute" />
+      </field>
+      <field name="type" type="java.lang.String" get-method="getTypeString"  set-method="setType">
+      	<bind-xml name="type" node="attribute"/>
+      </field>
+      <field name="skill" type="java.lang.String" get-method="getSkillAttribute"  set-method="setSkillAttribute">
+      	<bind-xml name="skill" node="attribute"/>
+      </field>
+      <field name="focus" type="java.lang.String" get-method="getFocusAttribute"  set-method="setFocusAttribute">
+      	<bind-xml name="focus" node="attribute"/>
+      </field>
+      <field name="description" type="java.lang.String">
+         <bind-xml name="description" node="element" />
+      </field>
+   </class>
+</mapping>

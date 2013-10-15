@@ -1,0 +1,29 @@
+<gridBagLayout>
+	<component name="text.label">
+		<grid x="0" y="0" width="1" height="1" />
+		<resize fill="NONE" anchor="WEST" weightx="1.0" weighty="0.0" />
+		<insets top="2" left="2" right="10" bottom="2" />
+		<ipad x="0" y="0" />
+	</component>
+	<component name="minus.button">
+		<grid x="1" y="0" width="1" height="1" />
+		<resize fill="NONE" anchor="CENTER" weightx="0" weighty="0.0" />
+		<insets top="2" left="2" right="2" bottom="2" />
+		<ipad x="0" y="0" />
+	</component>
+	<component name="value.label">
+		<grid x="2" y="0" width="1" height="1" />
+		<resize fill="HORIZONTAL" anchor="CENTER" weightx="0" weighty="0.0" />
+		<insets top="2" left="5" right="5" bottom="2" />
+		<ipad x="0" y="0" />
+	</component>
+	<component name="plus.button">
+		<grid x="3" y="0" width="1" height="1" />
+		<resize fill="NONE" anchor="CENTER" weightx="0" weighty="0.0" />
+		<insets top="2" left="2" right="2" bottom="2" />
+		<ipad x="0" y="0" />
+	</component>
+
+
+
+</gridBagLayout>

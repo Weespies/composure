@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="complications">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="complication" type="trait" minOccurs="1" maxOccurs="unbounded"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	
+	<xsd:complexType name="trait">	
+		<xsd:attribute name="name" use="required"/>
+		<xsd:attribute name="focus" use="optional"/>
+		<xsd:attribute name="skill" use="optional"/>
+		<xsd:attribute name="type" use="required">
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:string">
+					<xsd:enumeration value="MAJOR" />
+					<xsd:enumeration value="MINOR" />
+					<xsd:enumeration value="BOTH" />
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:attribute>
+		
+	</xsd:complexType>
+	
+</xsd:schema>

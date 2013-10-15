@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="meleeList">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="melee" type="melee" minOccurs="0"
+					maxOccurs="unbounded" />
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+
+	<xsd:complexType name="melee">
+		<xsd:attribute name="name" type="xsd:string" use="required"/>
+		<xsd:attribute name="cost" type="xsd:float" use="optional"/>
+		<xsd:attribute name="weight" type="xsd:float" use="optional"/>
+		<xsd:attribute name="type" type="xsd:string" use="required"/>
+		<xsd:attribute name="damage" type="xsd:string" use="required"/>
+		<xsd:attribute name="skill" type="xsd:string" use="optional"/>
+		<xsd:attribute name="availability">
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:string">
+					<xsd:enumeration value="E" />
+					<xsd:enumeration value="C" />
+					<xsd:enumeration value="R" />
+					<xsd:enumeration value="I" />
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:attribute>
+	</xsd:complexType>
+	
+</xsd:schema>

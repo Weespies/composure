@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<complications xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="complications.xsd">
+	<complication name="Allergy" type="BOTH" focus="any"/>
+	<complication name="Amorous" type="MINOR"/>
+	<complication name="Amputee" type="MINOR" focus="left arm|right arm|left leg|right leg"/>
+	<complication name="Bleeder" type="MAJOR"/>
+	<complication name="Blind" type="MAJOR"/>
+	<complication name="Branded" type="BOTH"/>
+	<complication name="Chip on the Shoulder" type="BOTH"/>
+	<complication name="Combat Paralysis" type="BOTH"/>
+	<complication name="Coward" type="MINOR"/>
+	<complication name="Credo" type="BOTH"/>
+	<complication name="Crude" type="MINOR"/>
+	<complication name="Dead Broke" type="MINOR"/>
+	<complication name="Deadly Enemy" type="MINOR"/>
+	<complication name="Deaf" type="MAJOR"/>
+	<complication name="Dull Sense" type="MINOR" focus="Smell|Touch|Sight|Taste|Hearing"/>
+	<complication name="Ego Signature" type="MINOR"/>
+	<complication name="Filcher" type="MINOR"/>
+	<complication name="Forked Tongue" type="MINOR"/>
+	<complication name="Greedy" type="MINOR"/>
+	<complication name="Hero Worship" type="MINOR"/>
+	<complication name="Hooked" type="BOTH" focus="any"/>
+	<complication name="Leaky Brainpan" type="BOTH"/>
+	<complication name="Lightweight" type="MINOR"/>
+	<complication name="Little Person" type="MINOR"/>
+	<complication name="Loyal" type="MINOR"/>
+	<complication name="Memorable" type="MINOR"/>
+	<complication name="Mute" type="MAJOR"/>
+	<complication name="Non-Fightin' Type" type="MINOR"/>
+	<complication name="Overconfident" type="MINOR"/>
+	<complication name="Paralyzed" type="MAJOR"/>
+	<complication name="Phobia" type="MINOR" focus="any"/>
+	<complication name="Portly" type="BOTH"/>
+	<complication name="Prejudiced" type="BOTH" focus="any"/>
+	<complication name="Sadistic" type="MAJOR"/>
+	<complication name="Scrawny" type="MINOR"/>
+	<complication name="Slow Learner" type="MINOR"/>
+	<complication name="Soft" type="MINOR"/>
+	<complication name="Stingy" type="MINOR"/>
+	<complication name="Straight Shooter" type="MINOR"/>
+	<complication name="Superstitious" type="MINOR"/>
+	<complication name="Things Don't Go Smooth" type="BOTH"/>
+	<complication name="Traumatic Flashes" type="BOTH"/>
+	<complication name="Twitchy" type="MINOR"/>
+	<complication name="Ugly as Sin" type="BOTH"/>
+	<complication name="Weak Stomach" type="BOTH"/>
+</complications>

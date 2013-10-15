@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<skills xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="skills.xsd">        
+	<skill name="Animal Handling">
+		<specialty child="Animal Training"/>
+		<specialty child="Riding"/>
+		<specialty child="Vetinary"/>
+		<specialty child="Zoology"/>
+	</skill>
+	<skill name="Artistry">
+		<specialty child="Appraisal"/>
+		<specialty child="Cooking"/>
+		<specialty child="Forgery"/>
+		<specialty child="Game Designing"/>
+		<specialty child="Painting"/>
+		<specialty child="Photography"/>
+		<specialty child="Poetry"/>
+		<specialty child="Sculpting"/>
+		<specialty child="Writing"/>
+	</skill>
+	<skill name="Athletics">
+		<specialty child="Climbing"/>
+		<specialty child="Contortion"/>
+		<specialty child="Dodge"/>
+		<specialty child="Juggling"/>
+		<specialty child="Jumping"/>
+		<specialty child="Gymnastics"/>
+		<specialty child="Parachuting"/>
+		<specialty child="Parasailing"/>
+		<specialty child="Pole Vaulting"/>
+		<specialty child="Riding"/>
+		<specialty child="Running"/>
+		<specialty child="Swimming"/>
+		<specialty child="Weight Lifting"/>
+	</skill>
+	<skill name="Covert">
+		<specialty child="Camoflauge"/>
+		<specialty child="Disable Devices"/>
+		<specialty child="Forgery"/>
+		<specialty child="Infiltration"/>
+		<specialty child="Open Locks"/>
+		<specialty child="Sabotage"/>
+		<specialty child="Sleight of Hand"/>
+		<specialty child="Stealth"/>
+		<specialty child="Streetwise"/>
+		<specialty child="Surveillance"/>
+	</skill>
+	<skill name="Craft">
+		<specialty child="Architecture"/>
+		<specialty child="Blacksmithing"/>
+		<specialty child="Carpentry"/>
+		<specialty child="Cooking"/>
+		<specialty child="Leatherworking"/>
+		<specialty child="Metalworking"/>
+		<specialty child="Pottery"/>
+		<specialty child="Sewing"/>
+	</skill>
+	<skill name="Discipline">
+		<specialty child="Concentration"/>
+		<specialty child="Interrogation"/>
+		<specialty child="Intimidation"/>
+		<specialty child="Leadership"/>
+		<specialty child="Mental Resistance"/>
+		<specialty child="Morale"/>
+	</skill>
+	<skill name="Guns">
+		<specialty child="Assault Rifles"/>
+		<specialty child="Energy Weapons"/>
+		<specialty child="Grenade Launchers"/>
+		<specialty child="Gunsmithing"/>
+		<specialty child="Machine Guns"/>
+		<specialty child="Pistols"/>
+		<specialty child="Rifles"/>
+		<specialty child="Shotguns"/>
+	</skill>
+	<skill name="Heavy Weapons">
+		<specialty child="Artillery"/>
+		<specialty child="Catapults"/>
+		<specialty child="Demolitions"/>
+		<specialty child="Forward Observer"/>
+		<specialty child="Mounted Guns"/>
+		<specialty child="Repair Heavy Weapons"/>
+		<specialty child="Rocket Launchers"/>
+		<specialty child="Ships Cannons"/>
+		<specialty child="Siege Weapons"/>
+	</skill>
+	<skill name="Influence">
+		<specialty child="Administration"/>
+		<specialty child="Barter"/>
+		<specialty child="Bureaucracy"/>
+		<specialty child="Conversation"/>
+		<specialty child="Counseling"/>
+		<specialty child="Interrogation"/>
+		<specialty child="Intimidation"/>
+		<specialty child="Leadership"/>
+		<specialty child="Marketing"/>
+		<specialty child="Persuasion"/>
+		<specialty child="Politics"/>
+		<specialty child="Seduction"/>
+		<specialty child="Streetwise"/>
+	</skill>
+	<skill name="Knowledge">
+		<specialty child="Appraisal"/>
+		<specialty child="Cultures"/>
+		<specialty child="History"/>
+		<specialty child="Law"/>
+		<specialty child="Literature"/>
+		<specialty child="Philosophy"/>
+		<specialty child="Religion"/>
+		<specialty child="Sports"/>
+	</skill>
+	<skill name="Linguist" skilledOnly="yes">
+		<specialty child="Arabic"/>
+		<specialty child="Armenian"/>
+		<specialty child="French"/>
+		<specialty child="German"/>
+		<specialty child="Hindu"/>
+		<specialty child="Japanese"/>
+		<specialty child="Latin"/>
+		<specialty child="Portuguese"/>
+		<specialty child="Russian"/>
+		<specialty child="Tagalog"/>
+		<specialty child="Swahili"/>
+		<specialty child="Swedish"/>
+	</skill>
+	<skill name="Mechanical Engineering" skilledOnly="yes">
+		<specialty child="Create Mechanical Devices"/>
+		<specialty child="Machinery Maintenance"/>
+		<specialty child="Mechanical Repairs"/>
+		<specialty child="Fix Mechanical Security Systems"/>
+		<specialty child="Plumbing"/>
+	</skill>
+	<skill name="Medical Expertise" skilledOnly="yes">
+		<specialty child="Dentistry"/>
+		<specialty child="First Aid"/>
+		<specialty child="Field Medic"/>
+		<specialty child="Forensics"/>
+		<specialty child="General Practice"/>
+		<specialty child="Genetics"/>
+		<specialty child="Internal Medicine"/>
+		<specialty child="Neurology"/>
+		<specialty child="Pharmaceuticals"/>
+		<specialty child="Physiology"/>
+		<specialty child="Psychiatry"/>
+		<specialty child="Rehabilitation"/>
+		<specialty child="Surgery"/>
+		<specialty child="Toxicology"/>
+		<specialty child="Vetinary Medicine"/>
+	</skill>
+	<skill name="Melee Weapon Combat">
+		<specialty child="Clubs"/>
+		<specialty child="Knives"/>
+		<specialty child="Melee Weaponsmithing"/>
+		<specialty child="Nunchaku"/>
+		<specialty child="Pole Arms"/>
+		<specialty child="Swords"/>
+		<specialty child="Whips"/>
+	</skill>
+	<skill name="Perception">
+		<specialty child="Deduction"/>
+		<specialty child="Empathy"/>
+		<specialty child="Gambling"/>
+		<specialty child="Hearing"/>
+		<specialty child="Intuition"/>
+		<specialty child="Investigation"/>
+		<specialty child="Read Lips"/>
+		<specialty child="Search"/>
+		<specialty child="Sight"/>
+		<specialty child="Smell"/>
+		<specialty child="Tactics"/>
+		<specialty child="Taste"/>
+		<specialty child="Tracking"/>
+	</skill>
+	<skill name="Performance">
+		<specialty child="Acting"/>
+		<specialty child="Costuming"/>
+		<specialty child="Dancing"/>
+		<specialty child="Impersonation"/>
+		<specialty child="Keyboard Instruments"/>
+		<specialty child="Mimicry"/>
+		<specialty child="Oratory"/>
+		<specialty child="Percussion Instruments"/>
+		<specialty child="Rock and Roll"/>
+		<specialty child="Singing"/>
+		<specialty child="Stringed Instruments"/>
+		<specialty child="Wind Instruments"/>
+	</skill>
+	<skill name="Pilot" skilledOnly="yes">
+		<specialty child="Aerial Navigation"/>
+		<specialty child="Astrogation"/>
+		<specialty child="Astronomy"/>
+		<specialty child="Astrophysics"/>
+		<specialty child="Gunships"/>
+		<specialty child="Hang Gliders"/>
+		<specialty child="Large Cruisers"/>
+		<specialty child="Mid Bulk Transport"/>
+		<specialty child="Patrol Vessels"/>
+		<specialty child="Rocket Shuttles"/>
+		<specialty child="Space Survival"/>
+		<specialty child="Tankers"/>
+		<specialty child="Ultralight Aircraft"/>
+		<specialty child="VTOL Tilt Rotor"/>
+	</skill>
+	<skill name="Planetary Vehicle">
+		<specialty child="Aquatic Navigation"/>
+		<specialty child="Bikes"/>
+		<specialty child="Canoes"/>
+		<specialty child="Cars"/>
+		<specialty child="Equestrian"/>
+		<specialty child="Ground Vehicle Repair"/>
+		<specialty child="Horse Drawn Conveyances"/>
+		<specialty child="Hovercraft"/>
+		<specialty child="Industrial Vehicles"/>
+		<specialty child="Land Navigation"/>
+		<specialty child="Large Ground Transports"/>
+		<specialty child="Military Combat Vehicles"/>
+		<specialty child="Powerboats"/>
+		<specialty child="Sailing"/>
+		<specialty child="Submarines"/>
+	</skill>
+	<skill name="Ranged Weapons">
+		<specialty child="Blowguns"/>
+		<specialty child="Bows"/>
+		<specialty child="Crossbows"/>
+		<specialty child="Darts"/>
+		<specialty child="Grenades"/>
+		<specialty child="Javelin"/>
+		<specialty child="Ranged Weaponsmithing"/>
+		<specialty child="Slings"/>
+		<specialty child="Throwing Axes"/>
+		<specialty child="Throwing Knives"/>
+	</skill>
+	<skill name="Scientific Expertise" skilledOnly="yes">
+		<specialty child="Earth Sciences"/>
+		<specialty child="Historical Sciences"/>
+		<specialty child="Life Sciences"/>
+		<specialty child="Mathematical Sciences"/>
+	</skill>
+	<skill name="Survival">
+		<specialty child="Aerial"/>
+		<specialty child="Aquatic"/>
+		<specialty child="Generical Navigation"/>
+		<specialty child="Land Survival"/>
+		<specialty child="Nature"/>
+		<specialty child="Space"/>
+	</skill>
+	<skill name="Technical Engineering" skilledOnly="yes">
+		<specialty child="Communications Systems"/>
+		<specialty child="Computer Systems"/>
+		<specialty child="Hacking"/>
+		<specialty child="Create/Alter Technical Devices"/>
+		<specialty child="Demolitions"/>
+		<specialty child="Electronics"/>
+		<specialty child="Technical Repair"/>
+		<specialty child="Technical Security Systems"/>
+	</skill>
+	<skill name="Unarmed Combat">
+		<specialty child="Boxing"/>
+		<specialty child="Brawling"/>
+		<specialty child="Judo"/>
+		<specialty child="Karate"/>
+		<specialty child="Kung Fu"/>
+		<specialty child="Savate"/>
+		<specialty child="Wrestling"/>
+	</skill>
+</skills>

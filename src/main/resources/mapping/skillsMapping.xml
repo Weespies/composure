@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"  standalone="yes"?>
+<!DOCTYPE mapping PUBLIC "-//EXOLAB/Castor Mapping DTD Version 1.0//EN"
+                        "http://castor.org/mapping.dtd">
+<mapping>
+   <class name="uk.lug.serenity.npc.model.skills.Skill">
+      <map-to xml="skill"/>
+      <field name="name" type="java.lang.String">
+         <bind-xml name="name" node="attribute" />
+      </field>
+      <field name="skilledOnly" type="java.lang.Boolean">
+      	<bind-xml name="skilledOnly" node="attribute"/>
+      </field>
+
+      <field name="specialtyList"
+      	type="uk.lug.serenity.npc.model.skills.Specialty"
+      	collection="arraylist">
+      	<bind-xml name="specialty" />
+      </field>
+   </class>
+   <class name="uk.lug.serenity.npc.model.skills.Specialty">
+      <map-to xml="specialty"/>
+      <field name="name" type="java.lang.String" >
+         <bind-xml name="child" node="attribute" />
+      </field>
+   </class>
+
+</mapping>

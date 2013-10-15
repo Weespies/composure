@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<explosivesList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="explosives.xsd">
+	<explosive name="ChemPlast (CP-HE)" damage="3d12 W" range="5" cost="6" weight="1" availability="I" type="Explosive" />
+	<explosive name="Grenade, Concussion" damage="4d6 B" range="10" cost="1.4" weight="1" availability="I" type="Explosive" />
+	<explosive name="Grenade, Flashbang" damage="2d6 B" range="5" cost="0.8" weight="1" availability="I" type="Explosive" />
+	<explosive name="Grenade, Fragmentation" damage="5d6 W" range="15" cost="1.8" weight="1" availability="I" type="Explosive" />
+	<explosive name="Grenade, Smoke" damage="d4 S" range="20" cost=".6" weight="1" availability="C" type="Explosive" />
+	<explosive name="Grenade, Gas" damage="3d6 S" range="5" cost="1.2" weight="1" availability="I" type="Explosive" />
+	<explosive name="Mining Charge" damage="5d10 B" range="2" cost="20" weight="5" availability="E" type="Explosive" />
+	<explosive name="Seeker Missile" damage="2d8 W" range="5" cost="95" weight="4" availability="I" type="Explosive" />
+	<explosive name="Squadkiller" damage="4d12W" range="15" cost="48" weight="8" availability="I" type="Explosive" />
+
+	<explosive name="ChemPlast (CP-HE)" damage="3d12 W" range="5" cost="6" weight="1" availability="I" type="Explosive" />
+</explosivesList>

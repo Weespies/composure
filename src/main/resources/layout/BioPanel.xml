@@ -1,0 +1,121 @@
+<gridBagLayout>
+	<component name="name.label">
+		<grid x="0" y="0" width="1" height="1" />
+		<resize fill="NONE" anchor="WEST" weightx="0" weighty="0.0" />
+		<insets top="2" left="2" right="2" bottom="2" />
+		<ipad x="0" y="0" />
+	</component>
+	<component name="name.field">
+		<grid x="1" y="0" width="3" height="1" />
+		<resize fill="HORIZONTAL" anchor="WEST" weightx="1" weighty="0.0" />
+		<insets top="2" left="2" right="2" bottom="2" />
+		<ipad x="0" y="0" />
+	</component>
+
+	<component name="random.button">
+		<grid x="20" y="0" width="1" height="3" />
+		<resize fill="BOTH" anchor="EAST" weightx="0" weighty="0.0" />
+		<insets top="2" left="2" right="15" bottom="2" />
+		<ipad x="0" y="0" />
+	</component>
+	<component name="clear.button">
+		<grid x="20" y="3" width="1" height="3" />
+		<resize fill="BOTH" anchor="NORTH" weightx="0" weighty="0.0" />
+		<insets top="2" left="2" right="15" bottom="2" />
+		<ipad x="0" y="0" />
+	</component>
+
+	<component name="profile.label">
+		<grid x="2" y="1" width="1" height="1" />
+		<resize fill="NONE" anchor="WEST" weightx="0" weighty="0.0" />
+		<insets top="2" left="2" right="2" bottom="2" />
+		<ipad x="0" y="0" />
+	</component>
+	<component name="profile.combo">
+		<grid x="3" y="1" width="1" height="1" />
+		<resize fill="NONE" anchor="WEST" weightx="0" weighty="0.0" />
+		<insets top="2" left="2" right="15" bottom="2" />
+		<ipad x="0" y="0" />
+	</component>
+
+	<component name="level.label">
+		<grid x="0" y="1" width="1" height="1" />
+		<resize fill="NONE" anchor="WEST" weightx="0" weighty="0.0" />
+		<insets top="2" left="2" right="2" bottom="2" />
+		<ipad x="0" y="0" />
+	</component>
+	<component name="level.combo">
+		<grid x="1" y="1" width="1" height="1" />
+		<resize fill="NONE" anchor="WEST" weightx="0" weighty="0.0" />
+		<insets top="2" left="2" right="15" bottom="2" />
+		<ipad x="0" y="0" />
+	</component>	
+
+	<component name="skillpoints.label">
+		<grid x="2" y="2" width="1" height="1" />
+		<resize fill="NONE" anchor="WEST" weightx="0" weighty="0.0" />
+		<insets top="2" left="2" right="2" bottom="2" />
+		<ipad x="0" y="0" />
+	</component>
+	<component name="skillpoints.field">
+		<grid x="3" y="2" width="1" height="1" />
+		<resize fill="NONE" anchor="WEST" weightx="0" weighty="0.0" />
+		<insets top="2" left="2" right="15" bottom="2" />
+		<ipad x="0" y="0" />
+	</component>
+
+	<component name="money.label">
+		<grid x="0" y="3" width="1" height="1" />
+		<resize fill="NONE" anchor="WEST" weightx="0" weighty="0.0" />
+		<insets top="2" left="2" right="2" bottom="2" />
+		<ipad x="0" y="0" />
+	</component>
+	<component name="money.field">
+		<grid x="1" y="3" width="1" height="1" />
+		<resize fill="NONE" anchor="WEST" weightx="0" weighty="0.0" />
+		<insets top="2" left="2" right="15" bottom="2" />
+		<ipad x="0" y="0" />
+	</component>
+
+	<component name="gender.label">
+		<grid x="2" y="3" width="1" height="1" />
+		<resize fill="NONE" anchor="WEST" weightx="0" weighty="0.0" />
+		<insets top="2" left="2" right="2" bottom="2" />
+		<ipad x="0" y="0" />
+	</component>
+	<component name="gender.panel">
+		<grid x="3" y="3" width="2" height="1" />
+		<resize fill="NONE" anchor="WEST" weightx="0" weighty="0.0" />
+		<insets top="2" left="2" right="2" bottom="2" />
+		<ipad x="0" y="0" />
+	</component>
+
+	<component name="statpoints.label">
+		<grid x="0" y="2" width="1" height="1" />
+		<resize fill="NONE" anchor="WEST" weightx="0" weighty="0.0" />
+		<insets top="2" left="2" right="2" bottom="2" />
+		<ipad x="0" y="0" />
+	</component>
+	<component name="statpoints.field">
+		<grid x="1" y="2" width="1" height="1" />
+		<resize fill="NONE" anchor="WEST" weightx="0" weighty="0.0" />
+		<insets top="2" left="2" right="15" bottom="2" />
+		<ipad x="0" y="0" />
+	</component>
+
+	<component name="personality.label">
+		<grid x="0" y="4" width="1" height="1" />
+		<resize fill="NONE" anchor="WEST" weightx="0" weighty="0.0" />
+		<insets top="2" left="2" right="2" bottom="2" />
+		<ipad x="0" y="0" />
+	</component>
+	<component name="personality.field">
+		<grid x="1" y="4" width="4" height="1" />
+		<resize fill="HORIZONTAL" anchor="WEST" weightx="0" weighty="0.0" />
+		<insets top="2" left="2" right="15" bottom="2" />
+		<ipad x="0" y="0" />
+	</component>
+	
+
+
+</gridBagLayout>

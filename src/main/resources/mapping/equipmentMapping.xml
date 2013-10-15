@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"  standalone="yes"?>
+<!DOCTYPE mapping PUBLIC "-//EXOLAB/Castor Mapping DTD Version 1.0//EN"
+                        "http://castor.org/mapping.dtd">
+<mapping>
+   <class name="uk.lug.serenity.npc.model.equipment.Equipment">
+      <map-to xml="equipment"/>
+      <field name="name" type="java.lang.String">
+         <bind-xml name="name" node="attribute" />
+      </field>
+      <field name="cost" type="java.lang.Double">
+      	<bind-xml name="cost" node="attribute"/>
+      </field>
+      <field name="weight" type="java.lang.Double">
+      	<bind-xml name="weight" node="attribute"/>
+      </field>
+      <field name="type" type="java.lang.String" handler="uk.lug.serenity.npc.model.equipment.EquipmentTypeFieldHandler">
+         <bind-xml name="type" node="attribute" />
+      </field>
+      <field name="availability" type="java.lang.String" handler="uk.lug.serenity.npc.model.equipment.AvailabilityFieldHandler">
+         <bind-xml name="availability" node="attribute" />
+      </field>
+   </class>
+   
+</mapping>
