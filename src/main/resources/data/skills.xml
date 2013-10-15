@@ -110,7 +110,7 @@
 		<specialty child="Religion"/>
 		<specialty child="Sports"/>
 	</skill>
-	<skill name="Linguist" skilledOnly="yes">
+	<skill name="Linguist" skilledOnly="true">
 		<specialty child="Arabic"/>
 		<specialty child="Armenian"/>
 		<specialty child="French"/>
@@ -124,14 +124,14 @@
 		<specialty child="Swahili"/>
 		<specialty child="Swedish"/>
 	</skill>
-	<skill name="Mechanical Engineering" skilledOnly="yes">
+	<skill name="Mechanical Engineering" skilledOnly="true">
 		<specialty child="Create Mechanical Devices"/>
 		<specialty child="Machinery Maintenance"/>
 		<specialty child="Mechanical Repairs"/>
 		<specialty child="Fix Mechanical Security Systems"/>
 		<specialty child="Plumbing"/>
 	</skill>
-	<skill name="Medical Expertise" skilledOnly="yes">
+	<skill name="Medical Expertise" skilledOnly="true">
 		<specialty child="Dentistry"/>
 		<specialty child="First Aid"/>
 		<specialty child="Field Medic"/>
@@ -186,7 +186,7 @@
 		<specialty child="Stringed Instruments"/>
 		<specialty child="Wind Instruments"/>
 	</skill>
-	<skill name="Pilot" skilledOnly="yes">
+	<skill name="Pilot" skilledOnly="true">
 		<specialty child="Aerial Navigation"/>
 		<specialty child="Astrogation"/>
 		<specialty child="Astronomy"/>
@@ -231,7 +231,7 @@
 		<specialty child="Throwing Axes"/>
 		<specialty child="Throwing Knives"/>
 	</skill>
-	<skill name="Scientific Expertise" skilledOnly="yes">
+	<skill name="Scientific Expertise" skilledOnly="true">
 		<specialty child="Earth Sciences"/>
 		<specialty child="Historical Sciences"/>
 		<specialty child="Life Sciences"/>
@@ -245,7 +245,7 @@
 		<specialty child="Nature"/>
 		<specialty child="Space"/>
 	</skill>
-	<skill name="Technical Engineering" skilledOnly="yes">
+	<skill name="Technical Engineering" skilledOnly="true">
 		<specialty child="Communications Systems"/>
 		<specialty child="Computer Systems"/>
 		<specialty child="Hacking"/>
