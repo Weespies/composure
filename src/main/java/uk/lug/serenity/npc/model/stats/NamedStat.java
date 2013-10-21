@@ -3,6 +3,7 @@
  */
 package uk.lug.serenity.npc.model.stats;
 
+import java.io.Serializable;
 import java.util.LinkedList;
 
 import org.apache.commons.lang.StringUtils;
@@ -24,7 +25,8 @@ import uk.lug.serenity.npc.model.event.StatChangeListener;
  * @author Luggy
  *
  */
-public class NamedStat extends StepStat {
+public class NamedStat extends StepStat implements Serializable {
+	private static final long serialVersionUID = 1l;
 	public static final String XML_KEY="stat";
 	private String name = "Unnamed Stat";
 	private String abbrevation = "N/A";

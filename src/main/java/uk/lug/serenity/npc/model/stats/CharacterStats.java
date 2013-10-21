@@ -5,6 +5,7 @@ package uk.lug.serenity.npc.model.stats;
 
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;
+import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Set;
 
@@ -25,7 +26,9 @@ import uk.lug.util.JDOMUtils;
  * @author Luggy
  *
  */
-public class CharacterStats implements StatChangeListener {
+public class CharacterStats implements StatChangeListener,Serializable {
+	private static final long serialVersionUID = 1l;
+
 	public static final String XML_KEY ="mainStats";
 
 	public HashMap<String, NamedStat> mainStats;

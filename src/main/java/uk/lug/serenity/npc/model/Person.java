@@ -7,6 +7,7 @@ import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;
 import java.io.IOException;
+import java.io.Serializable;
 import java.io.StringWriter;
 
 import javax.swing.event.DocumentEvent;
@@ -53,7 +54,8 @@ import uk.lug.util.RandomFactory;
  * @author Luggy
  *
  */
-public class Person implements ListDataListener, DocumentListener {
+public class Person implements ListDataListener, DocumentListener,Serializable {
+	private static final long serialVersionUID = 1l;
 	private static final String INFO_PROPERTY = "Info";
 	public static final String PROPERTY_STAT_POINTS="statpoints";
 	public static final String PROPERTY_SKILL_POINTS="skillpoints";
@@ -84,7 +86,6 @@ public class Person implements ListDataListener, DocumentListener {
 	
 	private int level = LEVEL_GREENHORN;
 	private boolean male=true;
-//	private String name ;
 	private String femaleName;
 	private String maleName;
 	private String personalityTemplate;

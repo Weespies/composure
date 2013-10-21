@@ -3,6 +3,8 @@
  */
 package uk.lug.serenity.npc.model.stats;
 
+import java.io.Serializable;
+
 /**
  * $Id$
  * @version $Revision$
@@ -14,7 +16,8 @@ package uk.lug.serenity.npc.model.stats;
  * @author Luggy
  *
  */
-public class StepStat {
+public class StepStat implements Serializable {
+	private static final long serialVersionUID = 1l;
 	
 	public static final int MINIMUM = 4;
 
