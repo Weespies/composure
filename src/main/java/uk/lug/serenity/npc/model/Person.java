@@ -66,6 +66,7 @@ public class Person implements ListDataListener, DocumentListener,Serializable {
 	public static final String PROPERTY_STARTING_MONEY= "startingmoney";
 	public static final String PROPERTY_CURRENT_MONEY= "currentmoney";
 	public static final String PROPERTY_PERSONALITY= "currentmoney";
+	public static final String PROPERTY_ARCHETYPE= "archetype";
 	
 	public static final int LEVEL_GREENHORN = 1;
 	public static final int LEVEL_VETERAN = 2;
@@ -94,6 +95,7 @@ public class Person implements ListDataListener, DocumentListener,Serializable {
 	private DerivedStat life;
 	private TraitList assets;
 	private TraitList complications;
+	private String archetypeName;
 	private int startingPoints = ATTRIBUTE_POINTS_GREENHORN;
 	private int currentPoints = ATTRIBUTE_POINTS_GREENHORN;
 	private SkillSheet skillSheet;
@@ -242,6 +244,7 @@ public class Person implements ListDataListener, DocumentListener,Serializable {
 		Element xml = new Element("serenityCharacter");
 		xml.setAttribute("maleName", maleName );
 		xml.setAttribute("femaleName", femaleName );
+		xml.setAttribute("archetype",archetypeName);
 		xml.addContent( mainStats.getXML() );
 		
 		xml.addContent( getTraitXML( "assets", assets) );
@@ -318,6 +321,7 @@ public class Person implements ListDataListener, DocumentListener,Serializable {
 			//New dual name system
 			femaleName = xml.getAttributeValue("femaleName");
 			maleName = xml.getAttributeValue("maleName");
+			archetypeName = xml.getAttributeValue("archetype", "");
 		} else {
 			//Old system, use the gender name and make up the other one.
 			if ( isMale() ) {
@@ -1334,6 +1338,16 @@ public class Person implements ListDataListener, DocumentListener,Serializable {
 	 */
 	public void removeUpdate(DocumentEvent e) {
 		propertySupport.firePropertyChange( INFO_PROPERTY, "", info );
+	}
+
+	public String getArchetypeName() {
+		return archetypeName;
+	}
+
+	public void setArchetypeName(String archetypeName) {
+		String oldArchetype = this.archetypeName;
+		this.archetypeName = archetypeName;
+		propertySupport.firePropertyChange(archetypeName,oldArchetype,this.archetypeName);
 	}
 }
 

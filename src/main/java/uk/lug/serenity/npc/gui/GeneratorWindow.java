@@ -12,6 +12,8 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.sql.SQLException;
+import java.util.List;
 
 import javax.swing.AbstractAction;
 import javax.swing.Action;
@@ -33,6 +35,8 @@ import org.jdom.JDOMException;
 import org.jdom.input.SAXBuilder;
 import org.jdom.output.XMLOutputter;
 
+import uk.lug.dao.handlers.DatabaseSchema;
+import uk.lug.dao.records.PersonRecord;
 import uk.lug.data.DataModel;
 import uk.lug.data.DataModelListener;
 import uk.lug.gui.CachedImageLoader;
@@ -52,8 +56,7 @@ import uk.lug.serenity.npc.random.Generator;
 /**
  * @author Luggy
  */
-public class GeneratorWindow extends JMemoryFrame implements
-		DataModelListener<Person> {
+public class GeneratorWindow extends JMemoryFrame implements DataModelListener<Person> {
 	private static final long serialVersionUID = 1L;
 
 	public static final String FILE_EXTENSION = ".serenitynpc";
@@ -64,34 +67,25 @@ public class GeneratorWindow extends JMemoryFrame implements
 
 	private static final String FILECHOOSER_ASCII_OUT = "composureNPCASCII";
 
-	private static final Icon DICE_ICON = CachedImageLoader
-			.getCachedIcon("images/die_48.png");
+	private static final Icon DICE_ICON = CachedImageLoader.getCachedIcon("images/die_48.png");
 
-	private static final Icon CLEAR_CHARACTER_ICON = CachedImageLoader
-			.getCachedIcon("images/clearcharacter.png");
+	private static final Icon CLEAR_CHARACTER_ICON = CachedImageLoader.getCachedIcon("images/clearcharacter.png");
 
-	private static final Icon LOAD_ICON = CachedImageLoader
-			.getCachedIcon("images/document-open.png");
+	private static final Icon LOAD_ICON = CachedImageLoader.getCachedIcon("images/document-open.png");
 
-	private static final Icon SAVE_ICON = CachedImageLoader
-			.getCachedIcon("images/document-save.png");
+	private static final Icon SAVE_ICON = CachedImageLoader.getCachedIcon("images/document-save.png");
 
-	private static final Icon SAVE_AS_ICON = CachedImageLoader
-			.getCachedIcon("images/document-save-as.png");
+	private static final Icon SAVE_AS_ICON = CachedImageLoader.getCachedIcon("images/document-save-as.png");
 
-	private static final Icon SAVE_ASCII = CachedImageLoader
-			.getCachedIcon("images/document_text.png");
+	private static final Icon SAVE_ASCII = CachedImageLoader.getCachedIcon("images/document_text.png");
 
-	protected static final Cursor CURSOR_WAIT = Cursor
-			.getPredefinedCursor(Cursor.WAIT_CURSOR);
+	protected static final Cursor CURSOR_WAIT = Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR);
 
-	protected static final Cursor CURSOR_NORMAL = Cursor
-			.getPredefinedCursor(Cursor.DEFAULT_CURSOR);
+	protected static final Cursor CURSOR_NORMAL = Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR);
 
 	protected static final String ASCII_FILE_EXTENSION = ".txt";
 
-	private static final Icon ARCHETYPES_MANAGER_ICON = CachedImageLoader
-			.getCachedIcon("images/configure.png");
+	private static final Icon ARCHETYPES_MANAGER_ICON = CachedImageLoader.getCachedIcon("images/configure.png");
 
 	private JMenuBar menuBar;
 
@@ -140,9 +134,7 @@ public class GeneratorWindow extends JMemoryFrame implements
 
 		@Override
 		public boolean accept(File arg0) {
-			return (arg0.isFile() && arg0.getName().toLowerCase().endsWith(
-					FILE_EXTENSION))
-					|| (arg0.isDirectory());
+			return (arg0.isFile() && arg0.getName().toLowerCase().endsWith(FILE_EXTENSION)) || (arg0.isDirectory());
 		}
 
 		@Override
@@ -157,9 +149,7 @@ public class GeneratorWindow extends JMemoryFrame implements
 	private FileFilter asciiFileFilter = new FileFilter() {
 		@Override
 		public boolean accept(File arg0) {
-			return (arg0.isFile() && arg0.getName().toLowerCase().endsWith(
-					ASCII_FILE_EXTENSION))
-					|| (arg0.isDirectory());
+			return (arg0.isFile() && arg0.getName().toLowerCase().endsWith(ASCII_FILE_EXTENSION)) || (arg0.isDirectory());
 		}
 
 		@Override
@@ -197,8 +187,7 @@ public class GeneratorWindow extends JMemoryFrame implements
 	/**
 	 * Action invoked to show the archtypes manager.
 	 */
-	private Action archetypesManagerAction = new AbstractAction(
-			"Manage Archetypes", ARCHETYPES_MANAGER_ICON) {
+	private Action archetypesManagerAction = new AbstractAction("Manage Archetypes", ARCHETYPES_MANAGER_ICON) {
 		public void actionPerformed(ActionEvent ae) {
 			doShowArchtypesManager();
 		}
@@ -230,8 +219,7 @@ public class GeneratorWindow extends JMemoryFrame implements
 	/**
 	 * Action invoked to save a character always asking for a filename.
 	 */
-	private Action saveAsAction = new AbstractAction("Save Character As",
-			SAVE_AS_ICON) {
+	private Action saveAsAction = new AbstractAction("Save Character As", SAVE_AS_ICON) {
 		private static final long serialVersionUID = 1L;
 
 		public void actionPerformed(ActionEvent ae) {
@@ -242,8 +230,7 @@ public class GeneratorWindow extends JMemoryFrame implements
 	/**
 	 * Action invoked to export an ASCII version of this character.
 	 */
-	private Action outputAsciiAction = new AbstractAction("Output as ASCII",
-			SAVE_ASCII) {
+	private Action outputAsciiAction = new AbstractAction("Output as ASCII", SAVE_ASCII) {
 		private static final long serialVersionUID = 1L;
 
 		public void actionPerformed(ActionEvent ae) {
@@ -254,8 +241,7 @@ public class GeneratorWindow extends JMemoryFrame implements
 	/**
 	 * Action invoked to show the random passenger generator.
 	 */
-	private Action randomPassengerAction = new AbstractAction(
-			"Random Passenger Generator") {
+	private Action randomPassengerAction = new AbstractAction("Random Passenger Generator") {
 		private static final long serialVersionUID = 1L;
 
 		public void actionPerformed(ActionEvent ae) {
@@ -285,6 +271,7 @@ public class GeneratorWindow extends JMemoryFrame implements
 	 */
 	public GeneratorWindow(String windowTitle) {
 		super(windowTitle);
+
 		model = new DataModel<Person>();
 		model.addDataModelListener(this);
 		createGUI();
@@ -330,19 +317,23 @@ public class GeneratorWindow extends JMemoryFrame implements
 	}
 
 	protected void doShowArchtypesManager() {
-		if ( archetypeFrame==null ) {
-			archetypeFrame = new JMemoryFrame("Archetype control");	
+		if (archetypeFrame == null) {
+			archetypeFrame = new JMemoryFrame("Archetype control");
 		} else {
 			archetypeFrame.setVisible(true);
 		}
-		
+
 		archetypeFrame.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
 
 		final ArchetypeManagerPanel archetypesManager = new ArchetypeManagerPanel();
 		archetypeFrame.add(archetypesManager);
-		archetypeFrame.addWindowListener( new WindowAdapter() {
-			/* (non-Javadoc)
-			 * @see java.awt.event.WindowAdapter#windowClosing(java.awt.event.WindowEvent)
+		archetypeFrame.addWindowListener(new WindowAdapter() {
+			/*
+			 * (non-Javadoc)
+			 * 
+			 * @see
+			 * java.awt.event.WindowAdapter#windowClosing(java.awt.event.WindowEvent
+			 * )
 			 */
 			@Override
 			public void windowClosing(WindowEvent e) {
@@ -350,12 +341,16 @@ public class GeneratorWindow extends JMemoryFrame implements
 			}
 		});
 
-		JMenuBar menuBar = new JMenuBar(  );
-		menuBar.add( archetypesManager.getArchetypesMenu() );
-		archetypeFrame.setJMenuBar( menuBar );
-		archetypeFrame.addWindowListener( new WindowAdapter() {
-			/* (non-Javadoc)
-			 * @see java.awt.event.WindowAdapter#windowClosing(java.awt.event.WindowEvent)
+		JMenuBar menuBar = new JMenuBar();
+		menuBar.add(archetypesManager.getArchetypesMenu());
+		archetypeFrame.setJMenuBar(menuBar);
+		archetypeFrame.addWindowListener(new WindowAdapter() {
+			/*
+			 * (non-Javadoc)
+			 * 
+			 * @see
+			 * java.awt.event.WindowAdapter#windowClosing(java.awt.event.WindowEvent
+			 * )
 			 */
 			@Override
 			public void windowClosing(WindowEvent e) {
@@ -383,9 +378,7 @@ public class GeneratorWindow extends JMemoryFrame implements
 		// Set up the dialog
 		JMemoryFileChooser chooser = new JMemoryFileChooser();
 		chooser.setFileFilter(asciiFileFilter);
-		chooser
-				.setSelectedFile(new File(characterName()
-						+ ASCII_FILE_EXTENSION));
+		chooser.setSelectedFile(new File(characterName() + ASCII_FILE_EXTENSION));
 
 		// Call dialog
 		if (chooser.showSaveDialog(FILECHOOSER_ASCII_OUT, charPanel) != JFileChooser.APPROVE_OPTION) {
@@ -407,8 +400,7 @@ public class GeneratorWindow extends JMemoryFrame implements
 			StringBuilder msg = new StringBuilder();
 			msg.append("Unable to save file.\nSpecific Error : ");
 			msg.append(e.getMessage());
-			JOptionPane.showMessageDialog(charPanel, msg.toString(),
-					"IO Error", JOptionPane.ERROR_MESSAGE);
+			JOptionPane.showMessageDialog(charPanel, msg.toString(), "IO Error", JOptionPane.ERROR_MESSAGE);
 			return;
 		}
 	}
@@ -454,13 +446,11 @@ public class GeneratorWindow extends JMemoryFrame implements
 	 */
 	protected void doSaveCharacterAsLast() {
 		boolean notify = (lastSaveFile != null);
-		if (lastSaveFile == null
-				|| !StringUtils.equals(lastSaveName, characterName())) {
+		if (lastSaveFile == null || !StringUtils.equals(lastSaveName, characterName())) {
 			// Set up the dialog
 			JMemoryFileChooser chooser = new JMemoryFileChooser();
 			chooser.setFileFilter(characterFileFilter);
-			chooser.setSelectedFile(new File(model.getData().getName()
-					+ FILE_EXTENSION));
+			chooser.setSelectedFile(new File(model.getData().getName() + FILE_EXTENSION));
 
 			// Call dialog
 			if (chooser.showSaveDialog(FILECHOOSER_DATAFILE, charPanel) != JFileChooser.APPROVE_OPTION) {
@@ -472,20 +462,18 @@ public class GeneratorWindow extends JMemoryFrame implements
 
 		// Save it
 		try {
-			doSave(lastSaveFile);
+			doSaveXML(lastSaveFile);
 			if (notify) {
-				JOptionPane.showMessageDialog(charPanel, model.getData()
-						.getName()
-						+ " Saved", "Done", JOptionPane.INFORMATION_MESSAGE);
+				JOptionPane.showMessageDialog(charPanel, model.getData().getName() + " Saved", "Done", JOptionPane.INFORMATION_MESSAGE);
 			}
 			File asciiFile = replaceExtension(lastSaveFile, ".txt");
 			writeAscii(asciiFile);
+
 		} catch (IOException e) {
 			StringBuilder msg = new StringBuilder();
 			msg.append("Unable to save file.\nSpecific Error : ");
 			msg.append(e.getMessage());
-			JOptionPane.showMessageDialog(charPanel, msg.toString(),
-					"IO Error", JOptionPane.ERROR_MESSAGE);
+			JOptionPane.showMessageDialog(charPanel, msg.toString(), "IO Error", JOptionPane.ERROR_MESSAGE);
 			return;
 		}
 
@@ -498,8 +486,7 @@ public class GeneratorWindow extends JMemoryFrame implements
 		// Set up the dialog
 		JMemoryFileChooser chooser = new JMemoryFileChooser();
 		chooser.setFileFilter(characterFileFilter);
-		chooser.setSelectedFile(new File(model.getData().getName()
-				+ FILE_EXTENSION));
+		chooser.setSelectedFile(new File(model.getData().getName() + FILE_EXTENSION));
 
 		// Call dialog
 		if (chooser.showSaveDialog(FILECHOOSER_DATAFILE, charPanel) != JFileChooser.APPROVE_OPTION) {
@@ -513,16 +500,22 @@ public class GeneratorWindow extends JMemoryFrame implements
 		// Save it
 		try {
 			// Save as serenity npc
-			doSave(targetFile);
+			doSaveXML(targetFile);
 			lastSaveFile = targetFile;
 			lastSaveName = model.getData().getName();
 			writeAscii(targetAsciiFile);
+			PersonRecord record = PersonRecord.createFrom(model.getData());
+			try {
+				DatabaseSchema.getPersonDao().save(record);
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		} catch (IOException e) {
 			StringBuilder msg = new StringBuilder();
 			msg.append("Unable to save file.\nSpecific Error : ");
 			msg.append(e.getMessage());
-			JOptionPane.showMessageDialog(charPanel, msg.toString(),
-					"IO Error", JOptionPane.ERROR_MESSAGE);
+			JOptionPane.showMessageDialog(charPanel, msg.toString(), "IO Error", JOptionPane.ERROR_MESSAGE);
 			return;
 		}
 	}
@@ -532,10 +525,9 @@ public class GeneratorWindow extends JMemoryFrame implements
 	 * 
 	 * @param selectedFile
 	 */
-	private void doSave(File selectedFile) throws IOException {
+	private void doSaveXML(File selectedFile) throws IOException {
 		Element xml = model.getData().getXML();
-		XMLOutputter output = new XMLOutputter(org.jdom.output.Format
-				.getPrettyFormat());
+		XMLOutputter output = new XMLOutputter(org.jdom.output.Format.getPrettyFormat());
 		FileOutputStream fos = new FileOutputStream(selectedFile, false);
 		try {
 			output.output(xml, fos);
@@ -568,8 +560,7 @@ public class GeneratorWindow extends JMemoryFrame implements
 			StringBuilder msg = new StringBuilder();
 			msg.append("Unable to save file.\nSpecific Error : ");
 			msg.append(e.getMessage());
-			JOptionPane.showMessageDialog(charPanel, msg.toString(),
-					"IO Error", JOptionPane.ERROR_MESSAGE);
+			JOptionPane.showMessageDialog(charPanel, msg.toString(), "IO Error", JOptionPane.ERROR_MESSAGE);
 			return;
 		}
 	}
@@ -652,11 +643,20 @@ public class GeneratorWindow extends JMemoryFrame implements
 	}
 
 	public static void main(String[] args) {
-		GeneratorWindow win = new GeneratorWindow(
-				"Composure - Serenity NPC Generator");
-		win.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		win.setSize(640, 480);
-		win.setVisible(true);
+		try {
+			DatabaseSchema.init();
+			GeneratorWindow win = new GeneratorWindow("Composure - Serenity NPC Generator");
+			win.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+			win.setSize(640, 480);
+			win.setVisible(true);
+			List<PersonRecord> peopleRecords = DatabaseSchema.getPersonDao().readAll();
+			System.out.println("People stored in db : "+peopleRecords.size());
+			for( PersonRecord pr: peopleRecords ) {
+				System.out.println(pr.getName()+" ["+pr.getArchetype()+"]");
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 
 	/**
@@ -670,7 +670,7 @@ public class GeneratorWindow extends JMemoryFrame implements
 	 * (non-Javadoc)
 	 * 
 	 * @see lug.data.DataModelListener#dataChanged(java.lang.Object,
-	 *      java.lang.Object)
+	 * java.lang.Object)
 	 */
 	public void dataChanged(Person oldData, Person newData) {
 	}

@@ -178,10 +178,12 @@ public class Generator {
 		p.setMale( RandomFactory.getRandom().nextBoolean() );
 		p.setMaleName( RandomNamer.getRandomName(true) );
 		p.setFemaleName( RandomNamer.getRandomName(false) );
-		Generator gen = new Generator(p, ArchetypesManager.getRandom());
+		Archetype archetype = ArchetypesManager.getRandom();
+		Generator gen = new Generator(p, archetype);
 		gen.randomizeTraits();
 		gen.randomizeStats();
 		gen.randomizeSkills();
+		p.setArchetypeName(archetype.getName());
 		return p;	
 	}
 	
@@ -199,6 +201,7 @@ public class Generator {
 		gen.randomizeTraits();
 		gen.randomizeStats();
 		gen.randomizeSkills();
+		p.setArchetypeName(archetype.getName());
 		return p;	
 	}
 	
