@@ -6,7 +6,7 @@ package uk.lug.serenity.npc.gui;
 import java.awt.BorderLayout;
 
 import uk.lug.data.DataModel;
-import uk.lug.gui.JMemoryFrame;
+import uk.lug.gui.archetype.skills.JMemoryFrame;
 import uk.lug.serenity.npc.model.Person;
 /**
  * Copyright 8 Jul 2007

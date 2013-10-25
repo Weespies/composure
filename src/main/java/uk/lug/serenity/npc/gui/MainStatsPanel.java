@@ -10,8 +10,8 @@ import java.util.LinkedList;
 
 import javax.swing.JPanel;
 
-import uk.lug.gui.ColorUtils;
 import uk.lug.gui.gridbag.GridBagException;
+import uk.lug.gui.util.ColorUtils;
 import uk.lug.serenity.npc.gui.controls.StatControl;
 import uk.lug.serenity.npc.model.Person;
 import uk.lug.serenity.npc.model.event.StatChangeEvent;

@@ -39,10 +39,10 @@ import uk.lug.dao.handlers.DatabaseSchema;
 import uk.lug.dao.records.PersonRecord;
 import uk.lug.data.DataModel;
 import uk.lug.data.DataModelListener;
-import uk.lug.gui.CachedImageLoader;
-import uk.lug.gui.JMemoryFileChooser;
-import uk.lug.gui.JMemoryFrame;
-import uk.lug.gui.archetype.ArchetypeManagerPanel;
+import uk.lug.gui.archetype.skills.JMemoryFileChooser;
+import uk.lug.gui.archetype.skills.JMemoryFrame;
+import uk.lug.gui.npc.archetype.ArchetypeManagerPanel;
+import uk.lug.gui.util.CachedImageLoader;
 import uk.lug.serenity.npc.model.Person;
 import uk.lug.serenity.npc.random.Generator;
 

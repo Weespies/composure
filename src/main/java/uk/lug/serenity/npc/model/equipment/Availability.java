@@ -5,7 +5,7 @@ package uk.lug.serenity.npc.model.equipment;
 
 import javax.swing.Icon;
 
-import uk.lug.gui.CachedImageLoader;
+import uk.lug.gui.util.CachedImageLoader;
 
 /**
  * $Id$

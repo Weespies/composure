@@ -36,10 +36,10 @@ import org.apache.commons.lang.StringUtils;
 
 import uk.lug.data.DataModel;
 import uk.lug.data.DataModelListener;
-import uk.lug.gui.CachedImageLoader;
-import uk.lug.gui.FontUtils;
+import uk.lug.gui.archetype.skills.FontUtils;
 import uk.lug.gui.gridbag.GridBagException;
 import uk.lug.gui.gridbag.GridBagLayoutXML;
+import uk.lug.gui.util.CachedImageLoader;
 import uk.lug.serenity.npc.managers.ArchetypesManager;
 import uk.lug.serenity.npc.model.Person;
 import uk.lug.serenity.npc.model.event.SkillChangeEvent;

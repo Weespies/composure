@@ -22,8 +22,8 @@ import javax.swing.ListCellRenderer;
 import javax.swing.border.EmptyBorder;
 
 import uk.lug.MutableList;
-import uk.lug.gui.CachedImageLoader;
-import uk.lug.gui.JMemoryFrame;
+import uk.lug.gui.archetype.skills.JMemoryFrame;
+import uk.lug.gui.util.CachedImageLoader;
 import uk.lug.serenity.npc.random.RandomPassengerGenerator;
 
 /**

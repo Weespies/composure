@@ -21,9 +21,9 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 
-import uk.lug.gui.CachedImageLoader;
 import uk.lug.gui.gridbag.GridBagException;
 import uk.lug.gui.gridbag.GridBagLayoutXML;
+import uk.lug.gui.util.CachedImageLoader;
 import uk.lug.serenity.npc.model.stats.StepStat;
 
 /**

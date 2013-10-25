@@ -12,7 +12,7 @@ import javax.swing.text.html.StyleSheet;
 
 import uk.lug.data.DataModel;
 import uk.lug.data.DataModelListener;
-import uk.lug.gui.HTMLEditorPanel;
+import uk.lug.gui.archetype.skills.HTMLEditorPanel;
 import uk.lug.serenity.npc.model.Person;
 
 /**

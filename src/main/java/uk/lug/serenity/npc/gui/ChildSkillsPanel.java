@@ -27,8 +27,8 @@ import javax.swing.JToolBar;
 
 import org.apache.commons.lang.StringUtils;
 
-import uk.lug.gui.CachedImageLoader;
-import uk.lug.gui.ColorUtils;
+import uk.lug.gui.util.CachedImageLoader;
+import uk.lug.gui.util.ColorUtils;
 import uk.lug.serenity.npc.gui.controls.ValuePanel;
 import uk.lug.serenity.npc.model.event.SkillChangeEvent;
 import uk.lug.serenity.npc.model.event.SkillChangeListener;
