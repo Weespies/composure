@@ -16,6 +16,8 @@ public class PersonRecord extends IdProvider {
 	private byte[] data;
 	@DatabaseField(columnName = "NAME", canBeNull = false)
 	private String name;
+	@DatabaseField(columnName = "TAGS", canBeNull = false)
+	private String tags="";
 	@DatabaseField(columnName = "ARCHETYPE", canBeNull = false)
 	private String archetype;
 	@DatabaseField(columnName = "CREATED", canBeNull = false)
@@ -94,5 +96,17 @@ public class PersonRecord extends IdProvider {
 
 	public void setLastUpdated(Date lastUpdated) {
 		this.lastUpdated = lastUpdated;
+	}
+
+
+
+	public String getTags() {
+		return tags;
+	}
+
+
+
+	public void setTags(String tags) {
+		this.tags = tags;
 	}
 }

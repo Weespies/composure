@@ -22,6 +22,15 @@ import javax.swing.ImageIcon;
  */
 public class CachedImageLoader {
 	private static HashMap<String , BufferedImage> cache = new HashMap<String,BufferedImage>();
+	public static final Icon ADD_ICON = CachedImageLoader.getCachedIcon("images/add.png");
+	public static final Icon DELETE_ICON = CachedImageLoader.getCachedIcon("images/delete.png");
+	public static final Icon DICE_ICON = CachedImageLoader.getCachedIcon("images/die_48.png");
+	public static final Icon CLEAR_CHARACTER_ICON = CachedImageLoader.getCachedIcon("images/clearcharacter.png");
+	public static final Icon LOAD_ICON = CachedImageLoader.getCachedIcon("images/document-open.png");
+	public static final Icon SAVE_ICON = CachedImageLoader.getCachedIcon("images/document-save.png");
+	public static final Icon SAVE_AS_ICON = CachedImageLoader.getCachedIcon("images/document-save-as.png");
+	public static final Icon SAVE_ASCII = CachedImageLoader.getCachedIcon("images/document_text.png");
+	public static final Icon ARCHETYPES_MANAGER_ICON = CachedImageLoader.getCachedIcon("images/configure.png");
 	
 	/**
 	 * Loads an icon from the cache, or local resource if not already in the cache.

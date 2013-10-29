@@ -1,6 +1,7 @@
 package uk.lug.dao.handlers;
 
 import java.sql.SQLException;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -22,6 +23,16 @@ public abstract class AbstractDao<T extends IdProvider, I extends Object> {
 		TableUtils.createTableIfNotExists(connection, getBeanClass());
 	}
 
+
+	public void delete(T bean) throws SQLException {
+		dao.delete(bean);
+	}
+
+	public void delete(T[] beans) throws SQLException {
+		dao.delete(Arrays.asList(beans));
+	}
+	
+	
 	public T save(T bean) throws SQLException {
 		if (bean.getId() == null) {
 			dao.create(bean);
