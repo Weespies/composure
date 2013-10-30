@@ -9,12 +9,21 @@ import uk.lug.control.PersonTablePanel;
 import uk.lug.dao.handlers.DatabaseSchema;
 import uk.lug.dao.records.PersonRecord;
 import uk.lug.gui.archetype.skills.JMemoryFrame;
+import uk.lug.serenity.npc.managers.EquipmentManager;
+import uk.lug.serenity.npc.managers.SkillsManager;
 
 public class AppLauncher {
 
 	public static void main(String[] args) {
 		try {
 			DatabaseSchema.init();
+			new Thread(new Runnable() {
+
+				public void run() {
+					EquipmentManager.getArmorList();
+					SkillsManager.getSkills();
+				}
+			}).start();
 			JMemoryFrame win = new JMemoryFrame("Composure - Serenity Control");
 			win.setName("composure.mainwin");
 			win.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

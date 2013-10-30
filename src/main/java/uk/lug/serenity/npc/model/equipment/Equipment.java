@@ -26,6 +26,8 @@ public class Equipment {
 	protected EquipmentType type;
 	protected double cost;
 	protected double weight;
+	protected Integer chance=0;
+	protected Integer max=1;
 	protected Availability availability =Availability.EVERYWHERE;
 	
 	/**
@@ -192,19 +194,23 @@ public class Equipment {
 		if ( !StringUtils.equalsIgnoreCase( eq.getName(), getName() ) ) {
 			return false;
 		}
-		if ( eq.getAvailability()!=getAvailability() ) {
-			return false;
-		}
-		if ( eq.getCost()!=getCost() ) {
-			return false;
-		}
-		if ( eq.getType()!=getType() ) {
-			return false;
-		}
-		if ( eq.getWeight()!=getWeight() ) {
-			return false;
-		}
 		return true;
+	}
+
+	public Integer getChance() {
+		return chance;
+	}
+
+	public void setChance(Integer chance) {
+		this.chance = chance;
+	}
+
+	public Integer getMax() {
+		return max;
+	}
+
+	public void setMax(Integer max) {
+		this.max = max;
 	}
 	
 //	/**

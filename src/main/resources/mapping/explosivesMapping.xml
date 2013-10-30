@@ -25,6 +25,15 @@
      <field name="rangeIncrement" type="java.lang.Integer">
       	<bind-xml name="range" node="attribute"/>
       </field>
+      <field name="max" type="java.lang.Integer">
+         <bind-xml name="max" node="attribute" />
+      </field>
+      <field name="chance" type="java.lang.Integer">
+         <bind-xml name="max" node="attribute" />
+      </field>
+      <field name="skill" type="java.lang.String">
+         <bind-xml name="skill" node="attribute" />
+      </field>
    </class>
    
 </mapping>

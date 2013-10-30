@@ -15,6 +15,9 @@
 		<xsd:attribute name="weight" type="xsd:float" use="required"/>
 		<xsd:attribute name="range" type="xsd:int" use="required"/>
 		<xsd:attribute name="type" type="xsd:string" use="required"/>
+		<xsd:attribute name="max" type="xsd:integer" use="optional"/>
+		<xsd:attribute name="chance" type="xsd:integer" use="required"/>
+		<xsd:attribute name="skill" type="xsd:string" use="optional"/>
 		<xsd:attribute name="availability">
 			<xsd:simpleType>
 				<xsd:restriction base="xsd:string">

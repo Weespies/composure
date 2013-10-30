@@ -18,6 +18,7 @@ import org.jdom.Element;
 public class Explosive extends Equipment {
 	private String damage = null;
 	private int rangeIncrement = 1;
+	private String skill=null;
 	
 	/**
 	 * @return the damage
@@ -102,6 +103,14 @@ public class Explosive extends Equipment {
 		sb.append( availability.getDescription() );
 		sb.append( ")");
 		return sb.toString();
+	}
+
+	public String getSkill() {
+		return skill;
+	}
+
+	public void setSkill(String skill) {
+		this.skill = skill;
 	}
 	
 }

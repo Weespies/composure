@@ -5,7 +5,9 @@ package uk.lug.serenity.npc.model.skills;
 
 import java.util.HashMap;
 import java.util.LinkedList;
+import java.util.Map;
 
+import org.apache.commons.lang3.StringUtils;
 import org.jdom.Element;
 
 import uk.lug.serenity.npc.model.event.SkillChangeEvent;
@@ -275,6 +277,19 @@ public class SkillSheet implements SkillChangeListener {
 			return 0;
 		}
 		return getPointsIn( skill.getName() );
+	}
+
+	public boolean hasSkill(String skillName) {
+		for ( GeneralSkill gs: skillDataMap.keySet() ) {
+			if (StringUtils.equals(gs.getName(), skillName) ) {
+				return true;
+			}
+			Map<String,Integer> childPoints = skillDataMap.get(gs).getChildrenPoints();
+			if ( childPoints.containsKey(skillName) && childPoints.get(skillName)>0) {
+				return true;
+			}
+		}
+		return false;
 	}
 	
 }
