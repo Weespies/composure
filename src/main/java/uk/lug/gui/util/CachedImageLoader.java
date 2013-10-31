@@ -25,6 +25,9 @@ public class CachedImageLoader {
 	public static final Icon ADD_ICON = CachedImageLoader.getCachedIcon("images/add.png");
 	public static final Icon DELETE_ICON = CachedImageLoader.getCachedIcon("images/delete.png");
 	public static final Icon DICE_ICON = CachedImageLoader.getCachedIcon("images/die_48.png");
+	public static final Icon DICE_SMALL = CachedImageLoader.getCachedIcon("images/die_16.png");
+	public static final Icon GLOVES_ICON = CachedImageLoader.getCachedIcon("images/gloves.png");
+	public static final Icon CONFIGURE_ICON = CachedImageLoader.getCachedIcon("images/configure.png");
 	public static final Icon CLEAR_CHARACTER_ICON = CachedImageLoader.getCachedIcon("images/clearcharacter.png");
 	public static final Icon LOAD_ICON = CachedImageLoader.getCachedIcon("images/document-open.png");
 	public static final Icon SAVE_ICON = CachedImageLoader.getCachedIcon("images/document-save.png");

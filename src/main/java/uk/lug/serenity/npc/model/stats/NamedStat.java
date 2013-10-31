@@ -4,12 +4,14 @@
 package uk.lug.serenity.npc.model.stats;
 
 import java.io.Serializable;
+import java.util.Collection;
 import java.util.LinkedList;
 
 import org.apache.commons.lang.StringUtils;
 import org.apache.commons.lang.math.NumberUtils;
 import org.jdom.Element;
 
+import uk.lug.fight.Dice;
 import uk.lug.serenity.npc.model.event.StatChangeEvent;
 import uk.lug.serenity.npc.model.event.StatChangeListener;
 

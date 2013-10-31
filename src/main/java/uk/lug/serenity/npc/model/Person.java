@@ -242,9 +242,12 @@ public class Person implements ListDataListener, DocumentListener, Serializable 
 	 */
 	public Element getXML() {
 		Element xml = new Element("serenityCharacter");
+		
 		xml.setAttribute("maleName", maleName);
 		xml.setAttribute("femaleName", femaleName);
 		xml.setAttribute("archetype", archetypeName);
+		xml.setAttribute("level", Integer.toString(level));
+		
 		xml.addContent(mainStats.getXML());
 
 		xml.addContent(getTraitXML("assets", assets));
@@ -336,7 +339,9 @@ public class Person implements ListDataListener, DocumentListener, Serializable 
 				maleName = RandomNamer.getRandomName(true);
 			}
 		}
-
+		if ( xml.getAttributeValue("level")!=null ) {
+			setLevel(Integer.parseInt(xml.getAttributeValue("level")));
+		}
 		mainStats.setXML(xml.getChild(CharacterStats.XML_KEY));
 
 		setTraitXML(xml.getChild("assets"), assets);

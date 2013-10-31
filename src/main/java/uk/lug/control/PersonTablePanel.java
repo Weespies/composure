@@ -3,26 +3,26 @@ package uk.lug.control;
 import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.swing.AbstractAction;
 import javax.swing.Action;
-import javax.swing.Icon;
+import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.ListSelectionModel;
+import javax.swing.SwingWorker;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
-
-import com.j256.ormlite.dao.Dao;
 
 import uk.lug.dao.handlers.DatabaseSchema;
 import uk.lug.dao.records.PersonRecord;
 import uk.lug.gui.ToolbarPanel;
 import uk.lug.gui.pending.PendingPanel;
-import uk.lug.gui.util.CachedImageLoader;
+import uk.lug.gui.pending.PleaseWaitPanel;
 import uk.lug.serenity.npc.gui.generator.GeneratorDialog;
 import uk.lug.util.SwingHelper;
 
@@ -30,69 +30,75 @@ import static uk.lug.gui.util.CachedImageLoader.*;
 
 public class PersonTablePanel extends JPanel {
 	private PersonRecordTableModel tableModel;
-	private PendingPanel tablePanel;
 	private List<PersonRecord> personList;
 	private JTable table;
 	private ToolbarPanel toolbar;
+	private List<PeopleAddedListener> addFightListeners = new ArrayList<PeopleAddedListener>();
 
 	public PersonTablePanel() {
 		super();
 		buildUI();
 	}
 
+	public void addFightListeners(PeopleAddedListener pal) {
+		addFightListeners.add(pal);
+	}
+
+	public void removeFightListeners(PeopleAddedListener pal) {
+		addFightListeners.remove(pal);
+	}
+
 	private void buildUI() {
 		setLayout(new BorderLayout());
-		tablePanel = new PendingPanel("Reading characters...") {
+		new SwingWorker<Void, Void>() {
 
 			@Override
-			protected boolean performPending() {
-				try {
-					personList = DatabaseSchema.getPersonDao().readAll();
-					return true;
-				} catch (Throwable t) {
-					t.printStackTrace();
-					return false;
-				}
-
+			protected Void doInBackground() throws Exception {
+				personList = new ArrayList<PersonRecord>();
+				personList.addAll(DatabaseSchema.getPersonDao().readAll());
+				return null;
 			}
 
-			@Override
-			protected void buildPostPendingUI() {
-				tableModel = new PersonRecordTableModel(personList);
-				table = new JTable(tableModel);
-				table.setRowSelectionAllowed(true);
-				table.setSelectionMode(ListSelectionModel.MULTIPLE_INTERVAL_SELECTION);
-				table.getSelectionModel().addListSelectionListener(new ListSelectionListener() {
+			protected void done() {
+				buildTable();
+			};
 
-					public void valueChanged(ListSelectionEvent e) {
-						SwingHelper.runOutsideEventThread(new Runnable() {
-
-							public void run() {
-								respondToSelection();
-							}
-						});
-
-					}
-				});
-				setLayout(new BorderLayout());
-				add(new JScrollPane(table), BorderLayout.CENTER);
-			}
-		};
-		add(tablePanel, BorderLayout.CENTER);
+		}.run();
 		buildToolbar();
 		add(toolbar, BorderLayout.NORTH);
+	}
+
+	protected void buildTable() {
+		tableModel = new PersonRecordTableModel(personList);
+		table = new JTable(tableModel);
+		table.setRowSelectionAllowed(true);
+		table.setSelectionMode(ListSelectionModel.MULTIPLE_INTERVAL_SELECTION);
+		table.getSelectionModel().addListSelectionListener(new ListSelectionListener() {
+
+			public void valueChanged(ListSelectionEvent e) {
+				respondToSelection();
+			}
+		});
+		add(new JScrollPane(table), BorderLayout.CENTER);
+		revalidate();
 	}
 
 	private void respondToSelection() {
 		int[] rows = table.getSelectedRows();
 		deleteAction.setEnabled(rows.length > 0);
+		editAction.setEnabled(rows.length == 1);
+		addToFightAction.setEnabled(rows.length > 0);
 	}
 
 	private void buildToolbar() {
 		toolbar = new ToolbarPanel();
 		toolbar.addActionButton(addAction);
 		toolbar.addActionButton(deleteAction);
+		toolbar.addActionButton(editAction);
+		toolbar.addActionButton(addToFightAction);
+		editAction.setEnabled(false);
 		deleteAction.setEnabled(false);
+		addToFightAction.setEnabled(false);
 	}
 
 	private Action addAction = new AbstractAction("Add", ADD_ICON) {
@@ -106,6 +112,26 @@ public class PersonTablePanel extends JPanel {
 
 		public void actionPerformed(ActionEvent e) {
 			doDelete();
+		}
+	};
+
+	private Action editAction = new AbstractAction("Edit", CONFIGURE_ICON) {
+
+		public void actionPerformed(ActionEvent e) {
+			doEdit();
+		}
+	};
+
+	private Action addToFightAction = new AbstractAction("Add To Fight", GLOVES_ICON) {
+
+		public void actionPerformed(ActionEvent e) {
+			SwingHelper.runOutsideEventThread(new Runnable() {
+
+				public void run() {
+					doAddToFight();
+				}
+			});
+
 		}
 	};
 
@@ -127,8 +153,62 @@ public class PersonTablePanel extends JPanel {
 					return;
 				}
 				tableModel.addNewRowObject(dialog.getPersonRecord());
+				table.getSelectionModel().clearSelection();
 			}
 		}).start();
+
+	}
+
+	protected void doAddToFight() {
+		int[] rows = table.getSelectedRows();
+		final List<PersonRecord> toAdd = new ArrayList<PersonRecord>(rows.length);
+		for (int row : rows) {
+			toAdd.add(tableModel.getRowObject(row));
+		}
+		for (final PeopleAddedListener pal : addFightListeners) {
+			SwingHelper.runInEventThread(new Runnable() {
+
+				public void run() {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			pal.peopleAdded(toAdd);
+
+		}
+	}
+
+	protected void doEdit() {
+		final int row = table.getSelectedRow();
+		PersonRecord personRecord = tableModel.getRowObject(row);
+		final GeneratorDialog dialog = new GeneratorDialog(this, "Edit", personRecord);
+		dialog.setVisible(true);
+		new Thread(new Runnable() {
+
+			public void run() {
+				while (dialog.isVisible()) {
+					try {
+						Thread.sleep(500);
+					} catch (InterruptedException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+				}
+				if (!dialog.isOk()) {
+					return;
+				}
+				tableModel.fireTableRowsUpdated(row, row);
+			}
+		}).start();
+	}
+
+	protected void doConfigure() {
+		// TODO Auto-generated method stub
+
+	}
+
+	protected void showFightPanel() {
+		// TODO Auto-generated method stub
 
 	}
 
@@ -151,11 +231,11 @@ public class PersonTablePanel extends JPanel {
 
 		try {
 			DatabaseSchema.getPersonDao().delete(records);
-			for( PersonRecord record : records ) {
+			for (PersonRecord record : records) {
 				tableModel.removeRow(record);
 			}
 		} catch (SQLException e) {
-			JOptionPane.showMessageDialog(this, "Error deleting from database.\n"+e.getMessage(),"Error",JOptionPane.ERROR_MESSAGE);
+			JOptionPane.showMessageDialog(this, "Error deleting from database.\n" + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
 		}
 
 	}

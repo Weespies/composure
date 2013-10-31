@@ -17,9 +17,18 @@ public class GeneratorDialog extends JDialog implements GeneratorListener {
 		buildUI();
 	}
 
+	public GeneratorDialog(Component owner, String title, PersonRecord personRecord) {
+		super(SwingHelper.getOwnerFrame(owner), title);
+		this.personRecord = personRecord;
+		buildUI();
+	}
+
 	private void buildUI() {
 		generatorPanel = new GeneratorPanel();
 		generatorPanel.addGeneratorListener(this);
+		if (personRecord!=null ) {
+			generatorPanel.setPersonRecord(personRecord);
+		}
 		getContentPane().add(generatorPanel);
 		pack();
 	}

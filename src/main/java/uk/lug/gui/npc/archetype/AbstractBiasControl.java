@@ -114,6 +114,7 @@ public abstract class AbstractBiasControl<T> extends JPanel {
 		levelCombo.addActionListener( new ActionListener() {
 
 			public void actionPerformed(ActionEvent e) {
+				
 				generateAverageResults();
 			}});
 		

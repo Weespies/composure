@@ -86,7 +86,7 @@ public class GeneratorPanel extends JPanel implements DataModelListener<Person> 
 	private SummaryFrame summaryWindow = null;
 	private PersonRecord personRecord = null;
 	private List<GeneratorListener> generatorListeners = new ArrayList<GeneratorListener>();
-	private JCheckBox pcheckBox;
+	private JTextField playerNameField;
 	private JTextField tagField;
 	private JPanel southPanel;
 
@@ -417,18 +417,27 @@ public class GeneratorPanel extends JPanel implements DataModelListener<Person> 
 	 */
 	protected void doSave() {
 		Person person = model.getData();
+		if (person.getStatMax()==16) {
+			person.setLevel(Person.LEVEL_BIG_DAM_HERO);
+		} else if (person.getStatMax()==14) {
+			person.setLevel(Person.LEVEL_VETERAN);
+		} else if (person.getStatMax()==12) {
+			person.setLevel(Person.LEVEL_GREENHORN);
+		}
 		if (personRecord == null) {
 			personRecord = personRecord.createFrom(person);
 		} else if (!StringUtils.equals(personRecord.getName(), person.getName())) {
-			int ret = JOptionPane.showOptionDialog(this, "An character with that name already exists.", "Duplicate name", JOptionPane.DEFAULT_OPTION,
+			int ret = JOptionPane.showOptionDialog(this, "You have changed the character name.", "Chang name.", JOptionPane.DEFAULT_OPTION,
 					JOptionPane.QUESTION_MESSAGE, null, new String[] { "Save as new", "Overwrite" }, "Overwrite");
 			if (ret == JOptionPane.CLOSED_OPTION) {
 				return;
 			} else if (ret == 0) {
 				personRecord.setId(null);
+			} else {
+				personRecord.setName(person.getName());
 			}
 		}
-		personRecord.setIsPlayer(pcheckBox.isSelected());
+		personRecord.setPlayerName(playerNameField.getText());
 		personRecord.setTags(tagField.getText());
 		try {
 			DatabaseSchema.getPersonDao().save(personRecord);
@@ -496,17 +505,21 @@ public class GeneratorPanel extends JPanel implements DataModelListener<Person> 
 		initMenu();
 		add(menuBar, BorderLayout.NORTH);
 		buildSouthPanel();
-		add(southPanel,BorderLayout.SOUTH);
+		add(southPanel, BorderLayout.SOUTH);
 	}
 
 	private void buildSouthPanel() {
 		tagField = new JTextField(20);
-		pcheckBox = new JCheckBox("is player");
+		playerNameField = new JTextField("");
 		southPanel = new JPanel(new GridBagLayout());
-		southPanel.add(pcheckBox, new GridBagConstraints(0, 0, 1, 1, .3d, 0, GridBagConstraints.WEST, GridBagConstraints.HORIZONTAL,
+		southPanel.add(new JLabel("Player"), new GridBagConstraints(0, 0, 1, 1, 0, 0, GridBagConstraints.EAST, GridBagConstraints.NONE, new Insets(2, 2, 2, 2),
+				0, 0));
+		southPanel.add(playerNameField, new GridBagConstraints(1, 0, 1, 1, .4d, 0, GridBagConstraints.WEST, GridBagConstraints.HORIZONTAL,
 				SwingHelper.DEFAULT_INSETS, 0, 0));
-		southPanel.add(new JLabel("Tags"), new GridBagConstraints(1,0,1,1,1,0,GridBagConstraints.EAST, GridBagConstraints.NONE, new Insets(2,10,2,2),0,0));
-		southPanel.add( tagField, new GridBagConstraints(2,0,1,1,.7d,0,GridBagConstraints.EAST,GridBagConstraints.HORIZONTAL,SwingHelper.DEFAULT_INSETS,0,0));
+		southPanel.add(new JLabel("Tags"), new GridBagConstraints(10, 0, 1, 1,0, 0, GridBagConstraints.EAST, GridBagConstraints.NONE, new Insets(2, 10, 2, 2),
+				0, 0));
+		southPanel.add(tagField, new GridBagConstraints(11, 0, 1, 1, .6d, 0, GridBagConstraints.EAST, GridBagConstraints.HORIZONTAL, SwingHelper.DEFAULT_INSETS,
+				0, 0));
 	}
 
 	/**
@@ -576,5 +589,12 @@ public class GeneratorPanel extends JPanel implements DataModelListener<Person> 
 		rpgFrame.recall();
 		rpgFrame.add(new RandomPassengerPanel());
 		rpgFrame.setVisible(true);
+	}
+
+	public void setPersonRecord(PersonRecord personRecord) {
+		this.personRecord = personRecord;
+		model.setData(personRecord.getPerson());
+		
+		charPanel.repaint();
 	}
 }

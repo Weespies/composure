@@ -348,12 +348,15 @@ public class BioPanel extends JPanel
 		switch ( levelCombo.getSelectedIndex() ) {
 			case 0 :
 				dataModel.setLevel( Person.LEVEL_GREENHORN );
+				model.getData().setLevel( Person.LEVEL_GREENHORN );
 				break;
 			case 1 :
 				dataModel.setLevel( Person.LEVEL_VETERAN);
+				model.getData().setLevel( Person.LEVEL_VETERAN);
 				break;
 			case 2 :
 				dataModel.setLevel( Person.LEVEL_BIG_DAM_HERO);
+				model.getData().setLevel( Person.LEVEL_BIG_DAM_HERO );
 				break;
 		}
 		
@@ -589,5 +592,9 @@ public class BioPanel extends JPanel
 		for ( Archetype archetype : ArchetypesManager.getArchetypes() ) {
 			archetypeCombo.addItem( archetype );
 		}
+	}
+
+	public int getLevel() {
+		return levelCombo.getSelectedIndex();
 	}
 }
