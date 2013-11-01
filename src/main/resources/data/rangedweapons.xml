@@ -8,7 +8,7 @@
 	<ranged name="Grenade Launcher" chance="10" damage="*" cost="106" weight="12" availability="I" range="40" rate="1" clip="8" type="Ranged" skill="Heavy Weapons,Grenades" max="1" />
 	<ranged name="Pistol" chance="90" damage="d6 W" cost="18" weight="2" availability="E" range="100" rate="3" clip="8" type="Ranged" skill="Guns,Pistols" max="2" />
 	<ranged name="Pistol, Machine" chance="60" damage="d4 W" cost="50" weight="5" availability="I" range="100" rate="6" clip="12" type="Ranged" skill="Guns,Pistols"  max="2"/>
-	<ranged name="Pistol, Laser" chance="40" damage="d10 W" cost="330" weight="1.5" availability="I" range="100" rate="3" clip="10" type="Ranged" skill="Guns,Energy Weapon"  max="2"/>
+	<ranged name="Pistol, Laser" chance="40" damage="d10 W" cost="330" weight="1.5" availability="I" range="100" rate="3" clip="10" type="Ranged" skill="Guns,Energy Weapons"  max="2"/>
 	<ranged name="Rifle" chance="90" damage="d8 W" cost="30" weight="9" availability="C" range="225" rate="3" clip="30" type="Ranged" skill="Guns,Rifles"  max="1"/>
 	<ranged name="Rifle, Bullpup" chance="40" damage="d8 W" cost="60" weight="7" availability="I" range="100" rate="3" clip="20" type="Ranged" skill="Guns,Assault Rifles" max="1" />
 	<ranged name="Rifle, Assault" chance="40" damage="d8 W" cost="40" weight="11" availability="I" range="150" rate="3" clip="40" type="Ranged" skill="Guns,Assault Rifles"  max="1"/>

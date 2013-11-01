@@ -9,7 +9,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
-import java.util.concurrent.locks.ReentrantReadWriteLock.ReadLock;
 import java.util.prefs.Preferences;
 
 import javax.swing.AbstractAction;
@@ -17,6 +16,7 @@ import javax.swing.Action;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
+import javax.swing.JSplitPane;
 import javax.swing.JTable;
 import javax.swing.ListSelectionModel;
 import javax.swing.SwingWorker;
@@ -42,7 +42,9 @@ public class RoundPanel extends JPanel implements PeopleAddedListener {
 	private Preferences prefs = Preferences.userNodeForPackage(this.getClass());
 	private MutableList<RoundRow> rowList;
 	private File tableFile = new File(System.getProperty("user.home") + File.separator + "composure" + File.separator + "roundTable.txt");
-
+	private DataPanel dataPanel;
+	private JSplitPane splitPane;
+	
 	public RoundPanel() {
 		rowList = new MutableList<RoundRow>();
 		buildUI();
@@ -53,7 +55,7 @@ public class RoundPanel extends JPanel implements PeopleAddedListener {
 		tableModel = new RoundTrackerTableModel(rowList);
 		table = new JTable(tableModel);
 		table.setRowSelectionAllowed(true);
-		table.setSelectionMode(ListSelectionModel.MULTIPLE_INTERVAL_SELECTION);
+		table.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
 		table.getSelectionModel().addListSelectionListener(new ListSelectionListener() {
 
 			public void valueChanged(ListSelectionEvent e) {
@@ -64,20 +66,23 @@ public class RoundPanel extends JPanel implements PeopleAddedListener {
 		add(scroll, BorderLayout.CENTER);
 		buildToolbar();
 
-		add(toolbar, BorderLayout.NORTH);
+		splitPane = new JSplitPane(JSplitPane.VERTICAL_SPLIT);
+		splitPane.setLeftComponent(scroll);
+		add(splitPane, BorderLayout.NORTH);
 		if (tableFile.exists()) {
 			loadTableFile();
 		} else {
 			loadRememberedRows();
 			saveTableFile();
 		}
+		dataPanel = new DataPanel();
+		splitPane.setRightComponent(dataPanel);
 	}
 
 	private void loadTableFile() {
 		try {
 			List<String> lines  = FileUtils.readLines(tableFile);
 			tableModel.deserialize(lines);
-			System.out.println("table loaded");
 		} catch (IOException e) {
 			e.printStackTrace();
 			JOptionPane.showMessageDialog(this, "Unable to reload table file.\n" + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
@@ -91,7 +96,6 @@ public class RoundPanel extends JPanel implements PeopleAddedListener {
 		try {
 			List<String> lines = tableModel.saveRows();
 			FileUtils.writeLines(tableFile, lines);
-			System.out.println("saved");
 		} catch (IOException e) {
 			JOptionPane.showMessageDialog(this, "Unable to reload table file.\n" + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
 		}
@@ -113,6 +117,15 @@ public class RoundPanel extends JPanel implements PeopleAddedListener {
 	protected void respondToRowSelected() {
 		int[] rows = table.getSelectedRows();
 		removeRowAction.setEnabled(rows.length == 1);
+		if (rows.length==1) {
+			int row = rows[0];
+			RoundRow item = tableModel.getRowObject(row);
+			if (StringUtils.isEmpty(item.getPlayer())) {
+				dataPanel.set(item);
+			} else {
+				dataPanel.clear();
+			}
+		}
 	}
 
 	private void buildToolbar() {
@@ -191,7 +204,7 @@ public class RoundPanel extends JPanel implements PeopleAddedListener {
 						t.printStackTrace();
 					}
 				}
-				saveTableFile();
+				
 				return null;
 			}
 
@@ -200,6 +213,7 @@ public class RoundPanel extends JPanel implements PeopleAddedListener {
 				for (RoundRow row : rows) {
 					tableModel.addNewRowObject(row);
 				}
+				saveTableFile();
 			}
 
 		}.run();

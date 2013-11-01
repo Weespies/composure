@@ -1,6 +1,8 @@
 package uk.lug.fight;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 import uk.lug.util.RandomFactory;
@@ -23,24 +25,24 @@ public class Dice implements Serializable {
 	public String toString() {
 		return name;
 	}
-	
+
 	public static Dice getForValue(Integer v) {
 		if (v == 2) {
 			return D2;
-		} else if (v==4 ) {
+		} else if (v == 4) {
 			return D4;
-		} else if (v==6 ) {
+		} else if (v == 6) {
 			return D6;
-		} else if (v==8 ) {
+		} else if (v == 8) {
 			return D8;
-		} else if (v==10 ) {
+		} else if (v == 10) {
 			return D10;
-		} else if (v==12 ) {
+		} else if (v == 12) {
 			return D12;
-		} else if (v==20 ) {
+		} else if (v == 20) {
 			return D20;
 		} else {
-			 throw new IllegalStateException("Cannot find dice for "+v);
+			throw new IllegalStateException("Cannot find dice for " + v);
 		}
 	}
 
@@ -68,7 +70,38 @@ public class Dice implements Serializable {
 	}
 
 	public int roll() {
-		return random.nextInt(value)+1;
+		return random.nextInt(value) + 1;
+	}
+
+	public static Dice getHighestFor(int v) {
+		if (v == 2) {
+			return D2;
+		} else if (v == 4) {
+			return D4;
+		} else if (v == 6) {
+			return D6;
+		} else if (v == 8) {
+			return D8;
+		} else if (v == 10) {
+			return D10;
+		} else if (v == 12) {
+			return D12;
+		} else if (v >= 20) {
+			return D20;
+		} else {
+			throw new IllegalStateException("Cannot located dice for " + v);
+		}
+	}
+
+	public static List<Dice> makeList(int value) {
+		int v = value;
+		List<Dice> ret = new ArrayList<Dice>();
+		while (v > 0) {
+			Dice d = getHighestFor(v);
+			v -= d.getValue();
+			ret.add(d);
+		}
+		return ret;
 	}
 
 }

@@ -8,6 +8,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Vector;
 
 import javax.swing.JOptionPane;
 
@@ -146,7 +147,7 @@ public class SkillsManager {
 	 * @return
 	 */
 	public static List<String> getChildrenFor(GeneralSkill parent) {
-		LinkedList<String> ret = new LinkedList<String>();
+		List<String> ret = new Vector<String>();
 		for ( Skill sk : skills ) {
 			if ( sk.getName().equals(parent.getName()) ) {
 				for ( String s : sk.getChildren() ) {

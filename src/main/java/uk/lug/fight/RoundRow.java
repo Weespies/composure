@@ -14,9 +14,10 @@ import uk.lug.serenity.npc.model.Person;
 public class RoundRow implements Serializable {
 	private static final long serialVersionUID = 1L;
 	private String name;
+	private Long personId = null;
 	private String player;
 	private String identifier;
-	private InititativeDice initiativeStats;
+	private ListOfDice initiativeStats;
 	private Integer initiativeRoll;
 	private Integer lifeTotal;
 	private Integer stun;
@@ -30,13 +31,17 @@ public class RoundRow implements Serializable {
 		sb.append(",");
 		appendString(sb, "identifier", identifier);
 		sb.append(",");
+		if (personId != null) {
+			appendString(sb, "recordId", Long.toString(personId));
+			sb.append(",");
+		}
 		appendInteger(sb, "initiativeRoll", initiativeRoll);
 		sb.append(",");
-		if ( initiativeStats!=null ) {
+		if (initiativeStats != null) {
 			appendString(sb, "initiativeDice", initiativeStats.toString());
-			sb.append(",");	
+			sb.append(",");
 		}
-		
+
 		appendInteger(sb, "lifeTotal", lifeTotal);
 		sb.append(",");
 		appendInteger(sb, "stun", stun);
@@ -64,24 +69,28 @@ public class RoundRow implements Serializable {
 				stun = nullInteger(data);
 			} else if (StringUtils.equals(fieldName, "wounds")) {
 				wounds = nullInteger(data);
+			}else if (StringUtils.equals(fieldName, "recordId")) {
+				if (StringUtils.isNumeric(data)) {
+					personId=Long.parseLong(data);
+				}
 			} else if (StringUtils.equals(fieldName, "initiativeRoll")) {
 				initiativeRoll = nullInteger(data);
-			} else if ( StringUtils.equals(fieldName,"initiativeDice")){
-				initiativeStats= new InititativeDice();
+			} else if (StringUtils.equals(fieldName, "initiativeDice")) {
+				initiativeStats = new InititativeDice();
 				initiativeStats.setFrom(data);
 			}
 		}
 	}
 
 	private Integer nullInteger(String data) {
-		if (StringUtils.isEmpty(data) || !StringUtils.isNumeric(data) || StringUtils.equals("null",data) ) {
+		if (StringUtils.isEmpty(data) || !StringUtils.isNumeric(data) || StringUtils.equals("null", data)) {
 			return null;
 		}
 		return Integer.parseInt(data);
 	}
 
 	private String nullString(String data) {
-		if (StringUtils.isEmpty(data) || StringUtils.equals("null",data) ) {
+		if (StringUtils.isEmpty(data) || StringUtils.equals("null", data)) {
 			return null;
 		} else {
 			return data;
@@ -104,6 +113,7 @@ public class RoundRow implements Serializable {
 
 	public static RoundRow fromRecord(PersonRecord pr) throws JDOMException, IOException {
 		RoundRow ret = new RoundRow();
+		ret.setPersonId(pr.getId());
 		ret.setPlayer(pr.getPlayerName());
 		Person person = PersonUtils.decode(pr.getData());
 		ret.setLifeTotal(person.getLife().getValue());
@@ -140,11 +150,11 @@ public class RoundRow implements Serializable {
 		this.name = name;
 	}
 
-	public InititativeDice getInitiativeStats() {
+	public ListOfDice getInitiativeStats() {
 		return initiativeStats;
 	}
 
-	public void setInitiativeStats(InititativeDice initiativeStats) {
+	public void setInitiativeStats(ListOfDice initiativeStats) {
 		this.initiativeStats = initiativeStats;
 	}
 
@@ -194,6 +204,14 @@ public class RoundRow implements Serializable {
 
 	public void setIdentifier(String identifier) {
 		this.identifier = identifier;
+	}
+
+	public Long getPersonId() {
+		return personId;
+	}
+
+	public void setPersonId(Long personId) {
+		this.personId = personId;
 	}
 
 }
