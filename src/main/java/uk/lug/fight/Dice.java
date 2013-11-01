@@ -1,10 +1,12 @@
 package uk.lug.fight;
 
+import java.io.Serializable;
 import java.util.Random;
 
 import uk.lug.util.RandomFactory;
 
-public class Dice {
+public class Dice implements Serializable {
+	private static final long serialVersionUID = 1L;
 	private static final Random random = RandomFactory.getRandom();
 	public static final Dice D2 = Dice.create("D2", 2);
 	public static final Dice D4 = Dice.create("D4", 4);

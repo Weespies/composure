@@ -22,18 +22,28 @@ import javax.swing.ImageIcon;
  */
 public class CachedImageLoader {
 	private static HashMap<String , BufferedImage> cache = new HashMap<String,BufferedImage>();
+	public static final Icon DICE_D4 = CachedImageLoader.getCachedIcon("images/d4.png");
+	public static final Icon DICE_D6 = CachedImageLoader.getCachedIcon("images/d6.png");	
+	public static final Icon DICE_D8 = CachedImageLoader.getCachedIcon("images/d8.png");
+	public static final Icon DICE_D10 = CachedImageLoader.getCachedIcon("images/d10.png");
+	public static final Icon DICE_D12 = CachedImageLoader.getCachedIcon("images/d12.png");
+	public static final Icon DICE_D20 = CachedImageLoader.getCachedIcon("images/d20.png");
 	public static final Icon ADD_ICON = CachedImageLoader.getCachedIcon("images/add.png");
+	public static final Icon CHECK_ICON = CachedImageLoader.getCachedIcon("images/check.png");	
 	public static final Icon DELETE_ICON = CachedImageLoader.getCachedIcon("images/delete.png");
 	public static final Icon DICE_ICON = CachedImageLoader.getCachedIcon("images/die_48.png");
 	public static final Icon DICE_SMALL = CachedImageLoader.getCachedIcon("images/die_16.png");
 	public static final Icon GLOVES_ICON = CachedImageLoader.getCachedIcon("images/gloves.png");
 	public static final Icon CONFIGURE_ICON = CachedImageLoader.getCachedIcon("images/configure.png");
 	public static final Icon CLEAR_CHARACTER_ICON = CachedImageLoader.getCachedIcon("images/clearcharacter.png");
+	public static final Icon DUDE_ICON = CachedImageLoader.getCachedIcon("images/dude1.png");
 	public static final Icon LOAD_ICON = CachedImageLoader.getCachedIcon("images/document-open.png");
 	public static final Icon SAVE_ICON = CachedImageLoader.getCachedIcon("images/document-save.png");
 	public static final Icon SAVE_AS_ICON = CachedImageLoader.getCachedIcon("images/document-save-as.png");
 	public static final Icon SAVE_ASCII = CachedImageLoader.getCachedIcon("images/document_text.png");
 	public static final Icon ARCHETYPES_MANAGER_ICON = CachedImageLoader.getCachedIcon("images/configure.png");
+	public static final Icon UP_PLUS_ICON = CachedImageLoader.getCachedIcon("images/up_plus.png");
+	
 	
 	/**
 	 * Loads an icon from the cache, or local resource if not already in the cache.

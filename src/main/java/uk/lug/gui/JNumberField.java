@@ -1,4 +1,4 @@
-package uk.lug.gui.archetype.skills;
+package uk.lug.gui;
 
 /*
  * JNumberField.java
