@@ -172,7 +172,6 @@ public class LocalFileController {
 		sb.append( dataDirectory.getAbsolutePath() );
 		sb.append( File.separatorChar );
 		sb.append( getResourceName(resource) );
-		System.out.println(sb.toString());
 		return new File(sb.toString());
 	}
 	
