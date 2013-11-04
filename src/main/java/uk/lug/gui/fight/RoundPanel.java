@@ -1,5 +1,7 @@
 package uk.lug.gui.fight;
 
+import static uk.lug.gui.util.CachedImageLoader.*;
+
 import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
 import java.io.File;
@@ -44,7 +46,7 @@ public class RoundPanel extends JPanel implements PeopleAddedListener {
 	private File tableFile = new File(System.getProperty("user.home") + File.separator + "composure" + File.separator + "roundTable.txt");
 	private DataPanel dataPanel;
 	private JSplitPane splitPane;
-	
+
 	public RoundPanel() {
 		rowList = new MutableList<RoundRow>();
 		buildUI();
@@ -65,10 +67,10 @@ public class RoundPanel extends JPanel implements PeopleAddedListener {
 		JScrollPane scroll = new JScrollPane(table);
 		add(scroll, BorderLayout.CENTER);
 		buildToolbar();
-
+		add(toolbar, BorderLayout.NORTH);
 		splitPane = new JSplitPane(JSplitPane.VERTICAL_SPLIT);
 		splitPane.setLeftComponent(scroll);
-		add(splitPane, BorderLayout.NORTH);
+		add(splitPane, BorderLayout.CENTER);
 		if (tableFile.exists()) {
 			loadTableFile();
 		} else {
@@ -81,7 +83,7 @@ public class RoundPanel extends JPanel implements PeopleAddedListener {
 
 	private void loadTableFile() {
 		try {
-			List<String> lines  = FileUtils.readLines(tableFile);
+			List<String> lines = FileUtils.readLines(tableFile);
 			tableModel.deserialize(lines);
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -117,7 +119,7 @@ public class RoundPanel extends JPanel implements PeopleAddedListener {
 	protected void respondToRowSelected() {
 		int[] rows = table.getSelectedRows();
 		removeRowAction.setEnabled(rows.length == 1);
-		if (rows.length==1) {
+		if (rows.length == 1) {
 			int row = rows[0];
 			RoundRow item = tableModel.getRowObject(row);
 			if (StringUtils.isEmpty(item.getPlayer())) {
@@ -161,7 +163,7 @@ public class RoundPanel extends JPanel implements PeopleAddedListener {
 			saveTableFile();
 		}
 	};
-	
+
 	private Action sortAction = new AbstractAction("Sort", CachedImageLoader.UP_PLUS_ICON) {
 
 		public void actionPerformed(ActionEvent e) {
@@ -170,7 +172,6 @@ public class RoundPanel extends JPanel implements PeopleAddedListener {
 			saveTableFile();
 		}
 	};
-
 	private Comparator<RoundRow> comparator = new Comparator<RoundRow>() {
 
 		public int compare(RoundRow o1, RoundRow o2) {
@@ -199,12 +200,12 @@ public class RoundPanel extends JPanel implements PeopleAddedListener {
 						if (!hasRowWithName(record.getPerson().getName())) {
 							rows.add(RoundRow.fromRecord(record));
 						}
-						
+
 					} catch (Throwable t) {
 						t.printStackTrace();
 					}
 				}
-				
+
 				return null;
 			}
 

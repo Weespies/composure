@@ -15,6 +15,6 @@
 	<ranged name="Rifle, Sniper" chance="40" damage="d8 W" cost="180" weight="15" availability="C" range="1000" rate="3" clip="20" type="Ranged" skill="Guns,Rifles"  max="1"/>
 	<ranged name="Rifle, Sonic" chance="25" damage="d8 S" cost="140" weight="6" availability="I" range="15" rate="2" clip="50" type="Ranged" skill="Guns,Energy Weapons" max="1" />
 	<ranged name="Shotgun" chance="90" damage="d10 W" cost="50" weight="10" availability="E" range="10" rate="2" clip="10" type="Ranged" skill="Guns,Shotguns"  max="1"/>
-	<ranged name="Submachine Gun" chance="" damage="d6 W" cost="36" weight="4" availability="I" range="60" rate="3" clip="35" type="Ranged" skill="Guns,Rifles"  max="1"/>
+	<ranged name="Submachine Gun" chance="10" damage="d6 W" cost="36" weight="4" availability="I" range="60" rate="3" clip="35" type="Ranged" skill="Guns,Rifles"  max="1"/>
 
 </rangedList>

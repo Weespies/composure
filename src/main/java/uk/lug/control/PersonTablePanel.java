@@ -1,14 +1,16 @@
 package uk.lug.control;
 
+import static uk.lug.gui.util.CachedImageLoader.*;
+
 import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 import javax.swing.AbstractAction;
 import javax.swing.Action;
-import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
@@ -21,12 +23,12 @@ import javax.swing.event.ListSelectionListener;
 import uk.lug.dao.handlers.DatabaseSchema;
 import uk.lug.dao.records.PersonRecord;
 import uk.lug.gui.ToolbarPanel;
-import uk.lug.gui.pending.PendingPanel;
-import uk.lug.gui.pending.PleaseWaitPanel;
+import uk.lug.gui.archetype.menu.ArchetypesDialog;
+import uk.lug.gui.archetype.menu.BatchKey;
 import uk.lug.serenity.npc.gui.generator.GeneratorDialog;
+import uk.lug.serenity.npc.model.Person;
+import uk.lug.serenity.npc.random.Generator;
 import uk.lug.util.SwingHelper;
-
-import static uk.lug.gui.util.CachedImageLoader.*;
 
 public class PersonTablePanel extends JPanel {
 	private PersonRecordTableModel tableModel;
@@ -96,6 +98,7 @@ public class PersonTablePanel extends JPanel {
 		toolbar.addActionButton(deleteAction);
 		toolbar.addActionButton(editAction);
 		toolbar.addActionButton(addToFightAction);
+		toolbar.addActionButton(addBatchAction);
 		editAction.setEnabled(false);
 		deleteAction.setEnabled(false);
 		addToFightAction.setEnabled(false);
@@ -105,6 +108,13 @@ public class PersonTablePanel extends JPanel {
 
 		public void actionPerformed(ActionEvent e) {
 			doNew();
+		}
+	};
+
+	private Action addBatchAction = new AbstractAction("Add Batch", ADD_ICON) {
+
+		public void actionPerformed(ActionEvent e) {
+			doAddBatch();
 		}
 	};
 
@@ -156,6 +166,42 @@ public class PersonTablePanel extends JPanel {
 				table.getSelectionModel().clearSelection();
 			}
 		}).start();
+
+	}
+
+	protected void doAddBatch() {
+		ArchetypesDialog dialog = new ArchetypesDialog(this, "Batch create");
+		dialog.setVisible(true);
+		if (!dialog.isOk()) {
+			return;
+		}
+		final List<BatchKey> batchList = dialog.getBatchMap();
+		final String tags = dialog.getTag();
+		new SwingWorker<Void, PersonRecord>() {
+
+			@Override
+			protected Void doInBackground() throws Exception {
+				for (BatchKey key : batchList) {
+					try {
+						Person person = Generator.getRandomPerson(key.getArchetype(), key.getLevel().getValue());
+						PersonRecord record = PersonRecord.createFrom(person);
+						record.setPlayerName("");
+						record.setTags(tags);
+						record = DatabaseSchema.getPersonDao().save(record);
+						publish(record);
+					} catch (Throwable t) {
+						t.printStackTrace();
+					}
+				}
+				return null;
+			}
+
+			protected void process(java.util.List<PersonRecord> chunks) {
+				for (PersonRecord pr : chunks) {
+					tableModel.addNewRowObject(pr);
+				}
+			}
+		}.execute();
 
 	}
 

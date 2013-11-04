@@ -226,16 +226,6 @@ public class Archetype {
 		if ( !StringUtils.equals(name, other.getName() ) ) {
 			return false;
 		}
-		if ( !StringUtils.equals(author, other.getAuthor() ) ) {
-			return false;
-		}
-		if ( !ObjectUtils.equals(statBiases, other.getStatBiases() ) ) {
-			return false;
-		}
-		
-		if ( !skillsMatch( other ) ) {
-			return false;
-		}
 		
 		return true;
 	}
