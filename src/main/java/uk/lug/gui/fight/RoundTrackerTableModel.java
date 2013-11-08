@@ -21,13 +21,14 @@ import uk.lug.fight.RoundRow;
 import uk.lug.util.SwingHelper;
 
 public class RoundTrackerTableModel extends AbstractListBackedTableModel<RoundRow> {
+	private static final String ACTION = "Action";
 	private static final String WOUND = "Wound";
 	private static final String STUN = "Stun";
 	private static final String LIFE_POINTS = "LifePoints";
 	private static final String INITIATIVE = "Initiative";
 	private static final String ID = "Id";
 	private static final String NAME = "Name";
-	private static final String[] COLUMNS = { ID, NAME, INITIATIVE, LIFE_POINTS, STUN, WOUND };
+	private static final String[] COLUMNS = { ID, NAME, ACTION,INITIATIVE, LIFE_POINTS, STUN, WOUND };
 
 	public List<String> saveRows() throws IOException {
 		List<String> ret= new ArrayList<String>(dataList.size());
@@ -129,6 +130,8 @@ public class RoundTrackerTableModel extends AbstractListBackedTableModel<RoundRo
 			return rowObject.getStun();
 		} else if (StringUtils.equals(columnName, WOUND)) {
 			return rowObject.getWounds();
+		}  else if (StringUtils.equals(columnName, ACTION)) {
+			return rowObject.getActions();
 		} else {
 			throw new IllegalArgumentException("Unrecognised table column " + columnName);
 		}

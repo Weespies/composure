@@ -119,6 +119,8 @@ public class RoundPanel extends JPanel implements PeopleAddedListener {
 	protected void respondToRowSelected() {
 		int[] rows = table.getSelectedRows();
 		removeRowAction.setEnabled(rows.length == 1);
+		increaseActionCount.setEnabled(rows.length==1);
+		clearActionCount.setEnabled(rows.length==1);
 		if (rows.length == 1) {
 			int row = rows[0];
 			RoundRow item = tableModel.getRowObject(row);
@@ -136,6 +138,8 @@ public class RoundPanel extends JPanel implements PeopleAddedListener {
 		toolbar.addActionButton(sortAction);
 		toolbar.addActionButton(removeRowAction);
 		toolbar.addActionButton(addPlayerAction);
+		toolbar.addActionButton(increaseActionCount);
+		toolbar.addActionButton(clearActionCount);
 		removeRowAction.setEnabled(false);
 
 	}
@@ -145,6 +149,20 @@ public class RoundPanel extends JPanel implements PeopleAddedListener {
 		public void actionPerformed(ActionEvent e) {
 			doRollInitiative();
 			saveTableFile();
+		}
+	};
+
+	private Action increaseActionCount = new AbstractAction("Actions Count+", CachedImageLoader.ADD_ICON) {
+
+		public void actionPerformed(ActionEvent e) {
+			doIncreaseActionCount();
+		}
+	};
+
+	private Action clearActionCount = new AbstractAction("Clear Actions", CachedImageLoader.DELETE_ICON) {
+
+		public void actionPerformed(ActionEvent e) {
+			doClearActionCount();
 		}
 	};
 
@@ -219,6 +237,27 @@ public class RoundPanel extends JPanel implements PeopleAddedListener {
 
 		}.run();
 
+	}
+
+	protected void doIncreaseActionCount() {
+		if (table.getSelectedRows().length != 1) {
+			return;
+		}
+		int row = table.getSelectedRows()[0];
+		RoundRow roundRow = tableModel.getRowObject(row);
+		roundRow.setActions(roundRow.getActions() + 1);
+		tableModel.fireTableRowsUpdated(row, row);
+	}
+
+	protected void doClearActionCount() {
+		if (table.getSelectedRows().length != 1) {
+			return;
+		}
+
+		int row = table.getSelectedRows()[0];
+		RoundRow roundRow = tableModel.getRowObject(row);
+		roundRow.setActions(0);
+		tableModel.fireTableRowsUpdated(row, row);
 	}
 
 	protected void doSort() {

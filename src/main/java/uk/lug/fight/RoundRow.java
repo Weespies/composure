@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.io.Serializable;
 
 import org.apache.commons.lang.StringUtils;
+import org.apache.tools.ant.taskdefs.Recorder.ActionChoices;
 import org.jdom.JDOMException;
 
 import uk.lug.dao.records.PersonRecord;
@@ -12,6 +13,7 @@ import uk.lug.gui.fight.PlayerInfo;
 import uk.lug.serenity.npc.model.Person;
 
 public class RoundRow implements Serializable {
+	private static final String ACTION_FIELD = "actions";
 	private static final long serialVersionUID = 1L;
 	private String name;
 	private Long personId = null;
@@ -22,6 +24,7 @@ public class RoundRow implements Serializable {
 	private Integer lifeTotal;
 	private Integer stun;
 	private Integer wounds;
+	private Integer actions = 0;
 
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
@@ -43,6 +46,8 @@ public class RoundRow implements Serializable {
 		}
 
 		appendInteger(sb, "lifeTotal", lifeTotal);
+		sb.append(",");
+		appendInteger(sb, ACTION_FIELD, actions);
 		sb.append(",");
 		appendInteger(sb, "stun", stun);
 		sb.append(",");
@@ -69,15 +74,21 @@ public class RoundRow implements Serializable {
 				stun = nullInteger(data);
 			} else if (StringUtils.equals(fieldName, "wounds")) {
 				wounds = nullInteger(data);
-			}else if (StringUtils.equals(fieldName, "recordId")) {
+			} else if (StringUtils.equals(fieldName, "recordId")) {
 				if (StringUtils.isNumeric(data)) {
-					personId=Long.parseLong(data);
+					personId = Long.parseLong(data);
 				}
 			} else if (StringUtils.equals(fieldName, "initiativeRoll")) {
 				initiativeRoll = nullInteger(data);
 			} else if (StringUtils.equals(fieldName, "initiativeDice")) {
 				initiativeStats = new InititativeDice();
 				initiativeStats.setFrom(data);
+			} else if (StringUtils.equals(fieldName, ACTION_FIELD)) {
+				if (!StringUtils.isEmpty(data) && StringUtils.isNumeric(data)) {
+					actions = Integer.parseInt(data);
+				} else {
+					actions= actions==null ? 0 : actions;
+				}
 			}
 		}
 	}
@@ -212,6 +223,14 @@ public class RoundRow implements Serializable {
 
 	public void setPersonId(Long personId) {
 		this.personId = personId;
+	}
+
+	public Integer getActions() {
+		return actions;
+	}
+
+	public void setActions(Integer actions) {
+		this.actions = actions;
 	}
 
 }
