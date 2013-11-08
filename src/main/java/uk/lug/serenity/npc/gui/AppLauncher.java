@@ -5,6 +5,7 @@ import java.io.IOException;
 
 import javax.swing.JFrame;
 import javax.swing.RepaintManager;
+import javax.swing.UIManager;
 
 import org.jdom.JDOMException;
 
@@ -21,7 +22,8 @@ public class AppLauncher {
 
 	public static void main(String[] args) {
 		try {
-			RepaintManager.setCurrentManager(new CheckThreadViolationRepaintManager());
+			UIManager.setLookAndFeel("javax.swing.plaf.nimbus.NimbusLookAndFeel");
+//			RepaintManager.setCurrentManager(new CheckThreadViolationRepaintManager());
 			DatabaseSchema.init();
 			new Thread(new Runnable() {
 
