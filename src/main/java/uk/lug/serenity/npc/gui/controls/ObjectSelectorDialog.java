@@ -28,7 +28,7 @@ import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
 import uk.lug.data.IDescribed;
-import uk.lug.gui.CachedImageLoader;
+import uk.lug.gui.util.CachedImageLoader;
 
 /**
  * Simple dialog to select from a list of choices.

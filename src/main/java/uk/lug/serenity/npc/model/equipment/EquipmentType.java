@@ -7,7 +7,7 @@ import javax.swing.Icon;
 
 import org.apache.commons.lang.StringUtils;
 
-import uk.lug.gui.CachedImageLoader;
+import uk.lug.gui.util.CachedImageLoader;
 import uk.lug.serenity.npc.gui.equipment.EquipmentTypeCellRenderer;
 
 /**

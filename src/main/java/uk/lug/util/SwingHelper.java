@@ -17,6 +17,7 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.Action;
 import javax.swing.JComponent;
 import javax.swing.JDialog;
+import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JSpinner;
 import javax.swing.JTextArea;

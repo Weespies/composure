@@ -21,7 +21,7 @@ import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 import javax.swing.border.EmptyBorder;
 
-import uk.lug.gui.CachedImageLoader;
+import uk.lug.gui.util.CachedImageLoader;
 import uk.lug.serenity.npc.model.event.StatChangeEvent;
 import uk.lug.serenity.npc.model.event.StatChangeListener;
 import uk.lug.serenity.npc.model.stats.NamedStat;

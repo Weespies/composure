@@ -31,6 +31,12 @@
       <field name="covers" type="java.lang.String">
          <bind-xml name="covers" node="attribute" />
       </field>
+      <field name="max" type="java.lang.Integer">
+         <bind-xml name="max" node="attribute" />
+      </field>
+      <field name="chance" type="java.lang.Integer">
+         <bind-xml name="chance" node="attribute" />
+      </field>
    </class>
    
 </mapping>

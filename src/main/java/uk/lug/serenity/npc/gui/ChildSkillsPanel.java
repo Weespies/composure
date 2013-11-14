@@ -27,8 +27,8 @@ import javax.swing.JToolBar;
 
 import org.apache.commons.lang.StringUtils;
 
-import uk.lug.gui.CachedImageLoader;
-import uk.lug.gui.ColorUtils;
+import uk.lug.gui.util.CachedImageLoader;
+import uk.lug.gui.util.ColorUtils;
 import uk.lug.serenity.npc.gui.controls.ValuePanel;
 import uk.lug.serenity.npc.model.event.SkillChangeEvent;
 import uk.lug.serenity.npc.model.event.SkillChangeListener;
@@ -170,6 +170,9 @@ public class ChildSkillsPanel extends JPanel implements SkillChangeListener, Pro
 			int max = dataModel.getMaxForChild(name, 0);
 			int min = dataModel.getMinForChild(name,0);
 			ValuePanel vpanel = childPanels.get(name);
+			if( vpanel==null ) {
+				throw new IllegalStateException("No child skills panel for "+name);
+			}
 			vpanel.setValues(max, min, points);
 		}
 		repaintChildPanels();

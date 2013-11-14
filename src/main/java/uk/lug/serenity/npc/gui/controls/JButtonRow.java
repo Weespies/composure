@@ -23,7 +23,7 @@ import javax.swing.event.ChangeListener;
 
 import org.apache.commons.lang.StringUtils;
 
-import uk.lug.gui.CachedImageLoader;
+import uk.lug.gui.util.CachedImageLoader;
 
 /**
  * @author Luggy

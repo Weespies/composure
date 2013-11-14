@@ -23,7 +23,7 @@ import javax.swing.JPanel;
 import javax.swing.event.ListDataEvent;
 import javax.swing.event.ListDataListener;
 
-import uk.lug.gui.CachedImageLoader;
+import uk.lug.gui.util.CachedImageLoader;
 import uk.lug.serenity.npc.model.Person;
 import uk.lug.serenity.npc.model.traits.TraitData;
 import uk.lug.serenity.npc.model.traits.TraitList;

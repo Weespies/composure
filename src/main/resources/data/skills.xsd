@@ -14,14 +14,14 @@
 				minOccurs="1" maxOccurs="unbounded" />
 		</xsd:sequence>
 		<xsd:attribute name="name" use="required"/>
-		<xsd:attribute name="skilledOnly" use="optional">
-			<xsd:simpleType>
-				<xsd:restriction base="xsd:string">
-					<xsd:enumeration value="yes" />
-					<xsd:enumeration value="no" />
-				</xsd:restriction>
-			</xsd:simpleType>
-		</xsd:attribute>
+		<xsd:attribute name="skilledOnly" use="optional" type="xsd:boolean"/>
+<!-- 			<xsd:simpleType> -->
+<!-- 				<xsd:restriction base="xsd:string"> -->
+<!-- 					<xsd:enumeration value="yes" /> -->
+<!-- 					<xsd:enumeration value="no" /> -->
+<!-- 				</xsd:restriction> -->
+<!-- 			</xsd:simpleType> -->
+<!-- 		</xsd:attribute> -->
 	</xsd:complexType>
 
 	<xsd:complexType name="specialty">

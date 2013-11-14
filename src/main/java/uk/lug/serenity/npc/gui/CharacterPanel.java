@@ -199,4 +199,5 @@ public class CharacterPanel extends JPanel implements DataModelListener<Person>{
 	public void refreshArchetypes() {
 		bioPanel.refreshArchetypes();
 	}
+
 }

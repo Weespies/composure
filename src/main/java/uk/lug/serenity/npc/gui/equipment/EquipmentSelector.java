@@ -25,7 +25,7 @@ import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
 import uk.lug.MutableList;
-import uk.lug.gui.CachedImageLoader;
+import uk.lug.gui.util.CachedImageLoader;
 import uk.lug.serenity.npc.managers.EquipmentManager;
 import uk.lug.serenity.npc.model.equipment.Equipment;
 import uk.lug.util.RandomFactory;

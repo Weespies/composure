@@ -29,7 +29,7 @@ import org.jdom.output.Format;
 import org.jdom.output.XMLOutputter;
 import org.xml.sax.InputSource;
 
-import uk.lug.gui.DirectoryDialog;
+import uk.lug.gui.archetype.skills.DirectoryDialog;
 
 /**
  * $Id: This will be filled in on CVS commit $
@@ -172,7 +172,6 @@ public class LocalFileController {
 		sb.append( dataDirectory.getAbsolutePath() );
 		sb.append( File.separatorChar );
 		sb.append( getResourceName(resource) );
-		System.out.println(sb.toString());
 		return new File(sb.toString());
 	}
 	

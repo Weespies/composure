@@ -53,7 +53,6 @@ public class DataModel<T extends Object> {
 		this.data = data;
 		for ( DataModelListener<T> dml : listeners ) {
 			if ( dml instanceof SkillSheetPanel ) {
-				System.out.println("");
 			}
 			dml.dataChanged( oldData, this.data );
 		}
