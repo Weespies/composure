@@ -159,9 +159,9 @@ public class RoundTrackerTableModel extends AbstractListBackedTableModel<RoundRo
 		if (COLUMNS[column].equals(INITIATIVE)) {
 			return isPlayer(row);
 		} else if (COLUMNS[column].equals(STUN)) {
-			return isPlayer(row);
+			return !isPlayer(row);
 		} else if (COLUMNS[column].equals(WOUND)) {
-			return isPlayer(row);
+			return !isPlayer(row);
 		}
 		return false;
 	}
