@@ -22,7 +22,7 @@ public class AppLauncher {
 
 	public static void main(String[] args) {
 		try {
-			UIManager.setLookAndFeel("javax.swing.plaf.nimbus.NimbusLookAndFeel");
+//			UIManager.setLookAndFeel("javax.swing.plaf.nimbus.NimbusLookAndFeel");
 //			RepaintManager.setCurrentManager(new CheckThreadViolationRepaintManager());
 			DatabaseSchema.init();
 			new Thread(new Runnable() {

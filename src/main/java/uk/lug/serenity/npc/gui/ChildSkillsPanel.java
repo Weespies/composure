@@ -170,6 +170,9 @@ public class ChildSkillsPanel extends JPanel implements SkillChangeListener, Pro
 			int max = dataModel.getMaxForChild(name, 0);
 			int min = dataModel.getMinForChild(name,0);
 			ValuePanel vpanel = childPanels.get(name);
+			if( vpanel==null ) {
+				throw new IllegalStateException("No child skills panel for "+name);
+			}
 			vpanel.setValues(max, min, points);
 		}
 		repaintChildPanels();

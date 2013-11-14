@@ -26,7 +26,17 @@ public class DataRow {
 		ret.setDamage(rw.getDamage());
 		return ret;
 	}
-
+	
+	public static DataRow createDodge(Person person) {
+		DataRow ret = new DataRow();
+		ret.setName("Dodge : ");
+		List<Dice> skillRoll = new ArrayList<Dice>();
+		int agility = person.getMainStats().getMainStats().get(MainStat.Agility.getKey()).getValue();
+		skillRoll.addAll(Dice.makeList(agility));
+		skillRoll.addAll(person.getSkillSheet().highestSkillOf("Athletics,Dodge"));
+		ret.setRoll(writeList(skillRoll));
+		return ret;
+	}
 
 	public static DataRow createFrom(Person person, Explosive ex) {
 		DataRow ret = new DataRow();

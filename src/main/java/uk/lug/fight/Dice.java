@@ -74,20 +74,20 @@ public class Dice implements Serializable {
 	}
 
 	public static Dice getHighestFor(int v) {
-		if (v == 2) {
-			return D2;
-		} else if (v == 4) {
-			return D4;
-		} else if (v == 6) {
-			return D6;
-		} else if (v == 8) {
-			return D8;
-		} else if (v == 10) {
-			return D10;
-		} else if (v == 12) {
-			return D12;
-		} else if (v >= 20) {
+		if (v >= 20) {
 			return D20;
+		} else if (v >= 12) {
+			return D12;
+		} else if (v >= 10) {
+			return D10;
+		} else if (v >= 8) {
+			return D8;
+		} else if (v >= 6) {
+			return D6;
+		} else if (v >= 4) {
+			return D4;
+		} else if (v >= 2) {
+			return D2;
 		} else {
 			throw new IllegalStateException("Cannot located dice for " + v);
 		}

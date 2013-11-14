@@ -79,6 +79,7 @@ public class DataPanel extends JPanel {
 				List<DataRow> ret = new ArrayList<DataRow>();
 				try {
 					Person person = DatabaseSchema.getPersonDao().getForId(roundRow.getPersonId()).getPerson();
+					
 					for (RangedWeapon rw : person.getRangedWeapons()) {
 						ret.add(DataRow.createFrom(person, rw));
 					}
@@ -105,8 +106,14 @@ public class DataPanel extends JPanel {
 			@Override
 			protected Void doInBackground() throws Exception {
 				Person person = DatabaseSchema.getPersonDao().getForId(roundRow.getPersonId()).getPerson();
+				StringBuilder sb = new StringBuilder();
+				DataRow dodge = DataRow.createDodge(person);
+				sb.append("Dodge : ");
+				sb.append(dodge.getRoll());
+				sb.append(" ");
+				publish(sb.toString());
 				for (Armor a : person.getArmor()) {
-					StringBuilder sb = new StringBuilder();
+					sb = new StringBuilder();
 					sb.append(a.getName());
 					sb.append(" (");
 					sb.append(a.getRating());
