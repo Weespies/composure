@@ -1,8 +1,8 @@
 package uk.lug.gui.fight;
 
-import static uk.lug.gui.util.CachedImageLoader.*;
-
 import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Component;
 import java.awt.event.ActionEvent;
 import java.io.File;
 import java.io.IOException;
@@ -15,6 +15,7 @@ import java.util.prefs.Preferences;
 
 import javax.swing.AbstractAction;
 import javax.swing.Action;
+import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
@@ -24,6 +25,7 @@ import javax.swing.ListSelectionModel;
 import javax.swing.SwingWorker;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
+import javax.swing.table.DefaultTableCellRenderer;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang.StringUtils;
@@ -62,6 +64,33 @@ public class RoundPanel extends JPanel implements PeopleAddedListener {
 
 			public void valueChanged(ListSelectionEvent e) {
 				respondToRowSelected();
+			}
+		});
+		table.setDefaultRenderer(Object.class, new DefaultTableCellRenderer(){
+			@Override
+			public Component getTableCellRendererComponent(JTable table, Object value, boolean isSelected, boolean hasFocus, int row, int column) {
+				// TODO Auto-generated method stub
+				JLabel label = (JLabel)super.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, column);
+				label.setOpaque(true);
+				RoundRow roundRow = tableModel.getRowObject(row);
+				label.setForeground(Color.BLACK);
+				label.setBackground(Color.WHITE);	
+				if ( tableModel.isPlayer(row) ) {
+					SwingHelper.boldLabel(label);
+				} else {
+					SwingHelper.plainLabel(label);
+					int damage = roundRow.getStun()+roundRow.getWounds();
+					int life = roundRow.getLifeTotal();
+					if ( damage>=life ){
+						label.setForeground(Color.RED);
+						label.setBackground(Color.LIGHT_GRAY);
+					} else if ( damage>=(int)(life/2) ) {
+						label.setForeground(Color.RED);
+						label.setBackground(Color.WHITE);	
+					} 
+				}
+				
+				return label;
 			}
 		});
 		JScrollPane scroll = new JScrollPane(table);

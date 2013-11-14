@@ -166,32 +166,45 @@ public class RoundTrackerTableModel extends AbstractListBackedTableModel<RoundRo
 		return false;
 	}
 
-	private boolean isPlayer(int row) {
+	boolean isPlayer(int row) {
 		return !StringUtils.isEmpty(super.getRowObject(row).getPlayer());
 	}
 
 	@Override
 	protected void setValue(Object newValue, RoundRow rowObject, String columnName) {
+		boolean refresh=false;
 		if (StringUtils.equals(INITIATIVE, columnName)) {
 			Integer i = getIntegerValue(newValue);
 			if (i == null) {
 				return;
 			}
 			rowObject.setInitiativeRoll(i);
+			refresh=true;
 		} else if (StringUtils.equals(STUN, columnName)) {
 			Integer i = getIntegerValue(newValue);
 			if (i == null) {
 				return;
 			}
 			rowObject.setStun(i);
+			refresh=true;
 		} else if (StringUtils.equals(WOUND, columnName)) {
 			Integer i = getIntegerValue(newValue);
 			if (i == null) {
 				return;
 			}
-			rowObject.setStun(i);
+			rowObject.setWounds(i);
+			refresh=true;
 		}
-
+		if( refresh ) {
+			int rown=0;
+			for ( RoundRow rowdata : dataList ) {
+				if ( StringUtils.equals(rowObject.getName(),rowdata.getName())) {
+					super.fireTableRowsUpdated(rown,rown);
+					return;
+				}
+				rown++;
+			}
+		}
 	}
 
 	private Integer getIntegerValue(Object value) {
