@@ -195,7 +195,7 @@ public class RoundPanel extends JPanel implements PeopleAddedListener {
 		}
 	};
 
-	private Action removeRowAction = new AbstractAction("Remove Roll", CachedImageLoader.DUDE_ICON) {
+	private Action removeRowAction = new AbstractAction("Remove Row", CachedImageLoader.DUDE_ICON) {
 
 		public void actionPerformed(ActionEvent e) {
 			doRemoveRow();

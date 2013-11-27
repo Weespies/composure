@@ -239,6 +239,9 @@ public class SkillData extends Skill {
 	 * @param childName
 	 */
 	public int getChildPoints(String childName) {
+		if (childName.equals("Pistol")) {
+			childName="Pistols";
+		}
 		if ( !children.contains(childName) ) {
 			throw new IllegalArgumentException("Unknown child skill : "+childName+" in " + getName());
 		} else if ( childrenPoints.containsKey(childName) && getPoints()==6 ) {
