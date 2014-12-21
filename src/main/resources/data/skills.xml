@@ -12,10 +12,10 @@
 		<specialty child="Appraisal"/>
 		<specialty child="Cooking"/>
 		<specialty child="Forgery"/>
-		<specialty child="Game Designing"/>
 		<specialty child="Painting"/>
 		<specialty child="Photography"/>
 		<specialty child="Poetry"/>
+		<specialty child="Song Writing"/>
 		<specialty child="Sculpting"/>
 		<specialty child="Writing"/>
 	</skill>
@@ -65,25 +65,19 @@
 		<specialty child="Morale"/>
 	</skill>
 	<skill name="Guns">
-		<specialty child="Assault Rifles"/>
-		<specialty child="Energy Weapons"/>
-		<specialty child="Grenade Launchers"/>
-		<specialty child="Gunsmithing"/>
-		<specialty child="Machine Guns"/>
-		<specialty child="Pistols"/>
-		<specialty child="Rifles"/>
-		<specialty child="Shotguns"/>
+		<specialty child="Single Handed Kinetic"/>
+		<specialty child="Double Handed Kinetic"/>
+		<specialty child="Disrutpors"/>
+		<specialty child="Phasers"/>
+		<specialty child="Blasters"/>
 	</skill>
 	<skill name="Heavy Weapons">
-		<specialty child="Artillery"/>
-		<specialty child="Catapults"/>
-		<specialty child="Demolitions"/>
-		<specialty child="Forward Observer"/>
-		<specialty child="Mounted Guns"/>
+		<specialty child="Ship Torpedo"/>
+		<specialty child="Ship Beam"/>
+		<specialty child="Ship Projectiles"/>
+		<specialty child="Ancient Weapons"/>
 		<specialty child="Repair Heavy Weapons"/>
 		<specialty child="Rocket Launchers"/>
-		<specialty child="Ships Cannons"/>
-		<specialty child="Siege Weapons"/>
 	</skill>
 	<skill name="Influence">
 		<specialty child="Administration"/>
@@ -111,18 +105,15 @@
 		<specialty child="Sports"/>
 	</skill>
 	<skill name="Linguist" skilledOnly="true">
-		<specialty child="Arabic"/>
-		<specialty child="Armenian"/>
-		<specialty child="French"/>
-		<specialty child="German"/>
-		<specialty child="Hindu"/>
-		<specialty child="Japanese"/>
-		<specialty child="Latin"/>
-		<specialty child="Portuguese"/>
-		<specialty child="Russian"/>
-		<specialty child="Tagalog"/>
-		<specialty child="Swahili"/>
-		<specialty child="Swedish"/>
+		<specialty child="Terran"/>
+		<specialty child="Klingon"/>
+		<specialty child="Romulan"/>
+		<specialty child="Vulcan"/>
+		<specialty child="Andoran"/>
+		<specialty child="Saurian"/>
+		<specialty child="Tholian"/>
+		<specialty child="Bajoran"/>
+		<specialty child="Cardasian"/>
 	</skill>
 	<skill name="Mechanical Engineering" skilledOnly="true">
 		<specialty child="Create Mechanical Devices"/>
@@ -130,6 +121,7 @@
 		<specialty child="Mechanical Repairs"/>
 		<specialty child="Fix Mechanical Security Systems"/>
 		<specialty child="Plumbing"/>
+		<specialty child="Starship Engineering"/>
 	</skill>
 	<skill name="Medical Expertise" skilledOnly="true">
 		<specialty child="Dentistry"/>
@@ -147,6 +139,7 @@
 		<specialty child="Surgery"/>
 		<specialty child="Toxicology"/>
 		<specialty child="Vetinary Medicine"/>
+		
 	</skill>
 	<skill name="Melee Weapon Combat">
 		<specialty child="Clubs"/>
@@ -155,6 +148,7 @@
 		<specialty child="Nunchaku"/>
 		<specialty child="Pole Arms"/>
 		<specialty child="Swords"/>
+		<specialty child="Bat'leth"/>
 		<specialty child="Whips"/>
 	</skill>
 	<skill name="Perception">
@@ -191,33 +185,29 @@
 		<specialty child="Astrogation"/>
 		<specialty child="Astronomy"/>
 		<specialty child="Astrophysics"/>
-		<specialty child="Gunships"/>
-		<specialty child="Hang Gliders"/>
-		<specialty child="Large Cruisers"/>
-		<specialty child="Mid Bulk Transport"/>
-		<specialty child="Patrol Vessels"/>
-		<specialty child="Rocket Shuttles"/>
+		<specialty child="Shuttles"/>
+		<specialty child="Starship Helming"/>
 		<specialty child="Space Survival"/>
-		<specialty child="Tankers"/>
-		<specialty child="Ultralight Aircraft"/>
-		<specialty child="VTOL Tilt Rotor"/>
 	</skill>
 	<skill name="Planetary Vehicle">
 		<specialty child="Aquatic Navigation"/>
-		<specialty child="Bikes"/>
-		<specialty child="Canoes"/>
-		<specialty child="Cars"/>
-		<specialty child="Equestrian"/>
+		<specialty child="Watercraft"/>
+		<specialty child="Atmospheric Craft"/>
 		<specialty child="Ground Vehicle Repair"/>
-		<specialty child="Horse Drawn Conveyances"/>
-		<specialty child="Hovercraft"/>
 		<specialty child="Industrial Vehicles"/>
 		<specialty child="Land Navigation"/>
 		<specialty child="Large Ground Transports"/>
 		<specialty child="Military Combat Vehicles"/>
-		<specialty child="Powerboats"/>
-		<specialty child="Sailing"/>
-		<specialty child="Submarines"/>
+	</skill>
+	<skill name="Military Tactics">
+		<specialty child="Spaace fleet combat"/>
+		<specialty child="Ground assault"/>
+		<specialty child="Ground special forces"/>
+		<specialty child="Covert Infiltration"/>
+		<specialty child="Famous Tactics (Racial)"/>
+		<specialty child="Ground Defensive Tactics"/>
+		<specialty child="Force Motivation"/>
+		<specialty child="The Great Warriors"/>
 	</skill>
 	<skill name="Ranged Weapons">
 		<specialty child="Blowguns"/>
@@ -232,10 +222,14 @@
 		<specialty child="Throwing Knives"/>
 	</skill>
 	<skill name="Scientific Expertise" skilledOnly="true">
-		<specialty child="Earth Sciences"/>
+		<specialty child="Planetary Sciences"/>
+		<specialty child="Astronomy"/>
 		<specialty child="Historical Sciences"/>
-		<specialty child="Life Sciences"/>
+		<specialty child="Biology"/>
 		<specialty child="Mathematical Sciences"/>
+		<specialty child="Warp Sciences"/>
+		<specialty child="Quantum Sciences"/>
+		<specialty child="Temporal Sciences"/>
 	</skill>
 	<skill name="Survival">
 		<specialty child="Aerial"/>
@@ -252,16 +246,14 @@
 		<specialty child="Create/Alter Technical Devices"/>
 		<specialty child="Demolitions"/>
 		<specialty child="Electronics"/>
-		<specialty child="Technical Repair"/>
+		<specialty child="Warp Systems"/>
+		<specialty child="Impulse Systems"/>
+		<specialty child="Transporter Systems"/>
+		<specialty child="Weapon Systems"/>
 		<specialty child="Technical Security Systems"/>
 	</skill>
 	<skill name="Unarmed Combat">
-		<specialty child="Boxing"/>
-		<specialty child="Brawling"/>
-		<specialty child="Judo"/>
-		<specialty child="Karate"/>
-		<specialty child="Kung Fu"/>
-		<specialty child="Savate"/>
+		<specialty child="Racial Martial Arts"/>
 		<specialty child="Wrestling"/>
 	</skill>
 </skills>

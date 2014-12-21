@@ -6,13 +6,13 @@
 	<complication name="Amputee" type="MINOR" focus="left arm|right arm|left leg|right leg"/>
 	<complication name="Bleeder" type="MAJOR"/>
 	<complication name="Blind" type="MAJOR"/>
-	<complication name="Branded" type="BOTH"/>
+	<complication name="Dishonored" type="BOTH"/>
 	<complication name="Chip on the Shoulder" type="BOTH"/>
-	<complication name="Combat Paralysis" type="BOTH"/>
-	<complication name="Coward" type="MINOR"/>
+	<complication name="Combat Paralysis" type="MAJOR"/>
+	<complication name="Coward" type="MAJOR"/>
 	<complication name="Credo" type="BOTH"/>
 	<complication name="Crude" type="MINOR"/>
-	<complication name="Dead Broke" type="MINOR"/>
+	<complication name="Penniless" type="MINOR"/>
 	<complication name="Deadly Enemy" type="MINOR"/>
 	<complication name="Deaf" type="MAJOR"/>
 	<complication name="Dull Sense" type="MINOR" focus="Smell|Touch|Sight|Taste|Hearing"/>
@@ -38,7 +38,7 @@
 	<complication name="Scrawny" type="MINOR"/>
 	<complication name="Slow Learner" type="MINOR"/>
 	<complication name="Soft" type="MINOR"/>
-	<complication name="Stingy" type="MINOR"/>
+	<complication name="Like A Ferenghi" type="MINOR"/>
 	<complication name="Straight Shooter" type="MINOR"/>
 	<complication name="Superstitious" type="MINOR"/>
 	<complication name="Things Don't Go Smooth" type="BOTH"/>

@@ -3,20 +3,13 @@
 
 	<ranged name="Bow" chance="90" damage="d4 W" cost="6" weight="8" availability="E" range="70" rate="1" clip="1" type="Ranged" skill="Ranged Weapons,Bows" max="1"/>
 	<ranged name="Crossbow" chance="90" damage="d4 W" cost="8" weight="13" availability="C" range="150" rate="0.5" clip="1" type="Ranged" skill="Ranged Weapons,Crossbows" max="1" />
-	<ranged name="Crossbow, Powered" chance="25" damage="d4 W" cost="24" weight="15" availability="C" range="175" rate="2" clip="6" type="Ranged" skill="Guns,Crossbows" max="2" />
-	<ranged name="Derringer" chance="10" damage="d4 W" cost="30" weight="1" availability="E" range="30" rate="1" clip="2" type="Ranged" skill="Guns,Pistols" max="2" />
-	<ranged name="Grenade Launcher" chance="10" damage="*" cost="106" weight="12" availability="I" range="40" rate="1" clip="8" type="Ranged" skill="Heavy Weapons,Grenades" max="1" />
-	<ranged name="Pistol" chance="90" damage="d6 W" cost="18" weight="2" availability="E" range="100" rate="3" clip="8" type="Ranged" skill="Guns,Pistols" max="2" />
-	<ranged name="Pistol, Machine" chance="60" damage="d4 W" cost="50" weight="5" availability="I" range="100" rate="6" clip="12" type="Ranged" skill="Guns,Pistols"  max="2"/>
-	<ranged name="Pistol, Laser" chance="40" damage="d10 W" cost="330" weight="1.5" availability="I" range="100" rate="3" clip="10" type="Ranged" skill="Guns,Energy Weapons,Pistols"  max="2"/>
-	<ranged name="Pistol, Laser (Micro)" chance="40" damage="d6 W" cost="330" weight=".75" availability="I" range="50" rate="4" clip="10" type="Ranged" skill="Guns,Energy Weapons,Pistol"  max="2"/>
-	<ranged name="Rifle" chance="90" damage="d8 W" cost="30" weight="9" availability="C" range="225" rate="3" clip="30" type="Ranged" skill="Guns,Rifles"  max="1"/>
-	<ranged name="Rifle, Bullpup" chance="40" damage="d8 W" cost="60" weight="7" availability="I" range="100" rate="3" clip="20" type="Ranged" skill="Guns,Assault Rifles" max="1" />
-	<ranged name="Rifle, Assault" chance="40" damage="d8 W" cost="40" weight="11" availability="I" range="150" rate="3" clip="40" type="Ranged" skill="Guns,Assault Rifles"  max="1"/>
-	<ranged name="Rifle, Sniper" chance="40" damage="d8 W" cost="180" weight="15" availability="C" range="1000" rate="3" clip="20" type="Ranged" skill="Guns,Rifles"  max="1"/>
-	<ranged name="Rifle, Sonic" chance="25" damage="d8 S" cost="140" weight="6" availability="I" range="15" rate="2" clip="50" type="Ranged" skill="Guns,Energy Weapons" max="1" />
-	<ranged name="Rifle, Laser" chance="5" damage="d12 W" cost="900" weight="15" availability="I" range="20" rate="3" clip="50" type="Ranged" skill="Guns,Energy Weapons" max="1" />
-	<ranged name="Shotgun" chance="90" damage="d10 W" cost="50" weight="10" availability="E" range="10" rate="2" clip="10" type="Ranged" skill="Guns,Shotguns"  max="1"/>
-	<ranged name="Submachine Gun" chance="10" damage="d6 W" cost="36" weight="4" availability="I" range="60" rate="3" clip="35" type="Ranged" skill="Guns,Rifles"  max="1"/>
-
+	<ranged name="Explsovie Projector" chance="10" damage="*" cost="106" weight="12" availability="I" range="40" rate="1" clip="8" type="Ranged" skill="Heavy Weapons,Grenades" max="1" />
+	<ranged name="Disruptor Pistol" chance="90" damage="d8 W" cost="18" weight="2" availability="E" range="100" rate="3" clip="20" type="Ranged" skill="Guns,Pistols" max="2" />
+	<ranged name="Phaser Pistol" chance="20" damage="d2 to D8 W/S" cost="18" weight="2" availability="E" range="100" rate="3" clip="50" type="Ranged" skill="Guns,Pistols" max="2" /
+	<ranged name="Kinetic Pistol" chance="10" damage="d6 W" cost="18" weight="2" availability="E" range="100" rate="3" clip="8" type="Ranged" skill="Guns,Pistols" max="2" />
+	
+	<ranged name="Disruptor Rifle" chance="90" damage="d12 W" cost="18" weight="2" availability="E" range="100" rate="3" clip="50" type="Ranged" skill="Guns,Pistols" max="2" />
+	<ranged name="Phaser Rifle" chance="20" damage="d6 to D20 W/S" cost="18" weight="2" availability="E" range="100" rate="3" clip="200" type="Ranged" skill="Guns,Pistols" max="2" /
+	<ranged name="Kinetic Rifle" chance="10" damage="d8 W" cost="18" weight="2" availability="E" range="100" rate="3" clip="8" type="Ranged" skill="Guns,Pistols" max="2" />
+	
 </rangedList>

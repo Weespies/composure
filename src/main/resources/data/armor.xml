@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <armorList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="armor.xsd">
-	<armor name="Ballistic Vest" chance="10" rating="1W" cost="46" weight="4" availability="C" type="Armor" covers="Chest" />
-	<armor name="Chameleon Suit" chance="1" rating="1W" cost="40" weight="17" availability="I" type="Armor" covers="All" />
-	<armor name="Helmet, Infantry" chance="10" rating="4W" cost="16" weight="2" availability="E" alertness="-1" type="Armor" covers="Head" />
-	<armor name="Helmet, Squad" chance="5" rating="4W" cost="35" weight="3" availability="C" alertness="-2" type="Armor" covers="Head" />
-	<armor name="Mask, NBC" rating="2W" cost="8" weight="3" availability="C" alertness="-3" type="Armor" covers="Face" />
-	<armor name="Body Suit, NBC" rating="2W" cost="32" weight="14" availability="C" agility="-2" alertness="-2" type="Armor" covers="All" />
-	<armor name="Plate Vest" chance="10" rating="4W" cost="30" weight="10" availability="E" agility="-1" type="Armor" covers="chest" />
-	<armor name="Riot Gear" rating="3W" cost="92" weight="24" availability="C" agility="-1" alertness="-1" type="Armor" covers="all" />
-	<armor name="Heartline Health Suit" cost="28" weight="3" availability="C" type="Armor" covers="all" />
-	<armor name="Tactical Suit" chance="1" rating="5W" cost="110" weight="18" availability="I" agility="-2" type="Armor" covers="all" />
-	<armor name="Vacuum Suit" rating="2W" cost="67" weight="35" availability="E" agility="-2" alertness="-2" type="Armor" covers="all" />
+	<armor name="Crewmans Uniform" chance="10" rating="1W" cost="46" weight="4" availability="C" type="Armor" covers="Chest" />
+	<armor name="Crewmans Helmet" chance="10" rating="4W" cost="16" weight="2" availability="E" alertness="-1" type="Armor" covers="Head" />
+	<armor name="Assualt Suit" chance="10" rating="4W" cost="30" weight="10" availability="E" agility="-1" type="Armor" covers="chest" />
+	<armor name="Assualt Pressure Suit" rating="3W" cost="92" weight="24" availability="C" agility="-1" alertness="-2" type="Armor" covers="all" />
 </armorList>

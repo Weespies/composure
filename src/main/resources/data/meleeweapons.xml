@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <meleeList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="meleeweapons.xsd" >
-	<melee name="Baton, Security" damage="d2 S" cost="1.2" weight="2" availability="E" type="Melee" skill="Clubs" chance="30" />
-	<melee name="Baton, Stun" damage="d2 S" cost="12" weight="2" availability="C" type="Melee" skill="Clubs" chance="30" />
-	<melee name="Brass Knuckles" damage="*" cost="0.8" weight="1" availability="E" type="Melee" skill="Unarmed Combat" chance="15" />
-	<melee name="Club" damage="d6 B" cost="0.2" weight="3" availability="E" type="Melee" skill="Clubs" chance="40" />
-	<melee name="Hatchet" damage="d6 W" cost="16" weight="4" availability="E" type="Melee" skill="Melee Weapon Combat" chance="70" />
-	<melee name="Knife, Combat" damage="d4 W" cost="1.6" weight="1" availability="E" type="Melee" skill="Knives" chance="60" />
-	<melee name="Knife, Utility" damage="d2 W" cost=".8" weight="0" availability="E" type="Melee" skill="Knives" chance="90" />
-	<melee name="Machete" damage="d4 W" cost="3.2" weight="3" availability="C" type="Melee" skill="Melee Weapon Combat" chance="70" />
-	<melee name="Sword, Combat" damage="d6 W" cost="24" weight="6" availability="E" type="Melee" skill="Swords" chance="90" />
-	<melee name="Sword, Gentleman's" damage="d4 W" cost="26" weight="1" availability="C" type="Melee" skill="Swords" chance="25" />
+	<melee name="Baton, Security" damage="d2 S" cost="1.2" weight="2" availability="E" type="Melee Weapon Combat" skill="Clubs" chance="30" />
+	<melee name="Baton, Stun" damage="d2 S" cost="12" weight="2" availability="C" type="Melee Weapon Combat" skill="Clubs" chance="30" />
+	<melee name="Brass Knuckles" damage="*" cost="0.8" weight="1" availability="E" type="Melee Weapon Combat" skill="Unarmed Combat" chance="15" />
+	<melee name="Club" damage="d6 B" cost="0.2" weight="3" availability="E" type="Melee Weapon Combat" skill="Clubs" chance="40" />
+	<melee name="Hatchet" damage="d6 W" cost="16" weight="4" availability="E" type="Melee Weapon Combat" skill="Melee Weapon Combat" chance="70" />
+	<melee name="Combat Knife" damage="d4 W" cost="1.6" weight="1" availability="E" type="Melee Weapon Combat" skill="Knives" chance="60" />
+	<melee name="Knife Domestic" damage="d2 W" cost=".8" weight="0" availability="E" type="Melee Weapon Combat" skill="Knives" chance="90" />
+	<melee name="Bat'leth" damage="d8 W" cost="24" weight="6" availability="E" type="Melee Weapon Combat" skill="Swords" chance="90" />
+	<melee name="Sword, Gentleman's" damage="d4 W" cost="26" weight="1" availability="C" type="Melee Weapon Combat" skill="Swords" chance="25" />
 </meleeList>

@@ -10,12 +10,10 @@
 		</description>
 	</asset>
 	<asset name="Athlete" type="BOTH" skill="Athletics"/>
-	<asset name="Born Behind The Wheel" type="BOTH"/>
-	<asset name="Cortex Spectre" type="BOTH"/>
 	<asset name="Fightin' Type" type="MAJOR"/>
 	<asset name="Friends in Low Places" type="MINOR"/>
 	<asset name="Friends in High Places" type="MINOR"/>
-	<asset name="Good Name" type="BOTH"/>
+	<asset name="High Born" type="MAJOR"/>
 	<asset name="Healthy as a Horse" type="MAJOR"/>
 	<asset name="Heavy Tolerance" type="MINOR"/>
 	<asset name="Highly Educated" type="MINOR"/>
@@ -23,19 +21,16 @@
 	<asset name="Leadership" type="BOTH"/>
 	<asset name="Lightnin' Reflexes" type="MAJOR"/>
 	<asset name="Math Whiz" type="MINOR"/>
-	<asset name="Mean Left Hook" type="MINOR"/>
+	<asset name="Unarmed Combat Expert" type="MINOR"/>
 	<asset name="Mechanical Empathy" type="MINOR"/>
 	<asset name="Military Rank" type="MINOR"/>
 	<asset name="Moneyed Individual" type="MAJOR"/>
-	<asset name="Natural Linguist" type="MAJOR"/>
 	<asset name="Nature Lover" type="MINOR"/>
 	<asset name="Nose for Trouble" type="BOTH"/>
-	<asset name="Reader" type="BOTH"/>
-	<asset name="Registered Companion" type="MINOR"/>
-	<asset name="Religiosity" type="BOTH"/>
+	<asset name="Spiritual" type="BOTH"/>
 	<asset name="Sharp Sense" type="MINOR" focus="Smell|Touch|Sight|Taste|Hearing"/>
 	<asset name="Steady Calm" type="BOTH"/>
-	<asset name="Sweet and Cheerful" type="MINOR"/>
+	<asset name="Optimistic" type="MINOR"/>
 	<asset name="Talented" type="BOTH" skill="any"/>
 	<asset name="Things Go Smooth" type="BOTH"/>
 	<asset name="Total Recall" type="MAJOR"/>

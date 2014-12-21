@@ -1,85 +1,31 @@
 <equipmentList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:noNamespaceSchemaLocation="equipment.xsd">
-	<!-- Tools -->
-	<equipment name="Fire Jelly" cost="0.2" weight="2" availability="E" type="Tools"/>
-	<equipment name="Garden Bunk" cost="18" weight="45" availability="C" type="Tools"/>
-	<equipment name="Gun Vac Case" cost="4" weight="2" availability="C" type="Tools"/>
-	<equipment name="Gun Cleaning Kit" cost="4" weight="2" availability="E" type="Tools"/>
-	<equipment name="Multiband" cost="4.8" weight="0" availability="C" type="Tools"/>
-	<equipment name="Patch Tape" cost="1.2" weight="3" availability="E" type="Tools"/>
-	<equipment name="Purification Crystals" cost="0.4" weight="0" availability="E" type="Tools"/>
-	<equipment name="Trash Incinerator" cost="0.2" weight="2" availability="E" type="Tools"/>
 	<!-- Food & Supplies-->	
 	<equipment name="Crop Supplements" cost="300" weight="0" availability="C" type="Food and Drink"/>
-	<equipment name="Drink, Fine Wine" cost="6.4" weight="0" availability="C" type="Food and Drink"/>
-	<equipment name="Drink, Good Whisky" cost="5.6" weight="0" availability="C" type="Food and Drink"/>
+	<equipment name="Drink, Regular" cost="6.4" weight="0" availability="C" type="Food and Drink"/>
+	<equipment name="Drink, Fine" cost="15.2" weight="0" availability="C" type="Food and Drink"/>
+	<equipment name="Drink, Vintage" cost="200" weight="0" availability="C" type="Food and Drink"/>
 	<equipment name="Foodstuffs, Canned" cost="5" weight="0" availability="E" type="Food and Drink"/>
 	<equipment name="Foodstuffs, Frozen" cost="6" weight="0" availability="E" type="Food and Drink"/>
 	<equipment name="Foodstuffs, Fresh" cost="8" weight="0" availability="E" type="Food and Drink"/>
 	<equipment name="Foodstuffs, Luxury" cost="2" weight="0" availability="C" type="Food and Drink"/>
-	<equipment name="Foodstuffs, Nutrient Bars" cost="570" weight="0" availability="C" type="Food and Drink"/>
-	<equipment name="Foodstuffs, Protein Packs" cost="2.5" weight="0" availability="E" type="Food and Drink"/>
 	<equipment name="Spices, Common" cost="2" weight="0" availability="C" type="Food and Drink"/>
 	<equipment name="Spices, Rare" cost="5" weight="0" availability="C" type="Food and Drink"/>
-	<equipment name="Crop Supplements" cost="300" weight="0" availability="C" type="Food and Drink"/>
-	<equipment name="Crop Supplements" cost="300" weight="0" availability="C" type="Food and Drink"/>
 	<!-- Computing -->	
-	<equipment name="Cortex Terminal Black Box" cost="747.2" weight="80" availability="I" type="Computing"/>
-	<equipment name="Cortex Terminal Personal Access" cost="100" weight="15" availability="C" type="Computing"/>
-	<equipment name="Cortex Terminal Public Access" cost="52" weight="15" availability="E" type="Computing"/>
-	<equipment name="Data Library Standard" cost="22.8" availability="E" type="Computing"/>
-	<equipment name="Data Library Professional" cost="92" availability="C" type="Computing"/>
-	<equipment name="DataBook" cost="30" weight="2" availability="E" type="Computing"/>
-	<equipment name="Data Disc" cost="0.2" availability="E" type="Computing"/>
-	<equipment name="Dedicated Sourcebox" cost="154" weight="30" availability="C" type="Computing"/>
-	<equipment name="Holo-Image Development Suite" cost="64" weight="5" availability="C" type="Computing"/>
-	<equipment name="SubKelvin" cost="80" availability="I" type="Computing"/>
-	<equipment name="XerO Sercurity" cost="7.2" availability="C" type="Computing"/>
-	<equipment name="Barrier Field" cost="1062" weight="450" availability="C" type="Security"/>
-	<!-- Communications -->
-	<equipment name="Commpack Long Range" cost="37.8" weight="10" availability="C" type="Communications"/>
-	<equipment name="Commpack Short Range" cost="22.4" weight="7" availability="E" type="Communications"/>
-	<equipment name="Distress Beacon" cost="31" weight="14" availability="C" type="Communications"/>
-	<equipment name="Emergency Signal Ring" cost="300" availability="C" type="Communications"/>
-	<equipment name="Fedband Scanner" cost="19.8" weight="3" availability="I" type="Communications"/>
-	<equipment name="Gunscanner" cost="132.8" weight="220" availability="C" type="Communications"/>
-	<equipment name="Micro Transmitter" cost="8" availability="C" type="Communications"/>
-	<equipment name="Motion Sensor Array" cost="22" weight="12" availability="C" type="Communications"/>
-	<equipment name="Shiplinked Handset" cost="3.2" weight="1" availability="E" type="Communications"/>
-	<equipment name="Surveyors Box" cost="230" weight="65" availability="C" type="Communications"/>
-	<equipment name="Transmission Station" cost="2200" weight="3000" availability="C" type="Communications"/>
-	<equipment name="Jabberwocky Signal Blocker" cost="13.3" weight="10" availability="I" type="Communications"/>
+	<equipment name="Small Handheld Computer (basic)" cost="37.8" weight="10" availability="C" type="Communications"/>
+	<equipment name="Small Handheld Computer (advanced)" cost="200.4" weight="7" availability="E" type="Communications"/>
+	<equipment name="Communicator" cost="31" weight="14" availability="C" type="Communications"/>
 	<!-- Medical Equipment -->
-	<equipment name="Blastomere Organs" cost="18000" weight="5" availability="I" type="Medical"/>
-	<equipment name="Cryo Chamer" cost="1300" weight="275" availability="I" type="Medical"/>
-	<equipment name="Dermal Mender" cost="800" weight="15" availability="C" type="Medical"/>
-	<equipment name="Doctors Bag" cost="27.4" weight="7" availability="R" type="Medical"/>
-	<equipment name="Doctors Bag (MedAcad)" cost="210" weight="8" availability="R" type="Medical"/>
 	<equipment name="First-Aid Kit" cost="0.6" weight="3" availability="E" type="Medical"/>
-	<equipment name="Immunization Packet" cost="3" availability="C" type="Medical"/>
-	<equipment name="MedComp" cost="312" weight="23" availability="C" type="Medical"/>
+	<equipment name="Field Medical Kit" cost="5" weight="3" availability="E" type="Medical"/>
+	<equipment name="Medical Handheld Computer" cost="312" weight="23" availability="C" type="Medical"/>
 	<equipment name="Medical Supplies, Emergency" cost="110" weight="20" availability="C" type="Medical"/>
 	<equipment name="Medical Supplies, Standard" cost="46" weight="15" availability="C" type="Medical"/>
-	<equipment name="Operating Theatre, Modular" cost="346" weight="1250" availability="C" type="Medical"/>
 	<!-- Covert Ops -->
-	<equipment name="Debugger" cost="20" weight="1" availability="C" type="Covert"/>
 	<equipment name="Disguise Kit" cost="62.6" weight="5" availability="C" type="Covert"/>
-	<equipment name="Eavesdrops" cost="47.2" weight="3" availability="I" type="Covert"/>
-	<equipment name="Faked ID Card" cost="4000" availability="I" type="Covert"/>
-	<equipment name="Laserlight Mist" cost="1.8" weight="1" availability="C" type="Covert"/>
-	<equipment name="Lock Picks" cost="14" availability="I" type="Covert"/>
-	<equipment name="Lock Picks, Electronic" cost="35.4" weight="1" availability="I" type="Covert"/>
-	<equipment name="Mag Charge" cost="27" weight="1" availability="I" type="Covert"/>
-	<equipment name="Optical Bomb" cost="16" weight="1" availability="I" type="Covert"/>
-	<equipment name="Poison Kortine (Debilitating)" cost="11" availability="I" type="Covert"/>
-	<equipment name="Poison Cyanol (Lethal)" cost="12.6" availability="I" type="Covert"/>
+	<equipment name="Eavesdropping kit" cost="47.2" weight="3" availability="I" type="Covert"/>
 	<!--Engineering-->
-	<equipment name="CAD Board" cost="27.2" weight="5" availability="C" type="Engineering"/>
 	<equipment name="Cutting Torch" cost="4" weight="8" availability="E" type="Engineering"/>
-	<equipment name="Gravcart" cost="485" weight="150" availability="C" type="Engineering"/>
-	<equipment name="Scrapware" cost="5" weight="50" availability="E" type="Engineering"/>
-	<equipment name="'Sticky' Scrapper's Gel" cost="2" weight="2" availability="C" type="Engineering"/>
 	<equipment name="Toolkit, Basic" cost="14.4" weight="15" availability="E" type="Engineering"/>
-	<equipment name="Tool Set, Electronic" cost="138" weight="45" availability="C" type="Engineering"/>
-	<equipment name="Tool Set, Mechanics" cost="284" weight="130" availability="C" type="Engineering"/>
+	<equipment name="Engineering Tool Set" cost="138" weight="45" availability="C" type="Engineering"/>
 </equipmentList>
